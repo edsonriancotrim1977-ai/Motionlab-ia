@@ -14,7 +14,6 @@ interface HomeProps {
 }
 
 export function Home({ onNavigate, recent, onOpenDetails, onSearch }: HomeProps) {
-  const testedCount = prompts.filter((p) => p.status === 'Testado').length;
   const categoryCount = categories.length;
 
   // "Comece por aqui" — prioritize tested prompts
@@ -72,10 +71,9 @@ export function Home({ onNavigate, recent, onOpenDetails, onSearch }: HomeProps)
           </p>
 
           {/* Metrics */}
-          <div className="mt-7 flex flex-wrap gap-6 sm:gap-10">
+          <div className="mt-7 flex flex-wrap gap-8 sm:gap-12">
             <Metric label="PROMPTS" value={prompts.length} />
             <Metric label="CATEGORIAS" value={categoryCount} />
-            <Metric label="TESTADOS" value={testedCount} />
           </div>
         </div>
       </section>
