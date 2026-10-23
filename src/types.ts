@@ -1,5 +1,5 @@
 export type PromptType = 'Vídeo' | 'Imagem' | 'UGC';
-export type PromptStatus = 'Testado' | 'A testar';
+export type PromptStatus = 'Compatível';
 export type PromptFormat = '9:16' | '16:9' | '1:1';
 export type PromptDuration = '5s' | '8s' | '10s';
 export type MediaType = 'video' | 'image';

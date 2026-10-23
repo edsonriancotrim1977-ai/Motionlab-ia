@@ -16,10 +16,8 @@ interface HomeProps {
 export function Home({ onNavigate, recent, onOpenDetails, onSearch }: HomeProps) {
   const categoryCount = categories.length;
 
-  // "Comece por aqui" — prioritize tested prompts
-  const starterPrompts = prompts
-    .filter((p) => p.status === 'Testado')
-    .slice(0, 3);
+  // "Comece por aqui" — first few prompts
+  const starterPrompts = prompts.slice(0, 3);
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -113,7 +111,7 @@ export function Home({ onNavigate, recent, onOpenDetails, onSearch }: HomeProps)
         <div className="flex items-center justify-between mb-4">
           <div>
             <h2 className="text-base sm:text-lg font-bold text-white uppercase tracking-wide">Comece por aqui</h2>
-            <p className="mt-0.5 text-[12px] text-gray-500">Prompts testados e prontos para usar</p>
+            <p className="mt-0.5 text-[12px] text-gray-500">Prompts prontos para usar</p>
           </div>
           <button
             onClick={() => onNavigate('all')}

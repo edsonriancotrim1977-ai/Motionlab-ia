@@ -1,8 +1,8 @@
-import { Search, Heart, Check, Clock, Film, Image, Tag, X, ChevronDown } from 'lucide-react';
+import { Search, Heart, Film, Image, Tag, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import type { PromptType, PromptFormat, PromptDuration } from '@/types';
 
-export type FilterStatus = 'Todos' | 'Testados' | 'A testar' | 'Favoritos';
+export type FilterStatus = 'Todos' | 'Favoritos';
 
 export interface FilterState {
   status: FilterStatus;
@@ -19,7 +19,7 @@ interface FiltersProps {
   resultCount: number;
 }
 
-const statusOptions: FilterStatus[] = ['Todos', 'Testados', 'A testar', 'Favoritos'];
+const statusOptions: FilterStatus[] = ['Todos', 'Favoritos'];
 const typeOptions: (PromptType | 'Todos')[] = ['Todos', 'Vídeo', 'Imagem', 'UGC'];
 const formatOptions: (PromptFormat | 'Todos')[] = ['Todos', '9:16', '16:9', '1:1'];
 const durationOptions: (PromptDuration | 'Todos')[] = ['Todos', '5s', '8s', '10s'];
@@ -74,8 +74,6 @@ export function Filters({
           value={filters.status}
           onChange={(v) => onFiltersChange({ ...filters, status: v as FilterStatus })}
           optionIcons={{
-            Testados: <Check className="w-3 h-3" />,
-            'A testar': <Clock className="w-3 h-3" />,
             Favoritos: <Heart className="w-3 h-3" />,
           }}
         />

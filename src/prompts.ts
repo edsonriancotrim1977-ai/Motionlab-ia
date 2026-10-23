@@ -100,8 +100,8 @@ function normalize(raw: RawPrompt): Prompt {
     type,
     duration: raw.duration || '',
     format: (raw.format || '9:16') as Prompt['format'],
-    status: (raw.status === 'Testado' ? 'Testado' : 'A testar') as Prompt['status'],
-    testedModel: raw.testedModel || undefined,
+    status: 'Compatível' as Prompt['status'],
+    testedModel: undefined,
     prompt: raw.prompt,
     mediaType: mediaType as Prompt['mediaType'],
     mediaUrl,
@@ -433,7 +433,7 @@ for (const [promptId, media] of promptIdToMedia) {
 
 // --- Merge new batch (30 items) with deduplication ---
 
-const newBatchRaw = (newBatchData as { items: RawPrompt[] }).items;
+const newBatchRaw = (newBatchData as unknown as { items: RawPrompt[] }).items;
 
 // Track existing mediaUrls to detect duplicates
 const existingMediaUrls = new Set<string>();
@@ -479,6 +479,20 @@ for (const item of newBatchRaw) {
   newBatchAdded++;
 }
 
-export const prompts: Prompt[] = Array.from(mergedMap.values()).map(normalize);
+const allNormalized: Prompt[] = Array.from(mergedMap.values()).map(normalize);
+export const prompts: Prompt[] = allNormalized.filter((p) => {
+  // Keep only cards with real Cloudinary demonstration media
+  const url = p.mediaUrl || '';
+  const hasCloudinaryVideo = url.includes('res.cloudinary.com/') && /\.(mp4|webm|ogg|mov)(\?|$)/i.test(url);
+  const hasCloudinaryImage = url.includes('res.cloudinary.com/') && url.includes('/image/upload/');
+  const hasPlayer = !!p.cloudinaryPlayerUrl;
+  return hasCloudinaryVideo || hasCloudinaryImage || hasPlayer;
+});
+
+export const cleanupStats = {
+  before: allNormalized.length,
+  after: prompts.length,
+  removed: allNormalized.length - prompts.length,
+};
 
 export const newBatchStats = { found: newBatchRaw.length, added: newBatchAdded, duplicates: newBatchDuplicates };

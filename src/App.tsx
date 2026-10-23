@@ -116,10 +116,6 @@ export default function App() {
     // Status filter
     if (filters.status === 'Favoritos') {
       result = result.filter((p) => favorites.includes(p.id));
-    } else if (filters.status === 'Testados') {
-      result = result.filter((p) => p.status === 'Testado');
-    } else if (filters.status === 'A testar') {
-      result = result.filter((p) => p.status === 'A testar');
     }
 
     // Type filter
@@ -158,13 +154,13 @@ export default function App() {
   // Heading for content area
   const heading = useMemo(() => {
     if (view === 'home') return null;
-    if (view === 'all') return { title: 'Todos os Prompts', subtitle: `${prompts.length} prompts cadastrados` };
+    if (view === 'all') return { title: 'Todos os Prompts', subtitle: `${filteredPrompts.length} prompts cadastrados` };
     if (view === 'favorites') return { title: 'Favoritos', subtitle: `${favorites.length} ${favorites.length === 1 ? 'prompt favoritado' : 'prompts favoritados'}` };
     const cat = typeof view === 'object' ? categoryMap[view.category] : null;
     return cat
-      ? { title: `${cat.icon} ${cat.label}`, subtitle: `${prompts.filter((p) => p.category === cat.id).length} prompts nesta categoria` }
+      ? { title: `${cat.icon} ${cat.label}`, subtitle: `${filteredPrompts.filter((p) => p.category === cat.id).length} prompts nesta categoria` }
       : null;
-  }, [view, favorites]);
+  }, [view, favorites, filteredPrompts]);
 
   const isHome = view === 'home';
   const showFilters = !isHome;
