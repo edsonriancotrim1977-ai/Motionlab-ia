@@ -20,6 +20,12 @@ export const categoryStyles: Record<string, CategoryStyle> = {
   'correcoes-realismo': { gradient: 'from-slate-400/20 via-gray-400/10 to-purple-500/10', glow: 'rgba(148,163,184,0.15)' },
   'casa-organizacao': { gradient: 'from-teal-500/20 via-emerald-500/10 to-cyan-500/10', glow: 'rgba(20,184,166,0.15)' },
   'imagens': { gradient: 'from-rose-500/20 via-pink-500/10 to-fuchsia-500/10', glow: 'rgba(244,63,94,0.15)' },
+  'no-face': { gradient: 'from-slate-500/20 via-gray-500/10 to-zinc-500/10', glow: 'rgba(100,116,139,0.15)' },
+  'feminino': { gradient: 'from-pink-500/20 via-rose-500/10 to-orange-500/10', glow: 'rgba(236,72,153,0.15)' },
+  'ugc': { gradient: 'from-sky-500/20 via-blue-500/10 to-cyan-500/10', glow: 'rgba(14,165,233,0.15)' },
+  'masculino': { gradient: 'from-blue-600/20 via-slate-500/10 to-gray-600/10', glow: 'rgba(37,99,235,0.15)' },
+  'dinamicos': { gradient: 'from-red-500/20 via-orange-500/10 to-amber-500/10', glow: 'rgba(239,68,68,0.15)' },
+  'make-joias-bolsas': { gradient: 'from-amber-500/20 via-yellow-500/10 to-orange-400/10', glow: 'rgba(245,158,11,0.15)' },
 };
 
 export const categories: Category[] = [
@@ -37,6 +43,12 @@ export const categories: Category[] = [
   { id: 'correcoes-realismo', label: 'Correções & Realismo', icon: '🛠' },
   { id: 'casa-organizacao', label: 'Casa & Organização', icon: '🏠' },
   { id: 'imagens', label: 'Imagens', icon: '🖼' },
+  { id: 'no-face', label: 'No Face', icon: '🫥' },
+  { id: 'feminino', label: 'Feminino', icon: '💃' },
+  { id: 'ugc', label: 'UGC', icon: '📱' },
+  { id: 'masculino', label: 'Masculino', icon: '🕺' },
+  { id: 'dinamicos', label: 'Dinâmicos', icon: '⚡' },
+  { id: 'make-joias-bolsas', label: 'Make/Jóias/Bolsas', icon: '💎' },
 ];
 
 export const categoryMap = categories.reduce<Record<string, Category>>((acc, c) => {

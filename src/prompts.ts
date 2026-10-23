@@ -3,6 +3,7 @@ import { categories } from './categories';
 import libraryData from './data/motionlab-library.json';
 import importBatchData from './data/import-batch.json';
 import recoveredMediaData from './data/recovered-media.json';
+import newBatchData from './data/motionlab_import_batch_30.json';
 
 type RawPrompt = Record<string, unknown> & {
   id: string;
@@ -49,6 +50,10 @@ const labelToId = new Map<string, string>();
 for (const cat of categories) {
   labelToId.set(cat.label.toLowerCase(), cat.id);
 }
+// Extra mappings for label variants used in imported batches
+labelToId.set('selfie espelho', 'selfie-espelho');
+labelToId.set('make/jóias/bolsas', 'make-joias-bolsas');
+labelToId.set('make/joias/bolsas', 'make-joias-bolsas');
 
 const typeMap: Record<string, PromptType> = {
   video: 'Vídeo',
@@ -392,6 +397,12 @@ for (const item of libraryRaw) {
 for (const item of batchRaw) {
   mergedMap.set(item.id, item);
 }
+// Add new cards from recovered media
+for (const card of newCards) {
+  if (!mergedMap.has(card.id)) {
+    mergedMap.set(card.id, card);
+  }
+}
 
 // Apply media matches to existing prompts
 for (const [promptId, media] of promptIdToMedia) {
@@ -420,11 +431,54 @@ for (const [promptId, media] of promptIdToMedia) {
   }
 }
 
-// Add new cards
-for (const card of newCards) {
-  if (!mergedMap.has(card.id)) {
-    mergedMap.set(card.id, card);
+// --- Merge new batch (30 items) with deduplication ---
+
+const newBatchRaw = (newBatchData as { items: RawPrompt[] }).items;
+
+// Track existing mediaUrls to detect duplicates
+const existingMediaUrls = new Set<string>();
+for (const [, item] of mergedMap) {
+  if (item.mediaUrl) existingMediaUrls.add(item.mediaUrl);
+  if (item.cloudinaryPlayerUrl) existingMediaUrls.add(item.cloudinaryPlayerUrl);
+}
+
+let newBatchAdded = 0;
+let newBatchDuplicates = 0;
+
+for (const item of newBatchRaw) {
+  // Dedupe by ID
+  if (mergedMap.has(item.id)) {
+    newBatchDuplicates++;
+    continue;
   }
+  // Dedupe by mediaUrl
+  const mediaUrl = String(item.mediaUrl || '');
+  if (mediaUrl && existingMediaUrls.has(mediaUrl)) {
+    newBatchDuplicates++;
+    continue;
+  }
+
+  // Cloudinary player URLs go into cloudinaryPlayerUrl for iframe rendering
+  const processed: RawPrompt = { ...item };
+  if (mediaUrl && mediaUrl.includes('player.cloudinary.com/embed/')) {
+    processed.cloudinaryPlayerUrl = mediaUrl;
+    // Extract public_id from the player URL
+    const pidMatch = mediaUrl.match(/public_id=([^&]+)/);
+    if (pidMatch) processed.publicId = decodeURIComponent(pidMatch[1]);
+    // Set mediaUrl to the direct video URL so isVideoUrl detects it
+    if (processed.publicId) {
+      processed.mediaUrl = videoUrl(processed.publicId);
+    }
+  }
+
+  // Cloudinary image URLs stay as-is in mediaUrl (rendered as <img>)
+
+  if (mediaUrl) existingMediaUrls.add(mediaUrl);
+
+  mergedMap.set(item.id, processed);
+  newBatchAdded++;
 }
 
 export const prompts: Prompt[] = Array.from(mergedMap.values()).map(normalize);
+
+export const newBatchStats = { found: newBatchRaw.length, added: newBatchAdded, duplicates: newBatchDuplicates };
