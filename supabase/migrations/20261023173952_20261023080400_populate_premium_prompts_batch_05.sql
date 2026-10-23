@@ -1,0 +1,20 @@
+INSERT INTO premium_prompts (prompt_id, prompt_text, take_prompts)
+VALUES
+('ML-NEW-003-utilize-com-qualquer-produto-disputa-na-loja', 'PROMPT COMPLETO recebido na conversa: abertura POV em grande loja; várias mãos disputam produto na prateleira; sequência rápida de demonstrações; fala PT-BR; estética UGC; produto idêntico à referência; sem overlays.', NULL),
+('ML-NEW-004-utilize-com-qualquer-produto-centro-de-pedidos', 'PROMPT COMPLETO recebido na conversa: POV em centro de separação de pedidos; esteira com unidades do produto; alta procura; demonstrações rápidas; fala PT-BR; CTA carrinho laranja; preservar produto.', NULL),
+('ML-NEW-005-crie-sua-influencer-ia-ultra-realista', 'JSON de criação de influencer feminina ultra-realista recebido integralmente na conversa, com campos personalizáveis para idade, pele, olhos, cabelo e maquiagem.', NULL),
+('ML-NEW-006-new-face-enquadramento-selfie-espelho', 'CAMERA FRAMING — EXTREMELY IMPORTANT: enquadramento muito próximo de mirror selfie; topo da cabeça intencionalmente cortado; rosto oculto pelo smartphone; priorizar torso, cintura, quadril, pernas e outfit; manter perspectiva e estética da referência.', NULL),
+('ML-NEW-008-new-face-mostrar-tecido-e-caimento', 'JSON de vídeo mirror-selfie ultra-fotorrealista 10s recebido na conversa: 0–3s tocar parte superior; 3–6s tecido inferior; 6–8s puxar tecido suavemente; 8–10s virar lateralmente; física realista de tecido.', NULL),
+('ML-NEW-009-new-face-costas-movimento-circular', 'Manter modelo exatamente de costas; mão livre faz apenas um movimento circular suave sobre o short e desliza para baixo; não virar, não puxar roupa, câmera fixa, sem zoom/cortes/fala; 9:16 ultra-realista.', NULL),
+('ML-NEW-010-new-face-ajuste-de-roupa-em-tres-quartos', 'Vídeo fashion 10s ultra-fotorrealista; mesma modelo/outfit; pose três quartos; ajuste sutil do tecido; zoom lento e suave; foco no produto; sem sensualização, texto ou alterações.', NULL),
+('ML-NEW-011-selfie-com-pacote-do-tiktok', 'Prompt fotográfico completo recebido: selfie noturna com flash; modelo da referência; cropped amarelo; pacote preto TikTok Shop; home office/quarto; preservar identidade, tatuagens, pose, cenário e estética UGC.', NULL),
+('ML-NEW-013-rosto-ultra-realista', 'Prompt recebido: iluminação suave/difusa natural, color grading neutro-quente, pele realista com poros e variações naturais, glow sutil, alta definição e aparência fotográfica.', NULL),
+('ML-NEW-014-naturalzinha', 'Vídeo UGC natural de look: ajustar top, passar mão no cabelo, mudar postura, mão no cós, giro sutil; sorriso natural; cenário levemente desfocado; silencioso, sem fala/áudio.', NULL),
+('ML-NEW-015-blog-gancho-1', 'Same female model from reference; exact garment; front camera head-to-hips; 9:16 TikTok UGC; subtle forward lean + half turn + look over shoulder + return; no audio; preserve face/outfit.', NULL),
+('ML-NEW-016-troca-de-cenario-casal', 'Combinar pessoas das referências de modelo com ambiente da referência de cenário; preservar identidade; remover pessoas originais do ambiente; integração fotográfica realista de luz, perspectiva, escala e sombras.', NULL),
+('ML-NEW-017-troca-de-cenario-modelo-1-ambiente-2', 'IMAGE 1 = modelo exclusivamente; IMAGE 2 = ambiente exclusivamente; preservar identidade e aparência da mulher; reconstruir fotografia no novo cenário com perspectiva, iluminação e sombras realistas.', NULL),
+('ML-NEW-018-colocar-roupas-no-casal', 'IMAGE 1 = casal; IMAGE 2 = roupas; atribuir roupa feminina à mulher e masculina ao homem; preservar identidades/corpos; reproduzir design, cores, padrões, logos, costuras, material e caimento.', NULL),
+('ML-NEW-019-ugc-masculino-troque-somente-a-fala', 'Vídeo 9:16 ultra-realista baseado no frame; influencer masculino natural; câmera smartphone; diálogo substituível ''(COLE SUA FALA AQUI)''; voz masculina brasileira com leve sotaque paulista; produto idêntico.', NULL)
+ON CONFLICT (prompt_id) DO UPDATE SET
+  prompt_text = EXCLUDED.prompt_text,
+  take_prompts = EXCLUDED.take_prompts;

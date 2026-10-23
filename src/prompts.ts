@@ -105,7 +105,16 @@ function normalize(raw: RawPrompt): Prompt {
   const mediaUrl = raw.mediaUrl || undefined;
   const mediaStatus = mediaUrl ? 'available' : ((raw.mediaStatus === 'available' ? 'available' : 'placeholder') as Prompt['mediaStatus']);
 
-  const isPaid = raw.access === 'paid';
+  const FREE_PROMPT_IDS = new Set([
+    'SELFIE-01',
+    'LANCAMENTO-002',
+    'LANCAMENTO-003',
+    'LANCAMENTO-007',
+    'LANCAMENTO-008',
+    'UNBOXING-001',
+    'ML-NEW-012-caminhao-com-mercadoria',
+  ]);
+  const isPaid = !FREE_PROMPT_IDS.has(raw.id);
   const isLaunch = raw.isLaunch === true;
 
   const status: Prompt['status'] = isLaunch
@@ -135,7 +144,7 @@ function normalize(raw: RawPrompt): Prompt {
     avoidList,
     isLaunch: isLaunch || undefined,
     launchOrder: raw.launchOrder,
-    access: raw.access,
+    access: isPaid ? 'paid' : 'free',
     isFreePreview: raw.isFreePreview,
     previewLabel: raw.previewLabel,
     takePrompts: isPaid ? undefined : raw.takePrompts,

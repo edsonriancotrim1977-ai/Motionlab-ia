@@ -303,7 +303,7 @@ export function PromptModal({
                 </div>
                 <h3 className="text-[15px] font-bold text-white mb-1">Conteúdo Premium</h3>
                 <p className="text-[12px] text-gray-400 leading-relaxed max-w-sm mx-auto mb-4">
-                  Este prompt faz parte do pacote de lançamento. Compre o MotionLab por R$ 49,90 e desbloqueie todos os 8 lançamentos + toda a biblioteca.
+                  Este prompt faz parte da biblioteca MotionLab. Compre por R$ 49,90 e desbloqueie todos os 112 prompts premium + toda a biblioteca completa.
                 </p>
                 {getCheckoutUrl() ? (
                   <a
