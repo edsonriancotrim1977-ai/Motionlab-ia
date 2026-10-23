@@ -3,7 +3,8 @@ import { createClient } from "npm:@supabase/supabase-js@2.57.4";
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Client-Info, Apikey",
+  "Access-Control-Allow-Headers":
+    "Content-Type, Authorization, X-Client-Info, Apikey",
 };
 
 const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
@@ -18,61 +19,175 @@ function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
 }
 
+async function hmacSha1Hex(
+  message: string,
+  secret: string,
+): Promise<string> {
+  const encoder = new TextEncoder();
+
+  const key = await crypto.subtle.importKey(
+    "raw",
+    encoder.encode(secret),
+    {
+      name: "HMAC",
+      hash: "SHA-1",
+    },
+    false,
+    ["sign"],
+  );
+
+  const signature = await crypto.subtle.sign(
+    "HMAC",
+    key,
+    encoder.encode(message),
+  );
+
+  return Array.from(new Uint8Array(signature))
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function safeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+
+  let result = 0;
+
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+
+  return result === 0;
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, { status: 200, headers: corsHeaders });
+    return new Response(null, {
+      status: 200,
+      headers: corsHeaders,
+    });
   }
 
   try {
     const rawBody = await req.text();
 
-    let payload: Record<string, unknown>;
+    let payload: any;
+
     try {
       payload = JSON.parse(rawBody);
     } catch {
       return new Response(
         JSON.stringify({ error: "Invalid JSON" }),
-        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        {
+          status: 400,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
       );
     }
 
-    // Validate Kiwify webhook token (if configured)
-    // Kiwify may send the token in the Authorization header, a custom header,
-    // a query parameter, or inside the request body as "token".
-    if (kiwifyToken) {
-      const authHeader = req.headers.get("Authorization") || "";
-      const headerToken = authHeader.replace(/^Bearer\s+/i, "").trim();
-      const customHeaderToken = req.headers.get("X-Kiwify-Token") || "";
-      const url = new URL(req.url);
-      const queryToken = url.searchParams.get("token") || "";
-      const bodyToken = String((payload as Record<string, unknown>).token || "");
+    // ---------------------------------------------------------
+    // VALIDAR ASSINATURA OFICIAL DA KIWIFY
+    // ---------------------------------------------------------
 
-      const providedToken =
-        headerToken || customHeaderToken || queryToken || bodyToken;
+    if (!kiwifyToken) {
+      console.error("KIWIFY_WEBHOOK_TOKEN is not configured");
 
-      if (providedToken !== kiwifyToken) {
-        return new Response(
-          JSON.stringify({ error: "Unauthorized" }),
-          { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-        );
-      }
+      return new Response(
+        JSON.stringify({ error: "Webhook secret not configured" }),
+        {
+          status: 500,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
+      );
     }
 
-    // Extract event type and identifiers
+    const url = new URL(req.url);
+
+    // A Kiwify normalmente envia a assinatura como ?signature=
+    // Também aceitamos o header como fallback.
+    const receivedSignature = (
+      url.searchParams.get("signature") ||
+      req.headers.get("X-Kiwify-Signature") ||
+      ""
+    )
+      .trim()
+      .toLowerCase();
+
+    if (!receivedSignature) {
+      console.error("Kiwify signature missing");
+
+      return new Response(
+        JSON.stringify({ error: "Missing Kiwify signature" }),
+        {
+          status: 401,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
+      );
+    }
+
+    // Formato documentado pela Kiwify:
+    // HMAC-SHA1 de JSON.stringify(body)
+    const normalizedBody = JSON.stringify(payload);
+
+    const normalizedSignature = await hmacSha1Hex(
+      normalizedBody,
+      kiwifyToken,
+    );
+
+    // Fallback para implementações que assinam o corpo cru.
+    const rawSignature = await hmacSha1Hex(
+      rawBody,
+      kiwifyToken,
+    );
+
+    const validSignature =
+      safeEqual(receivedSignature, normalizedSignature) ||
+      safeEqual(receivedSignature, rawSignature);
+
+    if (!validSignature) {
+      console.error("Invalid Kiwify signature");
+
+      return new Response(
+        JSON.stringify({ error: "Unauthorized" }),
+        {
+          status: 401,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
+      );
+    }
+
+    // ---------------------------------------------------------
+    // EXTRAIR DADOS DA KIWIFY
+    // ---------------------------------------------------------
+
     const eventType = String(
-      payload.event_type ||
+      payload.webhook_event_type ||
+        payload.event_type ||
         payload.type ||
         payload.event ||
+        payload.order_status ||
         "unknown",
     );
 
-    // Kiwify sends different structures; extract common fields
     const customerEmail = normalizeEmail(
       String(
-        payload.customer_email ||
+        payload.Customer?.email ||
+          payload.customer?.email ||
+          payload.customer_email ||
           payload.email ||
-          (payload.customer && payload.customer.email) ||
-          (payload.data && payload.data.customer_email) ||
+          payload.data?.customer_email ||
+          payload.data?.Customer?.email ||
           "",
       ),
     );
@@ -81,32 +196,79 @@ Deno.serve(async (req: Request) => {
       payload.order_id ||
         payload.id ||
         payload.transaction_id ||
-        (payload.data && payload.data.order_id) ||
+        payload.data?.order_id ||
         "",
     );
 
     const transactionId = String(
       payload.transaction_id ||
         payload.order_id ||
-        (payload.data && payload.data.transaction_id) ||
+        payload.data?.transaction_id ||
         orderId,
     );
 
-    // Unique event id for idempotency
     const eventId = String(
       payload.event_id ||
         payload.webhook_id ||
-        `${orderId}-${eventType}-${Date.now()}`,
+        `${orderId}-${eventType}`,
     );
+
+    const eventTypeLower = eventType.toLowerCase();
+
+    // Eventos que removem acesso
+    const isRefund =
+      /order_refunded|chargeback|subscription_canceled|subscription_cancelled|refund|reversal|cancel/i
+        .test(eventTypeLower);
+
+    // Eventos que liberam/mantêm acesso
+    const isApproval =
+      /order_approved|subscription_renewed|approved|paid|completed|confirmed|authorized|renewed/i
+        .test(eventTypeLower);
+
+    // Eventos que não alteram o acesso
+    if (!isRefund && !isApproval) {
+      if (customerEmail) {
+        await supabase.from("kiwify_events").insert({
+          event_id: eventId,
+          event_type: eventType,
+          email: customerEmail,
+          status: "processed",
+          payload,
+        });
+      }
+
+      return new Response(
+        JSON.stringify({
+          status: "ignored",
+          message: `Event type '${eventType}' not actionable`,
+        }),
+        {
+          status: 200,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
+      );
+    }
 
     if (!customerEmail) {
       return new Response(
         JSON.stringify({ error: "Missing customer email" }),
-        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        {
+          status: 400,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
       );
     }
 
-    // Idempotency: check if this event was already processed
+    // ---------------------------------------------------------
+    // EVITAR PROCESSAMENTO DUPLICADO
+    // ---------------------------------------------------------
+
     const { data: existingEvent } = await supabase
       .from("kiwify_events")
       .select("id, status")
@@ -115,33 +277,25 @@ Deno.serve(async (req: Request) => {
 
     if (existingEvent) {
       return new Response(
-        JSON.stringify({ status: "duplicate", message: "Event already processed" }),
-        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        JSON.stringify({
+          status: "duplicate",
+          message: "Event already processed",
+        }),
+        {
+          status: 200,
+          headers: {
+            ...corsHeaders,
+            "Content-Type": "application/json",
+          },
+        },
       );
     }
 
-    // Determine if this is an approval or refund/chargeback
-    const eventTypeLower = eventType.toLowerCase();
-    const isRefund = /refund|chargeback|reversal|cancel/i.test(eventTypeLower);
-    const isApproval = /approved|paid|completed|confirmed|authorized/i.test(eventTypeLower);
-
-    // Ignore non-actionable events (pix generated, boleto generated, cart abandoned, etc.)
-    if (!isRefund && !isApproval) {
-      await supabase.from("kiwify_events").insert({
-        event_id: eventId,
-        event_type: eventType,
-        email: customerEmail,
-        status: "processed",
-        payload,
-      });
-      return new Response(
-        JSON.stringify({ status: "ignored", message: `Event type '${eventType}' not actionable` }),
-        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-      );
-    }
+    // ---------------------------------------------------------
+    // COMPRA APROVADA / ASSINATURA RENOVADA
+    // ---------------------------------------------------------
 
     if (isApproval) {
-      // Upsert entitlement
       const { error: entError } = await supabase
         .from("kiwify_entitlements")
         .upsert(
@@ -154,14 +308,16 @@ Deno.serve(async (req: Request) => {
             status: "active",
             updated_at: new Date().toISOString(),
           },
-          { onConflict: "email" },
+          {
+            onConflict: "email",
+          },
         );
 
       if (entError) {
         console.error("Entitlement upsert error:", entError);
+        throw entError;
       }
 
-      // Try to find existing user profile and upgrade
       const { data: profile } = await supabase
         .from("profiles")
         .select("id, email, plan, premium_active")
@@ -169,7 +325,7 @@ Deno.serve(async (req: Request) => {
         .maybeSingle();
 
       if (profile) {
-        await supabase
+        const { error: profileError } = await supabase
           .from("profiles")
           .update({
             plan: "premium",
@@ -179,10 +335,20 @@ Deno.serve(async (req: Request) => {
             updated_at: new Date().toISOString(),
           })
           .eq("id", profile.id);
+
+        if (profileError) {
+          console.error("Profile update error:", profileError);
+          throw profileError;
+        }
       }
-    } else if (isRefund) {
-      // Revoke entitlement
-      await supabase
+    }
+
+    // ---------------------------------------------------------
+    // REEMBOLSO / CHARGEBACK / CANCELAMENTO
+    // ---------------------------------------------------------
+
+    if (isRefund) {
+      const { error: revokeError } = await supabase
         .from("kiwify_entitlements")
         .update({
           premium_active: false,
@@ -191,7 +357,11 @@ Deno.serve(async (req: Request) => {
         })
         .eq("email", customerEmail);
 
-      // Downgrade user profile if no other active entitlement
+      if (revokeError) {
+        console.error("Entitlement revoke error:", revokeError);
+        throw revokeError;
+      }
+
       const { data: activeEnt } = await supabase
         .from("kiwify_entitlements")
         .select("id")
@@ -201,7 +371,7 @@ Deno.serve(async (req: Request) => {
         .maybeSingle();
 
       if (!activeEnt) {
-        await supabase
+        const { error: downgradeError } = await supabase
           .from("profiles")
           .update({
             plan: "free",
@@ -209,27 +379,58 @@ Deno.serve(async (req: Request) => {
             updated_at: new Date().toISOString(),
           })
           .eq("email", customerEmail);
+
+        if (downgradeError) {
+          console.error("Profile downgrade error:", downgradeError);
+          throw downgradeError;
+        }
       }
     }
 
-    // Record event for audit
-    await supabase.from("kiwify_events").insert({
-      event_id: eventId,
-      event_type: eventType,
-      email: customerEmail,
-      status: "processed",
-      payload,
-    });
+    // ---------------------------------------------------------
+    // REGISTRAR EVENTO
+    // ---------------------------------------------------------
+
+    const { error: eventError } = await supabase
+      .from("kiwify_events")
+      .insert({
+        event_id: eventId,
+        event_type: eventType,
+        email: customerEmail,
+        status: "processed",
+        payload,
+      });
+
+    if (eventError) {
+      console.error("Event insert error:", eventError);
+      throw eventError;
+    }
 
     return new Response(
-      JSON.stringify({ status: "ok", action: isRefund ? "revoked" : "activated" }),
-      { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+      JSON.stringify({
+        status: "ok",
+        action: isRefund ? "revoked" : "activated",
+      }),
+      {
+        status: 200,
+        headers: {
+          ...corsHeaders,
+          "Content-Type": "application/json",
+        },
+      },
     );
   } catch (err) {
     console.error("Webhook error:", err);
+
     return new Response(
       JSON.stringify({ error: "Internal server error" }),
-      { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+      {
+        status: 500,
+        headers: {
+          ...corsHeaders,
+          "Content-Type": "application/json",
+        },
+      },
     );
   }
 });
