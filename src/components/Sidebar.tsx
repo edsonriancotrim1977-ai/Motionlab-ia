@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Film, X, Home as HomeIcon, LayoutGrid, Heart, Rocket, LogIn, UserPlus, LogOut, Crown, Mail, Lock, Loader2 } from 'lucide-react';
+import { Film, X, Home as HomeIcon, LayoutGrid, Heart, Rocket, LogIn, UserPlus, LogOut, Crown, Mail, Lock, Loader2, Bot } from 'lucide-react';
 import { categories } from '@/categories';
 import type { View } from '@/App';
 import type { User } from '@supabase/supabase-js';
@@ -35,6 +35,7 @@ export function Sidebar({
   const isAll = current === 'all';
   const isFav = current === 'favorites';
   const isLaunch = current === 'lancamentos';
+  const isAgents = current === 'agentes';
   const activeCat = typeof current === 'object' ? current.category : null;
 
   const [authMode, setAuthMode] = useState<'login' | 'signup'>('login');
@@ -135,6 +136,22 @@ export function Sidebar({
               {favoritesCount > 0 && (
                 <span className="ml-auto text-[10px] font-semibold text-purple-400 bg-purple-500/10 px-1.5 py-0.5 rounded">
                   {favoritesCount}
+                </span>
+              )}
+            </button>
+          </div>
+
+          {/* Agentes de IA */}
+          <p className="px-2.5 mt-4 mb-1.5 text-[10px] font-bold uppercase tracking-widest text-gray-700">
+            Ferramentas
+          </p>
+          <div className="space-y-0.5">
+            <button onClick={() => onNavigate('agentes')} className={itemClass(isAgents)}>
+              <Bot className="w-4 h-4" />
+              Agentes de IA
+              {isAgents && (
+                <span className="ml-auto text-[10px] font-semibold text-amber-400 bg-amber-500/10 px-1.5 py-0.5 rounded">
+                  PREMIUM
                 </span>
               )}
             </button>

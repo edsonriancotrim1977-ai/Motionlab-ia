@@ -6,6 +6,7 @@ import { PromptModal } from '@/components/PromptModal';
 import { Filters } from '@/components/Filters';
 import type { FilterState } from '@/components/Filters';
 import { Home } from '@/components/Home';
+import { AgentsPage } from '@/components/AgentsPage';
 import { categories, categoryMap } from '@/categories';
 import { prompts, launchPrompts } from '@/prompts';
 import type { Prompt } from '@/types';
@@ -13,7 +14,7 @@ import { useLocalStorage } from '@/hooks';
 import { useAuth } from '@/lib/auth';
 import { loadDbFavorites, migrateLocalFavorites, addDbFavorite, removeDbFavorite } from '@/lib/favorites';
 
-export type View = 'home' | 'all' | 'favorites' | 'lancamentos' | { category: string };
+export type View = 'home' | 'all' | 'favorites' | 'lancamentos' | 'agentes' | { category: string };
 
 const RECENT_KEY = 'motionlab:recent';
 const RECENT_MAX = 8;
@@ -199,7 +200,8 @@ export default function App() {
   }, [view, favorites, filteredPrompts]);
 
   const isHome = view === 'home';
-  const showFilters = !isHome;
+  const isAgents = view === 'agentes';
+  const showFilters = !isHome && !isAgents;
 
   const resetFilters = () => {
     setQuery('');
@@ -250,6 +252,8 @@ export default function App() {
               launchPrompts={launchPrompts}
               isPremium={isPremium}
             />
+          ) : isAgents ? (
+            <AgentsPage isPremium={isPremium} />
           ) : (
             <div className="space-y-5 animate-fade-in">
               {heading && (
