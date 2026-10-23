@@ -26,18 +26,6 @@ Deno.serve(async (req: Request) => {
   try {
     const rawBody = await req.text();
 
-    // Validate Kiwify webhook token (if configured)
-    if (kiwifyToken) {
-      const authHeader = req.headers.get("Authorization") || "";
-      const providedToken = authHeader.replace(/^Bearer\s+/i, "").trim();
-      if (providedToken !== kiwifyToken) {
-        return new Response(
-          JSON.stringify({ error: "Unauthorized" }),
-          { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } },
-        );
-      }
-    }
-
     let payload: Record<string, unknown>;
     try {
       payload = JSON.parse(rawBody);
@@ -46,6 +34,28 @@ Deno.serve(async (req: Request) => {
         JSON.stringify({ error: "Invalid JSON" }),
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } },
       );
+    }
+
+    // Validate Kiwify webhook token (if configured)
+    // Kiwify may send the token in the Authorization header, a custom header,
+    // a query parameter, or inside the request body as "token".
+    if (kiwifyToken) {
+      const authHeader = req.headers.get("Authorization") || "";
+      const headerToken = authHeader.replace(/^Bearer\s+/i, "").trim();
+      const customHeaderToken = req.headers.get("X-Kiwify-Token") || "";
+      const url = new URL(req.url);
+      const queryToken = url.searchParams.get("token") || "";
+      const bodyToken = String((payload as Record<string, unknown>).token || "");
+
+      const providedToken =
+        headerToken || customHeaderToken || queryToken || bodyToken;
+
+      if (providedToken !== kiwifyToken) {
+        return new Response(
+          JSON.stringify({ error: "Unauthorized" }),
+          { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } },
+        );
+      }
     }
 
     // Extract event type and identifiers
