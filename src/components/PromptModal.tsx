@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { X, Copy, Check, Heart, Clock, Tag, Film, Image as ImageIcon, Lightbulb, AlertTriangle, Lock, Crown, Rocket, ListChecks, Layers, FileText, ChevronDown, ChevronUp } from 'lucide-react';
+import { X, Copy, Check, Heart, Clock, Tag, Film, Image as ImageIcon, Lightbulb, AlertTriangle, Lock, Crown, Rocket, ListChecks, Layers, FileText, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import type { Prompt, TakePrompt } from '@/types';
 import { categoryMap } from '@/categories';
 import { MediaPreview } from '@/components/MediaPreview';
 import { StatusBadge } from '@/components/StatusBadge';
 import { fetchPremiumPrompt } from '@/lib/premium';
+import { getCheckoutUrl } from '@/lib/config';
 
 interface PromptModalProps {
   prompt: Prompt | null;
@@ -301,9 +302,23 @@ export function PromptModal({
                   <Lock className="w-7 h-7 text-amber-400" />
                 </div>
                 <h3 className="text-[15px] font-bold text-white mb-1">Conteúdo Premium</h3>
-                <p className="text-[12px] text-gray-400 leading-relaxed max-w-sm mx-auto">
-                  Este prompt faz parte do pacote de lançamento premium. Faça login com uma conta premium para desbloquear o prompt completo e todos os takes.
+                <p className="text-[12px] text-gray-400 leading-relaxed max-w-sm mx-auto mb-4">
+                  Este prompt faz parte do pacote de lançamento. Compre o MotionLab por R$ 49,90 e desbloqueie todos os 8 lançamentos + toda a biblioteca.
                 </p>
+                {getCheckoutUrl() ? (
+                  <a
+                    href={getCheckoutUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-[13px] font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:scale-[1.02] transition-transform active:scale-95"
+                  >
+                    <Crown className="w-4 h-4" />
+                    Comprar MotionLab — R$ 49,90
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                ) : (
+                  <p className="text-[11px] text-gray-600">Em breve — link de compra será configurado.</p>
+                )}
               </div>
             ) : premiumLoading ? (
               <div className="flex items-center justify-center py-8">
