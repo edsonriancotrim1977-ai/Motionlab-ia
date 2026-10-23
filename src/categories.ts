@@ -26,6 +26,7 @@ export const categoryStyles: Record<string, CategoryStyle> = {
   'masculino': { gradient: 'from-blue-600/20 via-slate-500/10 to-gray-600/10', glow: 'rgba(37,99,235,0.15)' },
   'dinamicos': { gradient: 'from-red-500/20 via-orange-500/10 to-amber-500/10', glow: 'rgba(239,68,68,0.15)' },
   'make-joias-bolsas': { gradient: 'from-amber-500/20 via-yellow-500/10 to-orange-400/10', glow: 'rgba(245,158,11,0.15)' },
+  'lancamentos': { gradient: 'from-rose-500/20 via-red-500/10 to-orange-500/10', glow: 'rgba(244,63,94,0.18)' },
 };
 
 export const categories: Category[] = [
@@ -49,6 +50,7 @@ export const categories: Category[] = [
   { id: 'masculino', label: 'Masculino', icon: '🕺' },
   { id: 'dinamicos', label: 'Dinâmicos', icon: '⚡' },
   { id: 'make-joias-bolsas', label: 'Make/Jóias/Bolsas', icon: '💎' },
+  { id: 'lancamentos', label: 'Lançamentos', icon: '🚀' },
 ];
 
 export const categoryMap = categories.reduce<Record<string, Category>>((acc, c) => {

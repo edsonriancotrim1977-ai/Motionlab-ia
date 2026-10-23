@@ -1,4 +1,4 @@
-import { Copy, Check, Heart, Eye } from 'lucide-react';
+import { Copy, Check, Heart, Eye, Lock, Crown, Rocket } from 'lucide-react';
 import type { Prompt } from '@/types';
 import { categoryMap } from '@/categories';
 import { MediaPreview } from '@/components/MediaPreview';
@@ -11,6 +11,7 @@ interface PromptCardProps {
   onCopy: (text: string) => void;
   copiedId: string | null;
   onOpenDetails: (prompt: Prompt) => void;
+  isPremium: boolean;
 }
 
 export function PromptCard({
@@ -20,13 +21,17 @@ export function PromptCard({
   onCopy,
   copiedId,
   onOpenDetails,
+  isPremium,
 }: PromptCardProps) {
   const cat = categoryMap[prompt.category];
   const isCopied = copiedId === prompt.id;
+  const isPaid = prompt.access === 'paid';
+  const isLocked = isPaid && !isPremium;
+  const isLaunch = prompt.isLaunch === true;
 
   return (
     <div className="group card-hover relative flex flex-col rounded-2xl border border-white/[0.06] bg-ink-800/60 hover:border-purple-500/25 hover:shadow-[0_12px_50px_-16px_rgba(168,85,247,0.2)] overflow-hidden">
-      {/* Preview area — large, ~55% of card visual weight */}
+      {/* Preview area */}
       <div className="relative aspect-[5/4] sm:aspect-[9/10] overflow-hidden">
         <MediaPreview
           prompt={prompt}
@@ -55,10 +60,39 @@ export function PromptCard({
           {prompt.id}
         </span>
 
+        {/* Launch badge */}
+        {isLaunch && (
+          <span className="absolute top-2.5 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider bg-gradient-to-r from-rose-500 to-orange-500 text-white z-10 flex items-center gap-1">
+            <Rocket className="w-2.5 h-2.5" />
+            LANÇAMENTO
+          </span>
+        )}
+
+        {/* Premium lock overlay */}
+        {isLocked && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-[2px] z-[5]">
+            <div className="flex flex-col items-center gap-1.5">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/20 border border-amber-500/30">
+                <Lock className="w-5 h-5 text-amber-400" />
+              </div>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">Premium</span>
+            </div>
+          </div>
+        )}
+
+        {/* Free preview badge */}
+        {prompt.isFreePreview && prompt.previewLabel && (
+          <span className="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 z-10">
+            {prompt.previewLabel}
+          </span>
+        )}
+
         {/* Status badge — bottom of preview */}
-        <div className="absolute bottom-2.5 left-2.5 z-10">
-          <StatusBadge prompt={prompt} />
-        </div>
+        {!prompt.isFreePreview && (
+          <div className="absolute bottom-2.5 left-2.5 z-10">
+            <StatusBadge prompt={prompt} />
+          </div>
+        )}
       </div>
 
       {/* Content below preview */}
@@ -89,26 +123,36 @@ export function PromptCard({
 
         {/* Actions */}
         <div className="flex items-center gap-2 mt-auto pt-2.5">
-          <button
-            onClick={() => onCopy(prompt.prompt)}
-            className={`flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-[12px] font-semibold transition-all ${
-              isCopied
-                ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/25'
-                : 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:shadow-[0_4px_16px_-4px_rgba(168,85,247,0.35)] hover:scale-[1.02] active:scale-95'
-            }`}
-          >
-            {isCopied ? (
-              <>
-                <Check className="w-3.5 h-3.5" />
-                Copiado
-              </>
-            ) : (
-              <>
-                <Copy className="w-3.5 h-3.5" />
-                Copiar prompt
-              </>
-            )}
-          </button>
+          {isLocked ? (
+            <button
+              onClick={() => onOpenDetails(prompt)}
+              className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-[12px] font-semibold text-amber-300 bg-amber-500/15 border border-amber-500/25 hover:bg-amber-500/20 transition-all active:scale-95"
+            >
+              <Crown className="w-3.5 h-3.5" />
+              Desbloquear
+            </button>
+          ) : (
+            <button
+              onClick={() => onCopy(prompt.prompt)}
+              className={`flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-[12px] font-semibold transition-all ${
+                isCopied
+                  ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/25'
+                  : 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:shadow-[0_4px_16px_-4px_rgba(168,85,247,0.35)] hover:scale-[1.02] active:scale-95'
+              }`}
+            >
+              {isCopied ? (
+                <>
+                  <Check className="w-3.5 h-3.5" />
+                  Copiado
+                </>
+              ) : (
+                <>
+                  <Copy className="w-3.5 h-3.5" />
+                  Copiar prompt
+                </>
+              )}
+            </button>
+          )}
           <button
             onClick={() => onOpenDetails(prompt)}
             className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-[12px] font-medium text-gray-400 hover:text-white bg-white/5 hover:bg-white/10 border border-white/5 transition-all active:scale-95"

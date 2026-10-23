@@ -1,4 +1,4 @@
-import { Search, Sparkles, Film, ArrowRight, Clock, Play } from 'lucide-react';
+import { Search, Sparkles, Film, ArrowRight, Clock, Rocket, Crown } from 'lucide-react';
 import { categories, categoryMap, getCategoryStyle } from '@/categories';
 import { prompts } from '@/prompts';
 import type { Prompt } from '@/types';
@@ -11,12 +11,12 @@ interface HomeProps {
   recent: Prompt[];
   onOpenDetails: (p: Prompt) => void;
   onSearch: (q: string) => void;
+  launchPrompts: Prompt[];
+  isPremium: boolean;
 }
 
-export function Home({ onNavigate, recent, onOpenDetails, onSearch }: HomeProps) {
+export function Home({ onNavigate, recent, onOpenDetails, onSearch, launchPrompts, isPremium }: HomeProps) {
   const categoryCount = categories.length;
-
-  // "Comece por aqui" — first few prompts
   const starterPrompts = prompts.slice(0, 3);
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
@@ -72,9 +72,80 @@ export function Home({ onNavigate, recent, onOpenDetails, onSearch }: HomeProps)
           <div className="mt-7 flex flex-wrap gap-8 sm:gap-12">
             <Metric label="PROMPTS" value={prompts.length} />
             <Metric label="CATEGORIAS" value={categoryCount} />
+            <Metric label="LANÇAMENTOS" value={launchPrompts.length} />
           </div>
         </div>
       </section>
+
+      {/* Lançamentos — launch cards */}
+      {launchPrompts.length > 0 && (
+        <section>
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-2.5">
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-rose-500 to-orange-500">
+                <Rocket className="w-4 h-4 text-white" />
+              </div>
+              <div>
+                <h2 className="text-base sm:text-lg font-bold text-white uppercase tracking-wide">Lançamentos</h2>
+                <p className="mt-0.5 text-[12px] text-gray-500">{launchPrompts.length} prompts exclusivos</p>
+              </div>
+            </div>
+            <button
+              onClick={() => onNavigate('lancamentos')}
+              className="inline-flex items-center gap-1 text-[12px] font-medium text-rose-400 hover:text-rose-300 transition-colors"
+            >
+              Ver todos
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {launchPrompts.map((p) => {
+              const isPaid = p.access === 'paid';
+              const isLocked = isPaid && !isPremium;
+              return (
+                <button
+                  key={p.id}
+                  onClick={() => onOpenDetails(p)}
+                  className="group relative text-left rounded-2xl border border-white/[0.06] bg-ink-800/60 hover:border-rose-500/25 card-hover hover:shadow-[0_12px_50px_-16px_rgba(244,63,94,0.2)] overflow-hidden"
+                >
+                  <div className="relative aspect-[9/10] overflow-hidden">
+                    <MediaPreview prompt={p} rounded="rounded-none" className="w-full h-full transition-transform duration-500 group-hover:scale-[1.03]" />
+                    {/* Launch badge */}
+                    <span className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider bg-gradient-to-r from-rose-500 to-orange-500 text-white z-10 flex items-center gap-1">
+                      <Rocket className="w-2.5 h-2.5" />
+                      {p.launchOrder ? `${p.launchOrder}` : ''}
+                    </span>
+                    {/* Premium / Free badge */}
+                    {isLocked ? (
+                      <span className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/30 z-10 flex items-center gap-1">
+                        <Crown className="w-2.5 h-2.5" />
+                        PREMIUM
+                      </span>
+                    ) : p.isFreePreview && p.previewLabel ? (
+                      <span className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 z-10">
+                        {p.previewLabel}
+                      </span>
+                    ) : null}
+                    {/* Locked overlay */}
+                    {isLocked && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/45 backdrop-blur-[2px] z-[5]">
+                        <Crown className="w-6 h-6 text-amber-400" />
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-[13px] font-semibold text-white line-clamp-1">{p.title}</h3>
+                    <p className="mt-1 text-[11px] text-gray-400 line-clamp-2">{p.description}</p>
+                    {p.duration && (
+                      <span className="mt-1.5 inline-block text-[10px] text-gray-500">{p.duration} · {p.format}</span>
+                    )}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Recent — only if exists */}
       {recent.length > 0 && (

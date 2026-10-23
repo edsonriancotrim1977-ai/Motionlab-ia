@@ -1,9 +1,10 @@
-import type { Prompt, PromptType } from './types';
+import type { Prompt, PromptType, TakePrompt, RequiredInput, OptionalInput, PromptMethod } from './types';
 import { categories } from './categories';
 import libraryData from './data/motionlab-library.json';
 import importBatchData from './data/import-batch.json';
 import recoveredMediaData from './data/recovered-media.json';
 import newBatchData from './data/motionlab_import_batch_30.json';
+import novoLoteData from './data/motionlab_novo_lote.json';
 
 type RawPrompt = Record<string, unknown> & {
   id: string;
@@ -28,6 +29,18 @@ type RawPrompt = Record<string, unknown> & {
   cloudinaryPlayerUrl?: string;
   publicId?: string;
   additionalMediaUrls?: string[];
+  // Launch & premium fields
+  isLaunch?: boolean;
+  launchOrder?: number;
+  access?: 'free' | 'paid';
+  isFreePreview?: boolean;
+  previewLabel?: string;
+  takePrompts?: TakePrompt[];
+  requiredInputs?: RequiredInput[];
+  optionalInputs?: OptionalInput[];
+  method?: PromptMethod;
+  isMostUsed?: boolean;
+  mostUsedOrder?: number;
 };
 
 interface RecoveredMedia {
@@ -92,6 +105,13 @@ function normalize(raw: RawPrompt): Prompt {
   const mediaUrl = raw.mediaUrl || undefined;
   const mediaStatus = mediaUrl ? 'available' : ((raw.mediaStatus === 'available' ? 'available' : 'placeholder') as Prompt['mediaStatus']);
 
+  const isPaid = raw.access === 'paid';
+  const isLaunch = raw.isLaunch === true;
+
+  const status: Prompt['status'] = isLaunch
+    ? 'Novo lançamento'
+    : (raw.status && raw.status.startsWith('Compat') ? 'Compatível' : 'Compatível');
+
   return {
     id: raw.id,
     title: raw.title,
@@ -100,9 +120,9 @@ function normalize(raw: RawPrompt): Prompt {
     type,
     duration: raw.duration || '',
     format: (raw.format || '9:16') as Prompt['format'],
-    status: 'Compatível' as Prompt['status'],
-    testedModel: undefined,
-    prompt: raw.prompt,
+    status,
+    testedModel: raw.testedModel || undefined,
+    prompt: isPaid ? '[Conteúdo Premium — desbloqueie para acessar]' : raw.prompt,
     mediaType: mediaType as Prompt['mediaType'],
     mediaUrl,
     thumbnailUrl: raw.thumbnailUrl || undefined,
@@ -113,6 +133,17 @@ function normalize(raw: RawPrompt): Prompt {
     tags: raw.tags ?? [],
     usageTip,
     avoidList,
+    isLaunch: isLaunch || undefined,
+    launchOrder: raw.launchOrder,
+    access: raw.access,
+    isFreePreview: raw.isFreePreview,
+    previewLabel: raw.previewLabel,
+    takePrompts: isPaid ? undefined : raw.takePrompts,
+    requiredInputs: raw.requiredInputs,
+    optionalInputs: raw.optionalInputs,
+    method: raw.method,
+    isMostUsed: raw.isMostUsed,
+    mostUsedOrder: raw.mostUsedOrder,
   };
 }
 
@@ -435,6 +466,10 @@ for (const [promptId, media] of promptIdToMedia) {
 
 const newBatchRaw = (newBatchData as unknown as { items: RawPrompt[] }).items;
 
+// --- Merge novo lote (31 items) ---
+
+const novoLoteRaw = ((novoLoteData as unknown as { items: RawPrompt[] }).items);
+
 // Track existing mediaUrls to detect duplicates
 const existingMediaUrls = new Set<string>();
 for (const [, item] of mergedMap) {
@@ -479,6 +514,40 @@ for (const item of newBatchRaw) {
   newBatchAdded++;
 }
 
+// --- Merge novo lote (31 items) with deduplication ---
+
+let novoLoteAdded = 0;
+let novoLoteDuplicates = 0;
+
+for (const item of novoLoteRaw) {
+  // Dedupe by ID
+  if (mergedMap.has(item.id)) {
+    novoLoteDuplicates++;
+    continue;
+  }
+  // Dedupe by mediaUrl
+  const mediaUrl = String(item.mediaUrl || '');
+  if (mediaUrl && existingMediaUrls.has(mediaUrl)) {
+    novoLoteDuplicates++;
+    continue;
+  }
+
+  const processed: RawPrompt = { ...item };
+  if (mediaUrl && mediaUrl.includes('player.cloudinary.com/embed/')) {
+    processed.cloudinaryPlayerUrl = mediaUrl;
+    const pidMatch = mediaUrl.match(/public_id=([^&]+)/);
+    if (pidMatch) processed.publicId = decodeURIComponent(pidMatch[1]);
+    if (processed.publicId) {
+      processed.mediaUrl = videoUrl(processed.publicId);
+    }
+  }
+
+  if (mediaUrl) existingMediaUrls.add(mediaUrl);
+
+  mergedMap.set(item.id, processed);
+  novoLoteAdded++;
+}
+
 const allNormalized: Prompt[] = Array.from(mergedMap.values()).map(normalize);
 export const prompts: Prompt[] = allNormalized.filter((p) => {
   // Keep only cards with real Cloudinary demonstration media
@@ -489,6 +558,10 @@ export const prompts: Prompt[] = allNormalized.filter((p) => {
   return hasCloudinaryVideo || hasCloudinaryImage || hasPlayer;
 });
 
+export const launchPrompts: Prompt[] = prompts
+  .filter((p) => p.isLaunch)
+  .sort((a, b) => (a.launchOrder ?? 99) - (b.launchOrder ?? 99));
+
 export const cleanupStats = {
   before: allNormalized.length,
   after: prompts.length,
@@ -496,3 +569,4 @@ export const cleanupStats = {
 };
 
 export const newBatchStats = { found: newBatchRaw.length, added: newBatchAdded, duplicates: newBatchDuplicates };
+export const novoLoteStats = { found: novoLoteRaw.length, added: novoLoteAdded, duplicates: novoLoteDuplicates };

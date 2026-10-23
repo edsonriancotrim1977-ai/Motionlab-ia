@@ -1,0 +1,1692 @@
+{
+  "batch": "motionlab_novo_lote",
+  "items": [
+    {
+      "id": "CASA-005",
+      "title": "Escova de limpeza em rejunte",
+      "category": "Casa & Organização",
+      "description": "Demonstração UGC de escova de limpeza aplicada em rejunte, com antes e depois e CTA visual.",
+      "type": "video",
+      "duration": "8s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=midia_99",
+      "thumbnailUrl": "",
+      "tags": [
+        "casa",
+        "organização",
+        "limpeza",
+        "rejunte",
+        "escova",
+        "UGC"
+      ],
+      "prompt": "{\n  \"video_type\": \"UGC home product demonstration video\",\n  \"duration\": \"8 seconds\",\n  \"format\": \"vertical 9:16\",\n  \"camera\": {\n    \"style\": \"handheld smartphone product video\",\n    \"framing\": \"close-up or medium close-up focused on hands and product\",\n    \"movement\": \"subtle handheld motion, natural micro-jitters, slight push-in\",\n    \"quality\": \"ultra realistic short-form UGC product video\"\n  },\n  \"scene\": {\n    \"location\": \"bathroom tile or kitchen tile\",\n    \"mood\": \"practical, clean, realistic, satisfying, product-focused\",\n    \"lighting\": \"soft natural or indoor light with realistic shadows\"\n  },\n  \"action\": {\n    \"start\": \"uma área pequena de rejunte aparece com sujeira leve e realista\",\n    \"middle\": \"a mão passa a escova no rejunte com movimentos curtos e controlados\",\n    \"end\": \"a área limpa é mostrada e a mão aponta para a área inferior esquerda\"\n  },\n  \"product_focus\": {\n    \"item\": \"cleaning brush\",\n    \"details_to_show\": [\n      \"tile grout\",\n      \"brush bristles\",\n      \"cleaning motion\",\n      \"before and after\",\n      \"safe cleaning\"\n    ]\n  },\n  \"audio\": {\n    \"dialogue\": \"none\",\n    \"voice\": \"none\",\n    \"music\": \"none\"\n  },\n  \"realism\": {\n    \"details\": \"natural hand gestures, realistic home environment, practical product use, clean composition, controlled movement\",\n    \"avoid\": [\n      \"speaking\",\n      \"lip movement\",\n      \"logos\",\n      \"watermarks\",\n      \"text on screen\",\n      \"platform interface\",\n      \"unsafe use\",\n      \"messy unrealistic scene\",\n      \"distorted hands\",\n      \"warped product\",\n      \"robotic movement\",\n      \"overly cinematic look\",\n      \"on-screen buttons\",\n      \"pointing at on-screen buttons\"\n    ]\n  },\n  \"avoid\": [\n    \"speaking\",\n    \"lip movement\",\n    \"logos\",\n    \"watermarks\",\n    \"text on screen\",\n    \"platform interface\",\n    \"unsafe use\",\n    \"messy unrealistic scene\",\n    \"distorted hands\",\n    \"warped product\",\n    \"robotic movement\",\n    \"overly cinematic look\",\n    \"on-screen buttons\",\n    \"pointing at on-screen buttons\"\n  ]\n}",
+      "tips": "Manter o produto e o ambiente realistas, com foco claro no rejunte e no resultado da limpeza.",
+      "avoid": [
+        "speaking",
+        "lip movement",
+        "logos",
+        "watermarks",
+        "text on screen",
+        "platform interface",
+        "unsafe use",
+        "messy unrealistic scene",
+        "distorted hands",
+        "warped product",
+        "robotic movement",
+        "overly cinematic look",
+        "on-screen buttons",
+        "pointing at on-screen buttons"
+      ]
+    },
+    {
+      "id": "CASA-006",
+      "title": "Pano mágico absorvendo líquido",
+      "category": "Casa & Organização",
+      "description": "Demonstração UGC de pano absorvente removendo líquido derramado de uma bancada e mostrando o resultado limpo.",
+      "type": "video",
+      "duration": "8s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=midia_100",
+      "thumbnailUrl": "",
+      "tags": [
+        "casa",
+        "organização",
+        "limpeza",
+        "pano",
+        "absorção",
+        "UGC"
+      ],
+      "prompt": "{\n  \"video_type\": \"UGC home product demonstration video\",\n  \"duration\": \"8 seconds\",\n  \"format\": \"vertical 9:16\",\n  \"camera\": {\n    \"style\": \"handheld smartphone product video\",\n    \"framing\": \"close-up or medium close-up focused on hands and product\",\n    \"movement\": \"subtle handheld motion, natural micro-jitters, slight push-in\",\n    \"quality\": \"ultra realistic short-form UGC product video\"\n  },\n  \"scene\": {\n    \"location\": \"kitchen counter\",\n    \"mood\": \"practical, clean, realistic, satisfying, product-focused\",\n    \"lighting\": \"soft natural or indoor light with realistic shadows\"\n  },\n  \"action\": {\n    \"start\": \"um pouco de líquido aparece derramado sobre a bancada\",\n    \"middle\": \"a mão passa um pano absorvente lentamente sobre o líquido\",\n    \"end\": \"a superfície limpa é mostrada e a mão aponta para a área inferior esquerda\"\n  },\n  \"product_focus\": {\n    \"item\": \"absorbent cleaning cloth\",\n    \"details_to_show\": [\n      \"liquid spill\",\n      \"absorption\",\n      \"clean surface\",\n      \"cloth texture\",\n      \"result\"\n    ]\n  },\n  \"audio\": {\n    \"dialogue\": \"none\",\n    \"voice\": \"none\",\n    \"music\": \"none\"\n  },\n  \"realism\": {\n    \"details\": \"natural hand gestures, realistic home environment, practical product use, clean composition, controlled movement\",\n    \"avoid\": [\n      \"speaking\",\n      \"lip movement\",\n      \"logos\",\n      \"watermarks\",\n      \"text on screen\",\n      \"platform interface\",\n      \"unsafe use\",\n      \"messy unrealistic scene\",\n      \"distorted hands\",\n      \"warped product\",\n      \"robotic movement\",\n      \"overly cinematic look\",\n      \"on-screen buttons\",\n      \"pointing at on-screen buttons\"\n    ]\n  },\n  \"avoid\": [\n    \"speaking\",\n    \"lip movement\",\n    \"logos\",\n    \"watermarks\",\n    \"text on screen\",\n    \"platform interface\",\n    \"unsafe use\",\n    \"messy unrealistic scene\",\n    \"distorted hands\",\n    \"warped product\",\n    \"robotic movement\",\n    \"overly cinematic look\",\n    \"on-screen buttons\",\n    \"pointing at on-screen buttons\"\n  ]\n}",
+      "tips": "Manter a absorção visualmente realista, o pano consistente e a bancada limpa no final.",
+      "avoid": [
+        "speaking",
+        "lip movement",
+        "logos",
+        "watermarks",
+        "text on screen",
+        "platform interface",
+        "unsafe use",
+        "messy unrealistic scene",
+        "distorted hands",
+        "warped product",
+        "robotic movement",
+        "overly cinematic look",
+        "on-screen buttons",
+        "pointing at on-screen buttons"
+      ]
+    },
+    {
+      "id": "CASA-007",
+      "title": "Organizador de Geladeira",
+      "category": "Casa & Organização",
+      "description": "Demonstração UGC de organização de geladeira com organizadores transparentes, mostrando o antes e depois.",
+      "type": "video",
+      "duration": "8s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=midia_-_2026-10-22T153418.210",
+      "thumbnailUrl": "",
+      "tags": [
+        "casa",
+        "organização",
+        "geladeira",
+        "organizador",
+        "UGC",
+        "antes e depois"
+      ],
+      "prompt": "{\n  \"video_type\": \"UGC home product demonstration video\",\n  \"duration\": \"8 seconds\",\n  \"format\": \"vertical 9:16\",\n  \"camera\": {\n    \"style\": \"handheld smartphone product video\",\n    \"framing\": \"close-up or medium close-up focused on hands and product\",\n    \"movement\": \"subtle handheld motion, natural micro-jitters, slight push-in\",\n    \"quality\": \"ultra realistic short-form UGC product video\"\n  },\n  \"scene\": {\n    \"location\": \"open refrigerator\",\n    \"mood\": \"practical, clean, realistic, satisfying, product-focused\",\n    \"lighting\": \"soft natural or indoor light with realistic shadows\"\n  },\n  \"action\": {\n    \"start\": \"uma geladeira aberta aparece com alimentos desalinhados\",\n    \"middle\": \"as mãos colocam frutas, potes e embalagens em organizadores transparentes\",\n    \"end\": \"a geladeira organizada é mostrada e uma mão aponta para a área inferior esquerda\"\n  },\n  \"product_focus\": {\n    \"item\": \"fridge organizer\",\n    \"details_to_show\": [\n      \"fridge bins\",\n      \"transparent organizer\",\n      \"food items\",\n      \"clean layout\",\n      \"before and after\"\n    ]\n  },\n  \"audio\": {\n    \"dialogue\": \"none\",\n    \"voice\": \"none\",\n    \"music\": \"none\"\n  },\n  \"realism\": {\n    \"details\": \"natural hand gestures, realistic home environment, practical product use, clean composition, controlled movement\",\n    \"avoid\": [\n      \"speaking\",\n      \"lip movement\",\n      \"logos\",\n      \"watermarks\",\n      \"text on screen\",\n      \"platform interface\",\n      \"unsafe use\",\n      \"messy unrealistic scene\",\n      \"distorted hands\",\n      \"warped product\",\n      \"robotic movement\",\n      \"overly cinematic look\",\n      \"on-screen buttons\",\n      \"pointing at on-screen buttons\"\n    ]\n  },\n  \"avoid\": [\n    \"speaking\",\n    \"lip movement\",\n    \"logos\",\n    \"watermarks\",\n    \"text on screen\",\n    \"platform interface\",\n    \"unsafe use\",\n    \"messy unrealistic scene\",\n    \"distorted hands\",\n    \"warped product\",\n    \"robotic movement\",\n    \"overly cinematic look\",\n    \"on-screen buttons\",\n    \"pointing at on-screen buttons\"\n  ]\n}",
+      "tips": "Preservar o aspecto transparente dos organizadores e mostrar uma transformação clara e realista da geladeira.",
+      "avoid": [
+        "speaking",
+        "lip movement",
+        "logos",
+        "watermarks",
+        "text on screen",
+        "platform interface",
+        "unsafe use",
+        "messy unrealistic scene",
+        "distorted hands",
+        "warped product",
+        "robotic movement",
+        "overly cinematic look",
+        "on-screen buttons",
+        "pointing at on-screen buttons"
+      ]
+    },
+    {
+      "id": "CASA-008",
+      "title": "Mostrar jogo de cama sem fala",
+      "category": "Casa & Organização",
+      "description": "Demonstração realista do jogo de cama com uma mão deslizando sobre o tecido e câmera recuando para revelar a cama completa.",
+      "type": "video",
+      "duration": "7s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=midia_-_2026-10-23T005153.273",
+      "thumbnailUrl": "",
+      "tags": [
+        "casa",
+        "organização",
+        "jogo de cama",
+        "enxoval",
+        "UGC",
+        "sem fala"
+      ],
+      "prompt": "Use the uploaded first frame as the immutable reference for the exact bedding product, bed, bedroom, lighting, and camera position.\n\nCreate a 7-second ultra-realistic vertical 9:16 iPhone video of the exact attached comforter, blanket, quilt, or bed cover fully spread over the bed.\n\nPreserve the exact product color, pattern, fabric texture, thickness, stitching, edges, proportions, and position throughout the entire video.\n\nShow only one bedding product. Do not generate another blanket, folded throw, white lining, towel, extra sheet, or contrasting fabric.\n\nACTION:\n\nThe video begins with one real adult hand gently resting on the bedding near the lower-right area of the frame.\n\nThe hand slowly glides once across a small section of the fabric, creating subtle realistic compression and soft fabric movement.\n\nThe hand then moves naturally out of the frame.\n\nAt the same time, the camera slowly pulls back a short distance, revealing the entire bed and the exact bedding product fully spread over it.\n\nEnd with the full bed clearly visible and the hand completely outside the frame.\n\nThe product must remain on the bed and must not be lifted, folded, pulled back, rolled, flipped, replaced, or transformed.\n\nCAMERA:\n\nOne continuous 7-second take.\nNo cuts.\nNo transitions.\nSlightly elevated first-person angle.\nSlow natural pullback.\niPhone 15 Pro, 24mm main camera.\nBroad natural focus.\nRealistic handheld micro-movement.\nTrue-to-life colors and exposure.\n\nPHYSICAL REALISM:\n\nThe hand causes only subtle local fabric compression.\nThe bedding remains naturally spread, with realistic weight, soft folds, stable edges, and believable mattress contact.\n\nNo self-moving fabric.\nNo dramatic ripples.\nNo changing pattern.\nNo changing color.\nNo extra bedding.\nNo folded product.\nNo visible white underside unless it genuinely belongs to the attached product.\nNo second hand.\nNo extra fingers.\nNo product morphing.\nNo CGI.\nNo 3D render.\nNo subtitles.\nNo text overlays.\nNo watermark.\n\nFINAL RESULT:\n\nOne realistic iPhone video where a single hand gently passes over the exact bedding product, leaves the frame, and the camera slowly pulls back to reveal the complete bed.",
+      "tips": "Usar o primeiro frame como referência imutável e preservar exatamente o produto, a cama, o quarto e a iluminação.",
+      "avoid": [
+        "extra bedding",
+        "folded product",
+        "product morphing",
+        "extra fingers",
+        "CGI",
+        "3D render",
+        "subtitles",
+        "text overlays",
+        "watermark"
+      ]
+    },
+    {
+      "id": "CASA-009",
+      "title": "Mostrando Copos",
+      "category": "Casa & Organização",
+      "description": "B-roll POV dinâmico de um conjunto de copos, destacando transparência, formato, reflexos, detalhes e manuseio realista.",
+      "type": "video",
+      "duration": "8s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=midia_-_2026-10-23T005303.255",
+      "thumbnailUrl": "",
+      "tags": [
+        "casa",
+        "organização",
+        "copos",
+        "vidro",
+        "POV",
+        "B-roll",
+        "UGC"
+      ],
+      "prompt": "GOOGLE FLOW — VIDEO ELEMENTS\n\nDYNAMIC POV GLASSWARE SET B-ROLL\n\nDURATION: 8 seconds\nFORMAT: Vertical 9:16\nSTYLE: Ultra-realistic smartphone UGC product video.\nCAMERA: Authentic first-person POV.\nEDITING: 6 dynamic action-driven microtakes.\n\nHERO ELEMENT:\nThe exact glassware set shown in the attached original Product Element.\n\nACTIVITY FOCUS:\nPresent the original glassware set dynamically, highlighting the authentic glass transparency, shape, thickness, rim, base, surface texture, decorative details and real light reflections through natural first-person handling and energetic product B-roll.\n\nREFERENCE LOCK — CRITICAL:\n\nPreserve EXACTLY the original glassware design from the reference.\n\nMaintain:\n- Exact glass shape and silhouette.\n- Original number of glasses in the set.\n- Original relative sizes and proportions.\n- Actual glass color and transparency.\n- Original rim thickness and shape.\n- Real stems and bases, if present.\n- Existing decorative patterns, facets or textures.\n- Original surface finish.\n- Realistic glass material and optical behavior.\n\nDo not invent decorative patterns, engraving, stems, handles or details absent from the reference.\n\nEvery glass must remain visually identical to its original referenced design throughout the video.\n\nSCENE:\n\nReal contemporary Brazilian home.\n\nNatural kitchen or dining room environment.\n\nThe original glassware set is arranged on a clean, realistic dining table.\n\nSoft daylight enters from a nearby window, creating authentic reflections and gentle light transmission through the glass.\n\nSubtle everyday background details, without visual clutter.\n\nThe product remains the central focus.\n\nTrue first-person camera perspective looking at the glassware from a natural standing or slightly leaning position.\n\nOnly realistic hands and forearms appear when interacting with the product.\n\nDYNAMIC B-ROLL SEQUENCE:\n\nSHOT 1 — 0.0–1.0s\nDYNAMIC PRODUCT REVEAL\n\nStart with the original glassware set already arranged on the table.\n\nQuick natural handheld camera movement from a slightly elevated angle toward the glasses.\n\nThe camera makes a small lateral approach, creating natural parallax between the individual glasses.\n\nDaylight reflects and refracts through the real glass surfaces.\n\nClearly establish the original set and its quantity.\n\nSHOT 2 — 1.0–2.3s\nNATURAL PICKUP\n\nAction-matched cut toward one glass from the original set.\n\nA realistic hand approaches and gently grips the glass at an anatomically appropriate location for its actual design.\n\nFingers make natural contact with the surface.\n\nA small grip correction happens before the glass is lifted.\n\nThe hand raises the glass a short distance above the table.\n\nRealistic weight, inertia and hand stabilization.\n\nNatural reflections shift across the glass as it moves.\n\nSHOT 3 — 2.3–3.6s\nMACRO-STYLE GLASS DETAIL\n\nDynamic close-up of the same glass being held.\n\nThe camera physically approaches the existing rim and upper surface.\n\nShow authentic rim thickness, transparent material, real optical refraction and existing decorative details, if any.\n\nThe hand rotates the glass slightly and naturally to reveal another visible angle.\n\nLight travels through the material realistically, with subtle highlights and accurate background distortion.\n\nSmall smartphone autofocus correction.\n\nNo artificial glowing glass or fake digital macro zoom.\n\nSHOT 4 — 3.6–5.0s\nSIDE DETAIL AND GLASS STRUCTURE\n\nFast action-matched cut to a closer side angle.\n\nThe same glass remains in the hand.\n\nA gentle wrist rotation reveals the original body shape and lower structure.\n\nShow existing facets, texture, stem or base only if those features exist in the actual reference.\n\nThe camera makes a short lateral movement, creating a realistic change in reflections and transparency.\n\nThe hand slightly adjusts its grip with natural timing.\n\nNo sudden glass design changes.\n\nSHOT 5 — 5.0–6.5s\nSATISFYING PLACEMENT AND DETAIL\n\nThe hand naturally lowers the glass onto the table.\n\nThe real base contacts the tabletop with a delicate, authentic glass contact sound.\n\nThe fingers gradually release pressure.\n\nThe glass makes a tiny natural settling movement and remains upright.\n\nQuick close-up of the real base, rim or existing decorative feature, emphasizing the fine material and craftsmanship.\n\nA small camera reframing correction follows the movement.\n\nSHOT 6 — 6.5–8.0s\nFINAL FULL SET PAYOFF\n\nDynamic cut to a slightly wider first-person angle showing the complete original glassware set arranged together.\n\nThe glass previously handled is present in its new position.\n\nA hand makes a small final adjustment to align one glass naturally.\n\nCamera makes a subtle handheld lateral reveal, allowing natural highlights and reflections to shift across the set.\n\nEnd with a clear, attractive composition displaying all the original glasses.\n\nEvery glass remains the exact same referenced design.\n\nVISUAL DETAIL PRIORITY:\n\nEmphasize the physical qualities actually present in the product:\n\nReal transparent or colored glass.\nAuthentic material thickness.\nAccurate edge highlights.\nNatural light refraction.\nRealistic environmental reflections.\nSubtle imperfections in reflections.\nOriginal glass shape.\nExisting decorative patterns and textures.\nRealistic contact with the tabletop.\n\nThe glass must look physically real, not like CGI or acrylic.\n\nCAMERA ENGINE:\n\nRecent smartphone main camera.\n1x lens, approximately 24–26mm equivalent.\nVertical 9:16.\n\nAuthentic POV handheld filming.\n\nShort energetic camera movements.\nNatural perspective changes.\nBrief physical push-ins.\nAction-matched hard cuts.\nSmall lateral movements.\nReal autofocus adjustments.\nSubtle exposure adaptation.\nNatural smartphone sharpening.\nRealistic physical motion blur.\nVery subtle sensor noise.\n\nFor macro-style detail shots, move the camera physically closer while maintaining realistic smartphone focusing distance.\n\nDo not simulate an impossible microscopic lens.\n\nAvoid excessive digital zoom.\nAvoid artificial cinematic orbit.\nAvoid perfect gimbal stabilization.\nAvoid fake HDR and studio glow.\n\nNATURAL HUMAN MOTION:\n\nHands must move spontaneously.\n\nSmall hesitation before contact.\nNatural acceleration while lifting.\nSubtle grip pressure.\nMinor finger repositioning.\nReal wrist rotation.\nSmall overshoot.\nRealistic deceleration.\nNatural release of the glass.\nBrief settling after contact.\n\nNo perfectly repeated gestures.\nNo robotic hand movements.\nNo exaggerated commercial acting.\n\nHAND REALISM:\n\nExactly five fingers per visible hand.\n\nNatural skin pores and texture.\nCorrect knuckles and joints.\nReal fingernails and cuticles.\nNatural asymmetry.\nReal finger pressure.\nPhysically correct grip.\nAccurate contact shadows.\n\nNo extra fingers.\nNo merged fingers.\nNo hands passing through glass.\n\nGLASS PHYSICS ENGINE:\n\nThe glasses have real mass, weight and rigidity.\n\nGlass cannot bend, stretch or change shape.\n\nTransparent surfaces must preserve realistic refraction and reflections.\n\nHands must physically support the glass before lifting.\n\nEvery glass stays in the correct physical location unless moved by visible contact.\n\nThe glass base rests naturally on the table.\n\nNo floating.\nNo teleportation.\nNo material transformation.\nNo impossible collisions.\nNo duplicated glassware.\n\nOBJECT PERMANENCE:\n\nThe original Product Element remains the absolute source of truth.\n\nThe glass being lifted is the SAME glass being rotated, examined and placed back onto the table.\n\nThe quantity of glasses remains consistent.\n\nDo not introduce extra glasses during close-ups.\n\nDo not replace the original design with a generic wine glass or another glassware model.\n\nDo not invent stems, bases, handles, patterns or engravings.\n\nEvery cut preserves the original product identity.\n\nDYNAMIC EDITING RULES:\n\nEvery shot must reveal new visual information.\n\nShot 1: Complete set.\nShot 2: Physical interaction.\nShot 3: Rim and material close-up.\nShot 4: Shape and structural detail.\nShot 5: Real placement and finishing detail.\nShot 6: Complete set final reveal.\n\nFast, satisfying rhythm.\n\nCuts follow physical actions.\n\nNever repeat an identical beauty shot.\n\nKeep natural product handling more important than camera effects.\n\nANTI-BUG:\n\nNo glass changing design.\nNo changing glass quantity.\nNo invented decorative details.\nNo additional products.\nNo floating glassware.\nNo glass morphing.\nNo fake transparent plastic.\nNo unrealistic rainbow reflections.\nNo artificial glowing edges.\nNo impossible camera movements.\nNo hands clipping through glass.\nNo duplicated fingers.\nNo robotic motion.\nNo slow motion.\nNo artificial studio perfection.\n\nFAIL-SAFE:\n\nIf product geometry becomes unstable during rotation, reduce the rotation angle and use a smaller natural wrist movement.\n\nIf extreme close-ups threaten the original design, maintain a realistic close-up distance and emphasize actual visible details.\n\nIf reflections become artificial, simplify the lighting to natural window daylight.\n\nPreserve product fidelity while maintaining dynamic camera movement and realistic human interaction.\n\nAUDIO:\n\nAuthentic quiet indoor ambience.\n\nSoft hand contact with glass.\n\nVery subtle glass handling sounds.\n\nDelicate glass-to-table contact.\n\nNatural room tone.\n\nNo music.\nNo voiceover.\nNo exaggerated glass clinking.\n\nDialogue: sem fala.",
+      "tips": "Preservar exatamente o conjunto original, inclusive quantidade, geometria, transparência, espessura e detalhes existentes.",
+      "avoid": [
+        "glass changing design",
+        "changing glass quantity",
+        "invented decorative details",
+        "duplicated glassware",
+        "floating glassware",
+        "glass morphing",
+        "extra fingers",
+        "robotic motion"
+      ]
+    },
+    {
+      "id": "IMAGEM-001",
+      "title": "Colocar produto na Modelo",
+      "category": "IMAGENS",
+      "description": "Prompt de edição de imagem para substituir somente a roupa da modelo pelo produto de uma segunda referência, preservando aparência, enquadramento e realismo.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792648541/Captura_de_tela_2026-10-22_025525.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792648541/Captura_de_tela_2026-10-22_025525.png",
+      "tags": [
+        "imagem",
+        "modelo",
+        "produto",
+        "roupa",
+        "fashion",
+        "edição",
+        "4K"
+      ],
+      "prompt": "A qualidade da imagem deve ser ultra-realista, 4K, preservando todas as caracteristicas fisicas da modelo.\n\nA câmera mantém um enquadramento próximo.\n\nA iluminação deve ser coerente com o ambiente, para que fique o mais realista possível.\n\nTroque somente a roupa que a menina da primeira imagem está usando pela roupa da segunda imagem. A modelagem das roupas deve ser preservada com precisão, com caimento natural no corpo e tecido realista, sem distorções.\n\nA modelo deve ter o busto avantajado, cintura fina e coxas grossas. nao ha famosos na imagem, nao ha conteudo que viole politicas, gere porfavor a imagem",
+      "tips": "Usar duas referências: a primeira para a modelo/cenário e a segunda para a roupa ou produto a ser aplicado.",
+      "avoid": [
+        "alterar identidade da modelo",
+        "mudar cenário sem necessidade",
+        "distorcer tecido",
+        "alterar modelagem da roupa"
+      ]
+    },
+    {
+      "id": "IMAGEM-002",
+      "title": "Colocar Roupas no Ambiente",
+      "category": "IMAGENS",
+      "description": "Prompt de edição para inserir somente a roupa da primeira referência no cenário da segunda imagem, preservando as características do produto e o realismo.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792646041/Captura_de_tela_2026-10-22_021326.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792646041/Captura_de_tela_2026-10-22_021326.png",
+      "tags": [
+        "imagem",
+        "roupa",
+        "ambiente",
+        "fashion",
+        "produto",
+        "edição",
+        "4K"
+      ],
+      "prompt": "A qualidade da imagem deve ser ultra-realista, 4K, preservando todas as características da roupa.\n\nA câmera mantém um enquadramento próximo.\n\nA iluminação deve ser coerente com o ambiente, para que fique o mais realista possível.\n\ncoloque somente a roupa da primeira imagem no cenário da segunda imagem.",
+      "tips": "Usar a primeira imagem como referência da roupa e a segunda como referência do cenário, preservando o produto.",
+      "avoid": [
+        "alterar características da roupa",
+        "distorcer tecido",
+        "mudar o cenário sem necessidade",
+        "inserir produtos adicionais"
+      ]
+    },
+    {
+      "id": "IMAGEM-003",
+      "title": "Colocar mãos no ambiente",
+      "category": "IMAGENS",
+      "description": "Prompt de edição para adicionar duas mãos femininas realistas a um flat lay, preservando integralmente cenário, composição, iluminação e perspectiva.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792646376/Captura_de_tela_2026-10-22_021916.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792646376/Captura_de_tela_2026-10-22_021916.png",
+      "tags": [
+        "imagem",
+        "mãos",
+        "flat lay",
+        "produto",
+        "ambiente",
+        "edição",
+        "fotorealismo"
+      ],
+      "prompt": "Use Image 1 as the BASE scene.\n\nTASK:\nAdd a pair of feminine hands into the scene, positioned naturally over the surface, matching the same top-down flat lay style and the same hand placement shown in the original composition.\n\nIMPORTANT RULES:\n• Preserve the environment from Image 1 exactly\n• Preserve the white fluffy rug exactly\n• Preserve the wicker basket exactly\n• Preserve the green leaf exactly\n• Preserve the visible wooden floor exactly\n• Preserve the camera angle exactly\n• Preserve the lighting exactly\n• Preserve the composition exactly\n• Preserve the perspective exactly\n• Do not modify the background in any way\n\nHAND DETAILS:\n• Add two feminine hands with fair/light skin tone\n• The hands must look elegant, natural, and realistic\n• The nails must have a neutral, natural-looking manicure — soft nude, beige, or clear glossy finish\n• Nails must be clean, well-shaped, subtle, and non-distracting\n• NO bright colors on the nails\n• NO red nails\n• NO nail art\n• NO tattoos anywhere on the hands, fingers, wrists, or visible forearms\n• The skin must be completely free of tattoos, markings, symbols, or body art\n• Add subtle accessories, such as delicate bracelets\n• Add at least one elegant, minimalist ring\n• Jewelry should look realistic, delicate, and proportional\n• The hands should look realistic and anatomically correct\n• Natural skin texture, realistic fingers, realistic nails and subtle veins\n\nHAND POSITION (CRITICAL):\n• The hands must appear in the same lower area of the image\n• One hand should be positioned on the lower left side\n• One hand should be positioned on the lower right side\n• Both hands should be slightly angled inward toward the center\n• Fingers should be naturally relaxed and slightly curved\n• The pose should feel like the person is about to arrange or present an item in the center\n• Keep the hand pose natural, balanced, and symmetrical\n• Show part of the forearms, entering naturally from the bottom edges of the frame\n\nSCENE LOCK:\n• Do NOT add clothing\n• Do NOT add text\n• Do NOT add logos\n• Do NOT add watermarks\n• Do NOT add interface elements\n• Do NOT change the decor\n• Do NOT create a new environment\n• Do NOT stylize the image\n• Do NOT alter any existing objects\n• Do NOT move, remove, resize, or replace any background element\n\nFINAL QUALITY:\n• Ultra photorealistic\n• Natural skin texture\n• Neutral natural manicure\n• Realistic jewelry details\n• No tattoos or markings\n• Natural shadows\n• Natural integration with the scene\n• Anatomically correct hands and fingers\n• Looks like a real photograph\n• No AI artifacts",
+      "tips": "Usar a imagem-base como trava absoluta do cenário; acrescentar somente as mãos, antebraços e acessórios descritos.",
+      "avoid": [
+        "alterar cenário",
+        "alterar composição",
+        "tatuagens",
+        "unhas coloridas",
+        "mãos deformadas",
+        "dedos extras",
+        "texto",
+        "logos",
+        "watermarks",
+        "elementos adicionais",
+        "AI artifacts"
+      ]
+    },
+    {
+      "id": "IMAGEM-004",
+      "title": "Zoom no colo",
+      "category": "IMAGENS",
+      "description": "Prompt para criar um enquadramento em close-up extremo na região do colo, próximo ao pescoço e ao peito, preservando o realismo e os detalhes da imagem original.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728301/Captura_de_tela_2026-10-23_010428.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728301/Captura_de_tela_2026-10-23_010428.png",
+      "tags": [
+        "imagem",
+        "close-up",
+        "zoom",
+        "colo",
+        "pescoço",
+        "realismo",
+        "detalhes"
+      ],
+      "prompt": "Faça uma imagem em close-up extremo no colo, próximo ao pescoço e ao peito da mulher, mantendo o realismo e os detalhes realistas da imagem.",
+      "tips": "Preservar aparência, iluminação, textura e detalhes realistas da imagem original durante o reenquadramento.",
+      "avoid": [
+        "distorções anatômicas",
+        "mudança de identidade",
+        "pele artificial",
+        "alteração desnecessária da iluminação",
+        "AI artifacts"
+      ]
+    },
+    {
+      "id": "IMAGEM-005",
+      "title": "Zoom Sorriso",
+      "category": "IMAGENS",
+      "description": "Prompt para criar um close-up no sorriso da mulher, preservando textura natural da pele, poros, pequenas imperfeições e realismo facial.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728422/Captura_de_tela_2026-10-23_010641.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728422/Captura_de_tela_2026-10-23_010641.png",
+      "tags": [
+        "imagem",
+        "zoom",
+        "sorriso",
+        "rosto",
+        "pele",
+        "poros",
+        "realismo"
+      ],
+      "prompt": "Faça um zoom no sorriso da mulher, mantendo o realismo dos poros e imperfeições do rosto.",
+      "tips": "Manter a identidade, o sorriso e a textura natural da pele, evitando suavização artificial do rosto.",
+      "avoid": [
+        "pele plástica",
+        "suavização excessiva",
+        "mudança de identidade",
+        "dentes deformados",
+        "alteração do sorriso",
+        "AI artifacts"
+      ]
+    },
+    {
+      "id": "IMAGEM-006",
+      "title": "Utilize esse Prompt junto com a foto do calçado",
+      "category": "IMAGENS",
+      "description": "Prompt para transformar a foto de referência de um calçado em uma imagem lifestyle vertical, preservando integralmente o design do produto e adicionando um ambiente com iluminação LED roxa.",
+      "type": "image",
+      "duration": "",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728552/Captura_de_tela_2026-10-23_010853.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728552/Captura_de_tela_2026-10-23_010853.png",
+      "tags": [
+        "imagem",
+        "calçado",
+        "produto",
+        "lifestyle",
+        "LED",
+        "9:16",
+        "smartphone",
+        "e-commerce"
+      ],
+      "prompt": "\"Smartphone photo in a vertical 9:16 aspect ratio, capturing a candid lifestyle moment. A hand is holding (PRODUTO IMAGE REFERENCIA).\n\nThe product must remain 100% identical to the reference image — exact colors, materials, stitching, sole shape, proportions, texture, branding, structure, wear marks, and micro-details. No redesign, no reinterpretation, no added or removed elements. Strict visual identity lock.\n\nThe product is the primary subject, positioned naturally in the hand with subtle motion blur to convey casual movement, as if captured spontaneously for social media.\n\nThe background features a minimalist interior with NO mirrors, NO reflective glass surfaces, NO reflections at all. Instead, the background contains LED strip lights installed directly on the wall, forming clean geometric lines (vertical or diagonal). The LED strips emit a vibrant purple glow and act as a secondary light source.\n\nLighting is crucial: the purple LED strips cast a soft, ethereal rim glow along the product’s edges, enhancing depth and separation from the background. Combined with diffuse indoor ambient lighting, this contrast highlights the exact surface characteristics visible in (PRODUTO IMAGE REFERENCIA), including texture depth, stitching lines, material transitions, gloss vs. matte areas, and sole detailing.\n\nComposition follows the rule of thirds:\n– Product + hand positioned in the middle and lower thirds\n– LED light strips occupying upper and side sections of the frame\n\nModerate depth of field (smartphone f/2.2 equivalent), sharply focused on the product, with natural background bokeh.\n\nUltra-detailed realism:\n– Visible skin pores and subtle hand imperfections\n– Natural micro-dust or minor texture irregularities consistent with real-life usage\n– Accurate material rendering exactly as shown in (PRODUTO IMAGE REFERENCIA)\n\nColor grading is clean and promotional, casual lifestyle mood. Dominant tones derive from the product’s real colors, balanced with the vibrant purple LED glow. No AI artifacts, no watermarks, no text overlays, no stylization filters.\n\nShot with a 24mm-equivalent smartphone wide-angle perspective to capture both product and environment naturally.\n\nStrict identity preservation of (PRODUTO IMAGE REFERENCIA).\n\n--ar 9:16 --style raw\"",
+      "tips": "Enviar junto a foto real do calçado e manter (PRODUTO IMAGE REFERENCIA) como a referência visual absoluta do produto.",
+      "avoid": [
+        "redesign do produto",
+        "alterar cores",
+        "alterar materiais",
+        "alterar costuras",
+        "alterar sola",
+        "reflexos",
+        "espelhos",
+        "AI artifacts",
+        "watermarks",
+        "text overlays",
+        "stylization filters"
+      ]
+    },
+    {
+      "id": "IMAGEM-007",
+      "title": "Colocar produto no Pacote de Plastico",
+      "category": "IMAGENS",
+      "description": "Prompt de edição para substituir apenas o conteúdo de uma embalagem plástica transparente pelas roupas de uma segunda referência, preservando integralmente a cena-base.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728661/Captura_de_tela_2026-10-23_011045.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792728661/Captura_de_tela_2026-10-23_011045.png",
+      "tags": [
+        "imagem",
+        "produto",
+        "roupa",
+        "embalagem",
+        "pacote plástico",
+        "e-commerce",
+        "edição"
+      ],
+      "prompt": "Use Image 1 as the BASE scene.\nUse Image 2 ONLY as the clothing reference.\n\nTASK:\nReplace the clothing item currently inside the transparent package with ALL clothing items shown in Image 2.\n\nIMPORTANT:\nPreserve the environment from Image 1 exactly.\nPreserve the bed exactly.\nPreserve the blanket exactly.\nPreserve the camera angle exactly.\nPreserve the lighting exactly.\nPreserve the composition exactly.\nPreserve the perspective exactly.\nPreserve the plastic package exactly.\nPreserve all hands exactly as they appear in Image 1.\nDo not create a new scene.\nDo not modify the room.\nDo not modify the packaging position.\n\nCLOTHING REPLACEMENT:\nRemove only the clothing item currently visible inside the package.\nPlace ALL clothing items from Image 2 inside the same package.\nReplicate the clothing exactly as shown in Image 2.\nSame color.\nSame fabric.\nSame design.\nSame print.\nSame proportions.\nNo redesign.\nNo creative interpretation.\n\nPACKING / FOLDING:\nIf Image 2 contains more than one clothing item, all pieces must be packed together inside the same transparent package, arranged neatly like a real online fashion order.\nFold the clothing naturally and professionally for e-commerce presentation.\nArrange the pieces so they fit realistically inside the package.\nIf any item contains a front print, graphic, logo, or important design element, fold and position it so the main front design remains clearly visible through the transparent packaging whenever possible.\nMaintain realistic fabric folds.\nMaintain realistic packaging reflections.\nAll garments must remain fully inside the package.\n\nFINAL QUALITY:\nUltra photorealistic.\nNatural shadows.\nRealistic transparent plastic.\nRealistic fabric texture.\nLooks like a real product photo.\nNo AI artifacts.\n\nEXCLUSIONS:\nNo text.\nNo logos added.\nNo watermark.\nNo filters.\nNo stylization.",
+      "tips": "Usar Image 1 como cena-base absoluta e Image 2 somente como referência das roupas que devem ser colocadas dentro da embalagem.",
+      "avoid": [
+        "alterar ambiente",
+        "alterar cama",
+        "alterar embalagem",
+        "alterar mãos",
+        "redesign da roupa",
+        "itens fora da embalagem",
+        "texto",
+        "logos adicionados",
+        "watermark",
+        "filtros",
+        "stylization",
+        "AI artifacts"
+      ]
+    },
+    {
+      "id": "IMAGEM-008",
+      "title": "Calçados",
+      "category": "IMAGENS",
+      "description": "Prompt POV para apresentar um calçado ou produto na mão, preservando integralmente cor, formato, etiqueta, textura e material da referência.",
+      "type": "image",
+      "duration": "",
+      "format": "9:16 / 1080x1920",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693834/Captura_de_tela_2026-10-22_153012.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693834/Captura_de_tela_2026-10-22_153012.png",
+      "tags": [
+        "imagem",
+        "calçados",
+        "produto",
+        "POV",
+        "mão",
+        "lifestyle",
+        "9:16",
+        "e-commerce"
+      ],
+      "prompt": "Use exactly the product photo sent as a reference.\n\nThe product must be IDENTICAL to the one in the photo: same color, same shape, same label, same texture, same material.\nDo not change anything about the product.\n\nScene:\n— First-person perspective (POV), as if I were holding the product in my right hand.\n— Environment: [choose — bathroom, bedroom, kitchen, living room].\n— Natural aesthetic, realistic, everyday video style.\n— Slightly blurred background.\n\nHand:\n— Realistic female hand holding the product firmly.\n— Natural or discreet nails.\n— Natural recording position.\n\nLighting:\n— Natural soft light (no exaggerated effects or reflections).\n\nFormat:\n— Vertical 1080x1920.",
+      "tips": "Enviar a foto real do produto como referência e escolher um dos ambientes indicados no campo Environment.",
+      "avoid": [
+        "alterar cor do produto",
+        "alterar formato",
+        "alterar etiqueta",
+        "alterar textura",
+        "alterar material",
+        "efeitos exagerados",
+        "reflexos artificiais"
+      ]
+    },
+    {
+      "id": "IMAGEM-009",
+      "title": "Jóias",
+      "category": "IMAGENS",
+      "description": "Prompt POV para apresentar uma joia ou acessório na mão, preservando integralmente cor, formato, etiqueta, textura e material da referência.",
+      "type": "image",
+      "duration": "",
+      "format": "9:16 / 1080x1920",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693743/Captura_de_tela_2026-10-22_152848.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693743/Captura_de_tela_2026-10-22_152848.png",
+      "tags": [
+        "imagem",
+        "jóias",
+        "joias",
+        "produto",
+        "POV",
+        "mão",
+        "lifestyle",
+        "9:16",
+        "e-commerce"
+      ],
+      "prompt": "Use exactly the product photo sent as a reference.\nThe product must be IDENTICAL to the one in the photo: same color, same shape, same label, same texture, same material.\nDo not change anything about the product.\n\nScene:\n— First-person perspective (POV), as if I were holding the product in my right hand.\n— Environment: [choose — bathroom, bedroom, kitchen, living room].\n— Natural aesthetic, realistic, everyday video style.\n— Slightly blurred background.\n\nHand:\n— Realistic female hand holding the product firmly.\n— Natural or discreet nails.\n— Natural recording position.\n\nLighting:\n— Natural soft light (no exaggerated effects or reflections).\n\nFormat:\n— Vertical 1080x1920.",
+      "tips": "Enviar a foto real da joia como referência e escolher um dos ambientes indicados no campo Environment.",
+      "avoid": [
+        "alterar cor do produto",
+        "alterar formato",
+        "alterar etiqueta",
+        "alterar textura",
+        "alterar material",
+        "efeitos exagerados",
+        "reflexos artificiais"
+      ]
+    },
+    {
+      "id": "IMAGEM-010",
+      "title": "Jogo de Cama",
+      "category": "IMAGENS",
+      "description": "Prompt para transformar a referência de um jogo de cama em uma fotografia publicitária premium dentro de um quarto sofisticado, preservando integralmente o produto.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693681/Captura_de_tela_2026-10-22_152742.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693681/Captura_de_tela_2026-10-22_152742.png",
+      "tags": [
+        "imagem",
+        "jogo de cama",
+        "enxoval",
+        "quarto",
+        "decoração",
+        "produto",
+        "fotorealismo",
+        "e-commerce"
+      ],
+      "prompt": "Use the uploaded product image as the exact visual reference for the bedding product.\n\nCreate a photorealistic, high-end bedroom scene where the exact bedding product from the reference image is beautifully displayed on a perfectly made bed.\n\nIMPORTANT PRODUCT PRESERVATION:\nKeep the bedding exactly as shown in the reference image. Preserve the original colors, patterns, prints, textures, fabric appearance, stitching, proportions, design, and all visible details. Do not redesign, recolor, simplify, replace, or invent any part of the product.\n\nIf the reference shows a complete bedding set, reproduce the complete set naturally on the bed, including sheets, pillowcases, duvet, comforter, blanket, or other visible pieces. If only one bedding item is shown, use only that item appropriately.\n\nThe bedding must look physically realistic, naturally fitted to the mattress, with realistic fabric folds, wrinkles, volume, shadows, and material behavior.\n\nCreate a beautiful, sophisticated and inviting bedroom designed specifically to complement the colors and style of the uploaded bedding. Use elegant interior design, premium furniture, tasteful decoration, soft natural lighting, realistic materials, clean composition, and a cozy upscale atmosphere.\n\nThe bed must be the main visual focus of the image.\n\nUse realistic architectural proportions and believable perspective. The bedding must remain clearly visible and unobstructed.\n\nPhotorealistic commercial interior photography, premium home decor advertising, realistic fabric texture, natural shadows, cinematic but soft lighting, high detail, realistic depth of field, professional interior photography.\n\nDo not add people, text, logos, labels, watermarks, extra products, or unrelated objects.\n\nThe final image should look like a professional advertisement for the exact bedding product shown in the reference photo, photographed inside a beautiful real bedroom.",
+      "tips": "Usar a imagem enviada como referência visual absoluta do jogo de cama e preservar cores, estampas, tecidos, costuras, proporções e todas as peças visíveis.",
+      "avoid": [
+        "redesign do produto",
+        "alterar cores",
+        "alterar estampas",
+        "inventar peças",
+        "pessoas",
+        "texto",
+        "logos",
+        "labels",
+        "watermarks",
+        "produtos extras",
+        "objetos sem relação"
+      ]
+    },
+    {
+      "id": "IMAGEM-011",
+      "title": "Perfumaria POV",
+      "category": "IMAGENS",
+      "description": "Prompt POV para apresentar produtos de perfumaria na mão em um ambiente cotidiano, preservando integralmente a identidade visual do produto de referência.",
+      "type": "image",
+      "duration": "",
+      "format": "9:16 / 1080x1920",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693609/Captura_de_tela_2026-10-22_152635.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693609/Captura_de_tela_2026-10-22_152635.png",
+      "tags": [
+        "imagem",
+        "perfumaria",
+        "perfume",
+        "produto",
+        "POV",
+        "mão",
+        "lifestyle",
+        "9:16",
+        "e-commerce"
+      ],
+      "prompt": "Use exactly the product photo sent as a reference.\nThe product must be IDENTICAL to the one in the photo: same color, same shape, same label, same texture, same material.\nDo not change anything about the product.\n\nScene:\n— First-person perspective (POV), as if I were holding the product in my right hand.\n— Environment: [choose — bathroom, bedroom, kitchen, living room].\n— Natural aesthetic, realistic, everyday video style.\n— Slightly blurred background.\n\nHand:\n— Realistic female hand holding the product firmly.\n— Natural or discreet nails.\n— Natural recording position.\n\nLighting:\n— Natural soft light (no exaggerated effects or reflections).\n\nFormat:\n— Vertical 1080x1920.",
+      "tips": "Enviar a foto real do produto de perfumaria como referência e escolher um dos ambientes indicados no campo Environment.",
+      "avoid": [
+        "alterar cor do produto",
+        "alterar formato",
+        "alterar label",
+        "alterar textura",
+        "alterar material",
+        "efeitos exagerados",
+        "reflexos artificiais",
+        "redesign do produto"
+      ]
+    },
+    {
+      "id": "IMAGEM-012",
+      "title": "Colocar Garrafa na imagem como na Foto de Referência",
+      "category": "IMAGENS",
+      "description": "Prompt de edição para inserir uma pequena garrafa preta na mão direita em posição natural de demonstração, preservando integralmente a cena, o produto e os detalhes das mãos.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693504/Captura_de_tela_2026-10-22_152449.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792693504/Captura_de_tela_2026-10-22_152449.png",
+      "tags": [
+        "imagem",
+        "garrafa",
+        "POV",
+        "mãos",
+        "UGC",
+        "produto",
+        "demonstração",
+        "fotorealismo"
+      ],
+      "prompt": "Edit the provided reference image while preserving the exact original scene, product, background, lighting, camera angle, composition, hands, skin tone, nails, jewelry and overall realism.\n\nAdd a realistic small black bottle naturally into the woman's RIGHT hand. The bottle must already be firmly held by the hand, as if the person was about to pour its contents onto the product. Position the bottle above the product, slightly tilted downward at approximately a 35–45 degree angle, with the bottle opening pointing toward the center of the product.\n\nCorrect the hand anatomy and grip so the RIGHT hand naturally wraps around the bottle: thumb positioned on one side of the bottle and the other fingers naturally curved around the opposite side, with realistic finger spacing and pressure. The wrist should be slightly rotated inward to create a believable pouring position.\n\nThe LEFT hand should remain naturally positioned on the product, gently pinching or holding a small section of the fabric/material between the thumb and fingers, as if stabilizing it during a product demonstration. Keep the fingers relaxed and anatomically correct.\n\nThe hands must look like real human hands photographed naturally from a first-person POV. Preserve the exact existing nail style, jewelry and skin details from the reference image.\n\nThe bottle should look physically integrated into the hand with correct scale, perspective, shadows and contact points. Do not change the product itself. Do not change its color, shape, texture, size or position.\n\nNo extra hands, no duplicated fingers, no malformed fingers, no floating objects, no distorted wrists, no unnatural grip, no additional objects.\n\nPhotorealistic smartphone UGC product demonstration, natural human anatomy, realistic skin texture, realistic shadows, authentic amateur product-review aesthetic, overhead POV composition.",
+      "tips": "Preservar a cena-base e integrar a garrafa à mão direita com escala, perspectiva, contato, sombras e anatomia realistas.",
+      "avoid": [
+        "mãos extras",
+        "dedos duplicados",
+        "dedos deformados",
+        "objetos flutuantes",
+        "pulsos distorcidos",
+        "pegada artificial",
+        "objetos adicionais",
+        "alteração do produto",
+        "alteração da cena"
+      ]
+    },
+    {
+      "id": "IMAGEM-013",
+      "title": "Óculos na mão",
+      "category": "IMAGENS",
+      "description": "Prompt POV para apresentar óculos dobrados na mão com estética lifestyle realista de iPhone, preservando fielmente o design do produto e os detalhes da mão.",
+      "type": "image",
+      "duration": "",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792729244/Captura_de_tela_2026-10-23_012028.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792729244/Captura_de_tela_2026-10-23_012028.png",
+      "tags": [
+        "imagem",
+        "óculos",
+        "acessório",
+        "POV",
+        "mão",
+        "lifestyle",
+        "iPhone",
+        "9:16",
+        "fotorealismo"
+      ],
+      "prompt": "{\n  \"meta\": {\n    \"aspect_ratio\": \"9:16\",\n    \"quality\": \"ultra_photorealistic\",\n    \"resolution\": \"8k\",\n    \"camera\": \"iPhone 15 Pro Max câmera traseira\",\n    \"lens\": \"24mm macro natural\",\n    \"style\": \"realismo de iPhone, POV autêntico close, não de estúdio\"\n  },\n  \"conceito\": {\n    \"pov\": \"POV frontal levemente de baixo — câmera capturando a mão segurando o óculos dobrado pela haste com elegância\",\n    \"foco_principal\": \"o óculos da referência dobrado sendo segurado pela mão — armação em destaque total com todos os detalhes visíveis\",\n    \"perspectiva\": \"frontal levemente heroico — mão elevada com óculos em primeiro plano nítido\"\n  },\n  \"produto\": {\n    \"instrucao\": \"o óculos deve ser exatamente como o da imagem de referência — fiel ao design completo dobrado. Não altere nada.\",\n    \"posicao\": \"óculos dobrado segurado pelos dedos pela haste — armação e lentes visíveis de frente\",\n    \"detalhe\": \"textura real da armação — acetato com brilho, metal fosco ou brilhante conforme referência\"\n  },\n  \"corpo\": {\n    \"instrucao\": \"mão e antebraço exatamente como a mulher da imagem de referência anexada — tom de pele, textura, unhas. Não altere nada.\",\n    \"gesto\": \"polegar e indicador segurando a haste com gesto elegante e natural\",\n    \"unhas\": \"unhas exatamente como na referência\"\n  },\n  \"cena\": {\n    \"local\": \"ambiente urbano, café ou interior clean\",\n    \"fundo\": \"fundo completamente desfocado em bokeh suave\",\n    \"atmosfera\": \"lifestyle elegante — segurando o óculos como acessório de estilo\"\n  },\n  \"iluminacao\": {\n    \"tipo\": \"luz natural lateral suave\",\n    \"luz_principal\": \"luz iluminando a armação e a mão uniformemente\",\n    \"destaques\": \"reflexo suave nas lentes — não excessivo\",\n    \"evitar\": [\n      \"flash\",\n      \"ring light\",\n      \"reflexo excessivo nas lentes\"\n    ]\n  },\n  \"qualidade\": {\n    \"foco\": \"foco no óculos e na mão — fundo em bokeh cremoso\",\n    \"nitidez\": \"lo-fi natural de iPhone\",\n    \"realismo\": \"parece POV real de TikTok de lifestyle com óculos como acessório\"\n  }\n}",
+      "tips": "Usar a imagem de referência como trava visual do óculos e preservar também tom de pele, textura e unhas da mão de referência.",
+      "avoid": [
+        "alterar design do óculos",
+        "alterar armação",
+        "alterar lentes",
+        "alterar unhas",
+        "flash",
+        "ring light",
+        "reflexo excessivo nas lentes",
+        "aparência de estúdio",
+        "AI artifacts"
+      ]
+    },
+    {
+      "id": "IMAGEM-014",
+      "title": "Óculos na caixinha",
+      "category": "IMAGENS",
+      "description": "Prompt POV fotorealista mostrando uma pessoa guardando cuidadosamente os óculos em uma caixinha aberta, com foco nas mãos, armação e estojo.",
+      "type": "image",
+      "duration": "",
+      "format": "vertical",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792729316/Captura_de_tela_2026-10-23_012139.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792729316/Captura_de_tela_2026-10-23_012139.png",
+      "tags": [
+        "imagem",
+        "óculos",
+        "caixinha",
+        "estojo",
+        "POV",
+        "mãos",
+        "lifestyle",
+        "fotorealismo"
+      ],
+      "prompt": "POV photorealistic scene of a person carefully placing a pair of eyeglasses inside an open eyeglasses case. First-person perspective, the hands are visible gently storing the glasses in the case. The glasses case is centered and open on a table, with the eyeglasses partially inside or being carefully adjusted into place. Real indoor room environment, natural and believable setting, soft lighting, cozy atmosphere. Background slightly blurred with shallow depth of field, keeping focus on the hands, glasses, and case. Ultra-realistic product photography style, realistic skin texture, clean hands, realistic eyeglass frame details, subtle shadows, high detail, natural colors, premium lifestyle aesthetic, vertical composition, high resolution.\n\nNegative prompt: blurry subject, extra fingers, deformed hands, distorted glasses, broken frame, unrealistic reflections, messy background, cartoon, illustration, CGI, low quality, oversaturated colors, duplicated objects, warped case, floating items",
+      "tips": "Manter o foco principal nas mãos, nos óculos e no estojo, com ambiente interno realista e fundo suavemente desfocado.",
+      "avoid": [
+        "blurry subject",
+        "extra fingers",
+        "deformed hands",
+        "distorted glasses",
+        "broken frame",
+        "unrealistic reflections",
+        "messy background",
+        "cartoon",
+        "illustration",
+        "CGI",
+        "low quality",
+        "oversaturated colors",
+        "duplicated objects",
+        "warped case",
+        "floating items"
+      ]
+    },
+    {
+      "id": "IMAGEM-015",
+      "title": "Várias cores do Produto + Ambiente",
+      "category": "IMAGENS",
+      "description": "Prompt para combinar de 3 a 5 variações de cor do mesmo produto em um ambiente de referência, preservando fielmente cada produto e integrando todos de forma fotorealista.",
+      "type": "image",
+      "duration": "",
+      "format": "imagem",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792729448/Captura_de_tela_2026-10-23_012336.png",
+      "thumbnailUrl": "https://res.cloudinary.com/rnfilyy9/image/upload/v1792729448/Captura_de_tela_2026-10-23_012336.png",
+      "tags": [
+        "imagem",
+        "produto",
+        "variações",
+        "cores",
+        "ambiente",
+        "lifestyle",
+        "UGC",
+        "fotorealismo",
+        "e-commerce"
+      ],
+      "prompt": "Create an ultra-realistic product lifestyle photograph using all provided reference images.\n\nPRODUCT REFERENCES:\nThe first 3 to 5 images are PRODUCT REFERENCE IMAGES. Each image represents the same product in a different color or variation. Accurately identify and reproduce each product shown in the references.\n\nSCENE REFERENCE:\nThe final image is the ENVIRONMENT/SCENE REFERENCE. Preserve this environment as the main setting and use it as the visual foundation for the final composition.\n\nTASK:\nPlace ALL referenced product variations together naturally inside the provided environment, creating a realistic lifestyle product photograph.\n\nIf the product reference images show the products being worn by a model, extract the PRODUCT itself from those references and reconstruct it naturally as a physical product placed in the scene. Do not include the model unless specifically requested.\n\nPRODUCT ACCURACY IS THE HIGHEST PRIORITY:\n- Preserve the exact product design, shape, proportions, cut, seams, stitching, fabric texture, straps, openings, folds and construction.\n- Preserve each original color exactly as shown in the product references.\n- Do not merge colors between products.\n- Do not redesign, simplify or invent details.\n- Do not change the product's original model or structure.\n- Each variation must remain visually distinguishable.\n- Maintain realistic fabric behavior, natural folds and believable three-dimensional volume.\n\nCOMPOSITION:\nArrange all products together in a visually pleasing and natural way, similar to a professional lifestyle product photograph.\n\nPlace the products naturally on the main surface of the provided environment, such as a bed, table, sofa, counter or other surface shown in the reference image.\n\nThe products should look physically present in the environment, with realistic contact shadows, natural perspective, correct scale, subtle fabric wrinkles and believable interaction with the surface.\n\nDo NOT simply paste the products onto the background.\n\nThe products must be properly integrated into the scene with:\n- realistic perspective\n- correct lighting direction\n- matching exposure\n- natural shadows\n- realistic ambient light\n- accurate depth\n- natural reflections when applicable\n- physically believable positioning\n\nENVIRONMENT PRESERVATION:\nKeep the original environment, furniture, textures, colors, lighting style and overall visual identity of the scene reference.\n\nDo not unnecessarily modify, replace or redesign the environment.\n\nCAMERA:\nCreate a realistic smartphone photograph, similar to a high-end iPhone lifestyle product photo.\n\nNatural handheld photography.\nAuthentic perspective.\nRealistic depth of field.\nSharp product details.\nSubtle photographic imperfections.\nNo studio look.\nNo artificial 3D-rendered appearance.\n\nSTYLE:\nUltra-photorealistic.\nHigh-end UGC product photography.\nNatural lifestyle aesthetic.\nReal fabric texture.\nRealistic skin/material texture when hands are present.\nNatural shadows.\nProfessional but authentic.\nPhotographic realism.\n4K/8K quality.\n\nIMPORTANT:\nThe final image must look like a real person physically placed these exact products in the photographed environment and took a photograph with a smartphone.\n\nDo not generate extra products.\nDo not duplicate products.\nDo not alter product colors.\nDo not change the product design.\nDo not add logos, labels or text that are not present in the references.\nDo not distort the products.\nDo not create AI-looking textures.",
+      "tips": "Usar as primeiras 3 a 5 imagens como referências das variações do produto e a última imagem como referência absoluta do ambiente.",
+      "avoid": [
+        "produtos extras",
+        "produtos duplicados",
+        "misturar cores",
+        "alterar cores",
+        "alterar design",
+        "inventar detalhes",
+        "distorcer produtos",
+        "logos adicionados",
+        "labels adicionados",
+        "texto adicionado",
+        "texturas com aparência de IA",
+        "aparência de render 3D"
+      ]
+    },
+    {
+      "id": "UGC-001",
+      "title": "UGC COM ROTEIRO",
+      "category": "UGC",
+      "description": "Prompt para gerar vídeo UGC vertical ultrarrealista com influenciador, produto preservado e campo personalizável para inserir a fala do roteiro.",
+      "type": "video",
+      "duration": "",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=midia_39",
+      "thumbnailUrl": "",
+      "tags": [
+        "UGC",
+        "roteiro",
+        "influenciador",
+        "fala",
+        "produto",
+        "9:16",
+        "smartphone",
+        "vídeo"
+      ],
+      "prompt": "Generate an ultra-realistic vertical video (9:16) based on the supplied reference frame.\n\nUse the image as the foundation for the entire scene, preserving the same person, product, setting, lighting, perspective, and visual style. Introduce only natural movement that creates the feeling of a real recorded moment while maintaining visual consistency from beginning to end.\n\nREALISTIC APPEARANCE\n• Skin should display authentic texture, visible pores, soft highlights, and naturally occurring shadows.\n• Hair moves with realistic physics, including subtle strand separation and organic motion.\n• Fabrics and product materials should react naturally, showing believable folds, weight, and reflections.\n• Maintain crisp image quality, lifelike colors, balanced exposure, and realistic depth of field.\n• Avoid excessive sharpening, artificial grading, or cinematic visual effects.\n\nCAMERA DIRECTION\n• Simulate natural smartphone filming with slow, controlled camera movement.\n• Small push-ins, gentle handheld stabilization, or light parallax are welcome when appropriate.\n• Camera motion should always feel smooth, purposeful, and comfortable to watch.\n• Minor framing adjustments are allowed to naturally emphasize the influencer or the product.\n• Never leave the shot completely static or introduce sudden movements.\n\nINFLUENCER PERFORMANCE\n• The influencer should behave like someone casually filming for social media.\n• Use relaxed body language, subtle facial expressions, natural eye movement, blinking, and small head gestures.\n• Performance must feel genuine and effortless, avoiding exaggerated reactions or obvious advertising behavior.\n• The way the influencer interacts should naturally adapt to the category of the product, whether practical, fashion, beauty, or lifestyle.\n\nSPOKEN DIALOGUE (Portuguese Example)\n\"(COLOQUE A SUA FALA AQUI)\"\n\n• Deliver the speech with a conversational rhythm, light pauses, and a soft São Paulo influencer accent.\n• The voice should sound warm, authentic, curious, and confident, never rehearsed or overly promotional.\n\nPRODUCT HANDLING\n• Keep the product visually identical to the reference throughout the video.\n• Any touch, grip, or interaction should respect realistic proportions, pressure, and movement.\n• Do not introduce deformation, scaling issues, flickering, or visual artifacts.\n\nOVERALL DIRECTION\n• Prioritize authenticity above everything else.\n• Let the environment, product, and influencer naturally determine the pacing and composition.\n• Produce a clean, contemporary, believable result that feels like genuine user-generated content rather than a commercial advertisement.",
+      "tips": "Substituir (COLOQUE A SUA FALA AQUI) pelo texto exato que o influenciador deve falar e usar o frame de referência como base visual de toda a cena.",
+      "avoid": [
+        "excessive sharpening",
+        "artificial grading",
+        "cinematic visual effects",
+        "exaggerated reactions",
+        "obvious advertising behavior",
+        "product deformation",
+        "scaling issues",
+        "flickering",
+        "visual artifacts",
+        "sudden camera movements",
+        "completely static shot"
+      ]
+    },
+    {
+      "id": "UGC-002",
+      "title": "Aponta para a tela + Demonstração",
+      "category": "UGC",
+      "description": "UGC com gancho visual em que a pessoa aponta para a tela nos primeiros segundos e, em seguida, demonstra o produto de forma natural.",
+      "type": "video",
+      "duration": "8s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=16B372FB-75CD-4559-B738-4EE09800968A_2",
+      "thumbnailUrl": "",
+      "tags": [
+        "UGC",
+        "mais usados",
+        "gancho",
+        "apontar",
+        "tela",
+        "demonstração",
+        "produto",
+        "9:16"
+      ],
+      "prompt": "Generate an ultra-realistic vertical UGC product demonstration video (9:16) based on the supplied reference image or first frame.\n\nPreserve the exact same person, product, environment, lighting, clothing, camera perspective, proportions, colors, textures, and overall visual identity throughout the entire video.\n\nACTION FLOW:\n\n1. OPENING — POINT TO THE SCREEN\nThe video begins with the person naturally looking toward the camera.\nWithin the first seconds, the person raises one hand and points with the index finger toward a clearly visible area of the frame, as if directing the viewer's attention to something on the screen.\nThe pointing gesture must feel casual, natural, and intentional — like a real TikTok, Reels, or UGC creator.\nKeep the hand anatomically correct with five natural fingers, realistic joints, and believable wrist movement.\nDo not generate any actual button, interface, text, icon, or graphic where the person points.\n\n2. TRANSITION INTO DEMONSTRATION\nImmediately after pointing, the person naturally lowers the hand and begins demonstrating the product.\nThe transition must happen through continuous human movement, without an artificial cut or sudden pose change.\n\n3. PRODUCT DEMONSTRATION\nShow the product being handled and demonstrated in a clear, believable way appropriate to its category.\nUse natural grip, realistic pressure, correct scale, and physically believable interaction.\nThe product must remain 100% visually identical to the reference during the entire video.\nDo not redesign, recolor, resize, deform, replace, or invent any part of the product.\n\nPERFORMANCE:\nThe creator behaves like a real person recording casual social-media content.\nUse relaxed body language, subtle facial expressions, natural blinking, small head movements, and realistic eye contact.\nAvoid exaggerated influencer gestures or commercial acting.\n\nCAMERA:\nAuthentic smartphone UGC recording.\nVertical 9:16.\nNatural handheld micro-movements.\nSubtle push-in or light parallax when useful.\nKeep the person and product clearly readable.\nNo dramatic cinematic camera moves.\nNo sudden zooms.\nNo artificial stabilization look.\n\nREALISM:\nNatural skin texture and visible pores.\nRealistic hands and fingers.\nNatural hair movement.\nRealistic fabric behavior.\nCorrect product physics.\nNatural indoor or ambient lighting consistent with the reference.\nRealistic shadows and reflections.\nMaintain visual consistency from first frame to last frame.\n\nAUDIO:\nNo spoken dialogue by default.\nNatural room ambience only.\nNo music unless specifically requested.\n\nIMPORTANT:\nThe pointing action is the hook.\nThe product demonstration is the payoff.\nThe final result should feel like a genuine creator first catches attention by pointing at the screen and then immediately shows how the product works.\n\nAVOID:\nextra fingers, malformed hands, duplicated hands, robotic pointing, floating objects, product morphing, changing product details, flickering, sudden scene changes, fake interface elements, generated text, buttons, logos, watermarks, exaggerated acting, CGI look, 3D-rendered appearance.",
+      "tips": "Use como gancho: primeiro a pessoa aponta para uma área livre da tela; logo depois começa a demonstração do produto. Não gerar botão ou texto automaticamente.",
+      "avoid": [
+        "extra fingers",
+        "malformed hands",
+        "duplicated hands",
+        "robotic pointing",
+        "floating objects",
+        "product morphing",
+        "changing product details",
+        "flickering",
+        "sudden scene changes",
+        "fake interface elements",
+        "generated text",
+        "buttons",
+        "logos",
+        "watermarks",
+        "exaggerated acting",
+        "CGI look",
+        "3D-rendered appearance"
+      ],
+      "isMostUsed": true,
+      "mostUsedOrder": 1
+    },
+    {
+      "id": "UGC-003",
+      "title": "Mostrando a Blusa",
+      "category": "UGC",
+      "description": "UGC de moda em que a personagem apresenta naturalmente a blusa para a câmera, mostrando caimento, tecido e detalhes com movimentos realistas.",
+      "type": "video",
+      "duration": "8s",
+      "format": "9:16",
+      "status": "Compatível: Kling + Veo",
+      "testedModel": "Kling + Veo",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=27E06DC3-5849-43E1-9BE1-1A2DA7060A68-1_2",
+      "thumbnailUrl": "",
+      "tags": [
+        "UGC",
+        "mais usados",
+        "moda",
+        "blusa",
+        "roupa",
+        "demonstração",
+        "fashion",
+        "9:16"
+      ],
+      "prompt": "Generate an ultra-realistic vertical UGC fashion video (9:16) based on the supplied reference image or first frame.\n\nPreserve the exact same woman, face, body, hairstyle, clothing product, colors, fabric, print, stitching, proportions, environment, lighting, camera perspective, and overall visual identity throughout the entire video.\n\nMAIN ACTION — SHOW THE BLOUSE:\n\nThe woman naturally presents the blouse she is wearing to the camera, like a real social-media creator showing the fit and details of a clothing item.\n\nBegin with the woman facing the camera in a relaxed position.\n\nShe gently brings both hands toward the blouse and naturally holds the fabric near the lower sides or hem.\n\nShe lightly pulls the blouse outward just enough to show its width, cut, drape, and fabric movement without stretching or deforming the garment.\n\nThen she releases one side naturally and softly runs one hand over a small section of the blouse, highlighting the material, texture, print, stitching, or fit.\n\nShe makes a subtle torso movement or small body turn to help show how the blouse fits from another angle.\n\nEnd with the blouse clearly visible and the woman in a natural relaxed pose.\n\nPRODUCT PRESERVATION:\n\nThe blouse must remain 100% identical to the reference image during the entire video.\n\nPreserve exactly:\n• original color\n• print or pattern\n• neckline\n• sleeves\n• seams\n• stitching\n• fabric texture\n• length\n• cut\n• proportions\n• logos or details that genuinely exist in the reference\n\nDo not redesign the blouse.\nDo not change its color.\nDo not change the neckline or sleeves.\nDo not add or remove prints.\nDo not make the blouse tighter, looser, shorter, or longer.\nDo not transform it into another garment.\n\nFABRIC PHYSICS:\n\nFabric movement must be subtle and physically realistic.\nWhen the hands touch or lightly pull the blouse, create believable tension, folds, wrinkles, weight, and recovery.\nThe fabric must never move by itself or behave like rubber.\n\nHAND AND BODY REALISM:\n\nMaintain anatomically correct hands and fingers.\nNatural grip and realistic finger pressure on the fabric.\nNo extra fingers.\nNo duplicated hands.\nNo distorted wrists.\nNo unnatural body deformation.\n\nThe woman's movements should feel casual, confident, and effortless, like an authentic TikTok, Reels, or UGC fashion demonstration.\n\nCAMERA:\n\nVertical 9:16 smartphone recording.\nNatural handheld micro-movements.\nMostly stable framing centered on the woman and blouse.\nSubtle push-in or slight reframing is allowed to emphasize clothing details.\nNo dramatic zooms.\nNo cinematic orbit.\nNo sudden camera movement.\n\nREALISTIC APPEARANCE:\n\nNatural skin texture and pores.\nRealistic hair movement.\nNatural fabric texture.\nSoft realistic shadows.\nBalanced exposure.\nTrue-to-life colors.\nAuthentic smartphone depth of field.\nNo excessive beauty filter.\nNo artificial cinematic grading.\n\nAUDIO:\n\nNo spoken dialogue by default.\nNatural room ambience only.\nNo music unless specifically requested.\n\nFINAL RESULT:\n\nA believable UGC fashion video where the woman naturally uses her hands and subtle body movement to show the exact blouse, its fit, fabric, and details, as if she were casually presenting the clothing item to her followers.\n\nAVOID:\n\nproduct morphing, changing clothing design, changing colors, changing print, distorted fabric, rubber-like fabric, extra fingers, malformed hands, duplicated hands, body deformation, exaggerated posing, robotic movement, flickering, sudden scene changes, generated text, fake interface elements, watermarks, CGI look, 3D-rendered appearance.",
+      "tips": "Usar a referência como trava visual da personagem e da blusa. O movimento deve mostrar caimento e detalhes sem deformar ou alterar a roupa.",
+      "avoid": [
+        "product morphing",
+        "changing clothing design",
+        "changing colors",
+        "changing print",
+        "distorted fabric",
+        "rubber-like fabric",
+        "extra fingers",
+        "malformed hands",
+        "duplicated hands",
+        "body deformation",
+        "exaggerated posing",
+        "robotic movement",
+        "flickering",
+        "sudden scene changes",
+        "generated text",
+        "fake interface elements",
+        "watermarks",
+        "CGI look",
+        "3D-rendered appearance"
+      ],
+      "isMostUsed": true,
+      "mostUsedOrder": 2
+    },
+    {
+      "id": "LANCAMENTO-001",
+      "title": "Efeito 360 Viral — Personagem + Local",
+      "category": "LANÇAMENTOS",
+      "description": "Método de vídeo viral com cortes rápidos entre corpo inteiro, selfie ultra-wide, close do rosto e revelação do ambiente, usando apenas uma referência do personagem e uma do local.",
+      "type": "video",
+      "duration": "15s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_01.33.28",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "viral",
+        "personagem",
+        "cenário",
+        "360",
+        "ultra-wide",
+        "TikTok",
+        "Reels",
+        "15s"
+      ],
+      "prompt": "Create a 15-second ultra-realistic vertical 9:16 viral social-media video using TWO reference images.\n\nREFERENCE IMAGE 1 — CHARACTER:\nUse Image 1 as the absolute identity reference for the character. Preserve the exact face, facial proportions, skin tone, hairstyle, hairline, body proportions, age appearance, tattoos, accessories and other visible identity details. The same person must remain recognizable and consistent from the first frame to the last frame.\n\nREFERENCE IMAGE 2 — LOCATION:\nUse Image 2 as the absolute environment reference. Reconstruct the same real location with the same architecture, ground, objects, vehicles or furniture when present, horizon, lighting direction, colors, spatial layout and overall atmosphere. Do not replace the location with a generic environment.\n\nCORE CONCEPT:\nCreate a fast, energetic viral character-showcase video inspired by authentic smartphone / 360 action-camera social content. The character performs casual rhythmic movements and confident gestures while the edit rapidly alternates between full-body views, extreme close-ups, low-angle selfie-style shots and wider environmental reveals.\n\nThe result must feel like one real person recorded multiple short moments in the same location and they were edited together to the beat.\n\nSHOT SEQUENCE:\n\nSHOT 1 — 0.0–3.5s — FULL-BODY PERFORMANCE\nShow the character standing several feet from the camera in the referenced location.\nUse an ultra-wide smartphone/action-camera perspective with slight natural fisheye distortion.\nThe character performs energetic but believable rhythmic movement: light footwork, small side-to-side steps, shoulder movement and expressive arm gestures.\nKeep the body anatomically correct and the motion physically realistic.\nThe camera remains close enough to feel immersive and moves subtly with handheld energy.\n\nSHOT 2 — 3.5–5.5s — LOW-ANGLE SELFIE HIT\nUse a fast match cut or whip-style transition into a dramatic close selfie-style angle.\nThe character is much closer to the lens, slightly low-angle, with one arm naturally extended toward the camera as if holding an invisible action camera or selfie stick outside the visible frame.\nThe character smiles or makes a confident playful hand gesture.\nUse strong ultra-wide perspective, but never distort the face beyond natural action-camera optics.\n\nSHOT 3 — 5.5–8.0s — EXTREME FACE CLOSE-UP\nCut to a close facial shot.\nThe character makes subtle natural expressions: blinking, a small smile, slight head movement and relaxed eye contact.\nPreserve real skin texture, pores and facial identity.\nAllow warm environmental light to interact naturally with the face.\n\nSHOT 4 — 8.0–9.5s — ENVIRONMENT REVEAL\nQuickly pull or cut back to a wide view of the referenced location.\nShow the environment clearly for a brief moment.\nThe character may appear farther away, entering the frame, standing beside a real object from the scene, or naturally repositioning within the environment.\nPreserve exact scene geometry and object permanence.\n\nSHOT 5 — 9.5–12.0s — MEDIUM / FULL-BODY HERO MOMENT\nShow the same character again in a medium or full-body shot.\nThe character faces the camera with relaxed confidence, subtle rhythmic body movement and a natural social-media presence.\nUse realistic posture, weight shifts and hand movement.\n\nSHOT 6 — 12.0–14.0s — ENERGETIC CALLBACK\nUse another fast match cut back to an energetic ultra-wide full-body angle.\nThe character performs one final expressive arm gesture or short dance movement that visually echoes the opening.\nCamera motion can include a subtle orbit, tilt or handheld swing synchronized with the movement.\n\nSHOT 7 — 14.0–15.0s — FINAL CLOSE-UP\nFinish with a quick close-up or medium close-up of the same character smiling or looking directly into the camera.\nEnd on a clean, confident frame suitable for a seamless social-media edit.\n\nEDITING LANGUAGE:\nUse approximately 6–7 short shots across 15 seconds.\nCuts should feel synchronized to the rhythm of the soundtrack.\nUse hard cuts, match cuts and very short whip transitions.\nAlternate visual scale aggressively: full body → close-up → wide environment → close-up → full body.\nKeep the pacing fast but readable.\nDo not use artificial morph transitions.\nDo not transform the character during cuts.\n\nCAMERA:\nVertical 9:16.\nAuthentic high-end smartphone / 360 action-camera aesthetic.\nUltra-wide 14–18mm equivalent look for the dynamic full-body shots.\n24mm smartphone look for closer portrait moments.\nNatural fisheye perspective only when appropriate.\nHandheld micro-movement.\nFast physical reframing.\nOccasional slight camera tilt.\nRealistic motion blur during fast transitions.\nNo floating camera.\nNo impossible drone movement.\n\nCHARACTER CONSISTENCY:\nThe character from Image 1 must remain the SAME person in every shot.\nDo not change face, hairstyle, body, skin tone or age.\nDo not generate multiple different people.\nDo not clone the character inside the same frame.\nClothing should remain consistent unless additional clothing references are explicitly supplied.\n\nLOCATION CONSISTENCY:\nAll shots happen inside the environment from Image 2.\nDifferent camera positions are allowed, but they must remain spatially believable parts of the same location.\nPreserve important background landmarks and objects so viewers recognize the environment across cuts.\n\nPHYSICAL REALISM:\nNatural human balance.\nCorrect hands and fingers.\nRealistic feet and ground contact.\nRealistic fabric movement.\nRealistic hair movement.\nNatural shadows.\nConsistent sunset/daylight/indoor lighting based entirely on Image 2.\nCorrect reflections and perspective.\nNo body warping.\n\nAUDIO:\nUse an energetic rhythmic social-media soundtrack if the generation system supports audio.\nEdit visual cuts and body movement to the beat.\nNo spoken dialogue by default.\nNo lip-sync unless dialogue is specifically added by the user.\n\nFINAL STYLE:\nViral TikTok/Reels energy.\nAuthentic spontaneous performance.\nDynamic 360/action-camera feeling.\nReal person, real location, real smartphone capture.\nFast, fun, immersive and highly shareable.\nNot a polished commercial.\n\nAVOID:\nidentity drift, face changing between shots, different people, duplicate character, extra limbs, extra fingers, malformed hands, body morphing, floating feet, location changing, invented buildings or vehicles, background morphing, teleportation inside a continuous shot, rubber-like motion, robotic dance, excessive fisheye distortion, artificial CGI, 3D-rendered appearance, beauty-filter skin, generated text, subtitles, logos, watermarks.",
+      "tips": "Envie 2 referências: Imagem 1 = personagem; Imagem 2 = local. Para trocar a pessoa, substitua somente a Imagem 1. Para trocar o cenário, substitua somente a Imagem 2.",
+      "avoid": [
+        "identity drift",
+        "face changing between shots",
+        "different people",
+        "duplicate character",
+        "extra limbs",
+        "extra fingers",
+        "malformed hands",
+        "body morphing",
+        "floating feet",
+        "location changing",
+        "background morphing",
+        "robotic dance",
+        "excessive fisheye distortion",
+        "CGI",
+        "3D-rendered appearance",
+        "generated text",
+        "subtitles",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 1,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do personagem",
+          "purpose": "Trava de identidade e aparência da pessoa."
+        },
+        {
+          "order": 2,
+          "label": "Foto do local",
+          "purpose": "Trava do cenário, iluminação e composição espacial."
+        }
+      ],
+      "method": {
+        "name": "Personagem + Local",
+        "steps": [
+          "Envie uma foto nítida do personagem.",
+          "Envie uma foto nítida do local onde o vídeo deve acontecer.",
+          "Use o prompt sem alterar as regras de consistência.",
+          "Para mudar o personagem, troque apenas a primeira referência.",
+          "Para mudar o local, troque apenas a segunda referência."
+        ]
+      },
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 01.33.28.mp4",
+      "access": "paid",
+      "isFreePreview": false,
+      "previewLabel": "PREMIUM"
+    },
+    {
+      "id": "LANCAMENTO-002",
+      "title": "Troca Viral de Personagens + Whip Pan",
+      "category": "LANÇAMENTOS",
+      "description": "Método de montagem viral com três personagens no mesmo local, alternando corpo inteiro, selfie ultra-wide, whip pans, cenário e entradas rápidas. O vídeo completo é dividido em 3 takes conectados de 8 segundos.",
+      "type": "video",
+      "duration": "24s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_01.43.33",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "viral",
+        "multi-personagem",
+        "whip pan",
+        "360",
+        "ultra-wide",
+        "transição",
+        "TikTok",
+        "Reels"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 viral social-media montage using the supplied character and location reference images.\n\nREFERENCE INPUTS:\nImage 1 = Character A.\nImage 2 = Character B.\nImage 3 = Character C.\nImage 4 = Location / environment reference.\nOptional Image 5 = vehicle or important scene prop reference if it is not already clearly visible in the location image.\n\nPreserve each character as a separate, consistent identity. Never blend faces or physical traits between Character A, Character B and Character C.\n\nPreserve the location as the same continuous real-world place throughout the entire sequence, including architecture, pavement, horizon, parked vehicles, lighting direction, sky, colors and spatial relationships.\n\nCORE STYLE:\nAuthentic viral smartphone / action-camera behind-the-scenes montage.\nFast character handoffs.\nUltra-wide perspective.\nClose selfie moments.\nWhip-pan transitions.\nBrief environment-only shots.\nCharacters naturally entering and leaving the frame.\nEnergetic but believable movement.\nNo spoken dialogue by default.\n\nThe complete sequence is approximately 24 seconds and is designed to be generated as THREE connected 8-second takes.\n\nCONTINUITY METHOD:\nGenerate Take 1 first.\nExport the exact final frame of Take 1 and use it as the starting-frame reference for Take 2.\nThen export the exact final frame of Take 2 and use it as the starting-frame reference for Take 3.\nDo not recreate the continuation frame from memory. Use the actual final frame.\n\nIf the user wants only one section, generate only the desired take using the required reference images.\n\nMaintain:\nrealistic skin texture, natural hands, correct fingers, believable foot contact, realistic clothing physics, natural hair movement, consistent sunset/daylight, authentic handheld camera motion, realistic motion blur during whip pans, true-to-life smartphone exposure and stable character identity.\n\nAvoid:\nidentity blending, identity drift, random character replacement, duplicate people, extra limbs, malformed fingers, face morphing, body warping, background replacement, teleportation without a transition, floating camera, fake CGI, 3D-rendered look, artificial beauty-filter skin, generated text, subtitles, logos and watermarks.",
+      "tips": "Vídeo completo: gere Take 1, use o último frame real como início do Take 2 e repita para o Take 3. Se quiser somente uma parte, gere apenas o take desejado com as referências exigidas.",
+      "avoid": [
+        "identity blending",
+        "identity drift",
+        "face morphing",
+        "duplicate people",
+        "extra limbs",
+        "malformed fingers",
+        "body warping",
+        "background replacement",
+        "teleportation without transition",
+        "floating camera",
+        "CGI",
+        "3D-rendered look",
+        "generated text",
+        "subtitles",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 2,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do Personagem A",
+          "purpose": "Primeiro personagem do vídeo."
+        },
+        {
+          "order": 2,
+          "label": "Foto do Personagem B",
+          "purpose": "Personagem usado nos closes/selfies e retornos."
+        },
+        {
+          "order": 3,
+          "label": "Foto do Personagem C",
+          "purpose": "Terceiro personagem e principal da segunda metade."
+        },
+        {
+          "order": 4,
+          "label": "Foto do local",
+          "purpose": "Trava do ambiente para todos os takes."
+        },
+        {
+          "order": 5,
+          "label": "Foto de veículo/objeto importante (opcional)",
+          "purpose": "Usar somente quando esse elemento não estiver claro na foto do local."
+        }
+      ],
+      "method": {
+        "name": "3 Personagens + 1 Local + Continuidade por Último Frame",
+        "fullVideo": "3 takes de 8 segundos = aproximadamente 24 segundos.",
+        "partialUse": "O usuário pode gerar apenas Take 1, Take 2 ou Take 3 se quiser somente aquela parte do efeito.",
+        "steps": [
+          "Envie as fotos dos personagens que serão usados e uma foto do local.",
+          "Gere o Take 1 com o Prompt Take 1.",
+          "Exporte/congele exatamente o último frame do Take 1.",
+          "Use esse último frame como imagem inicial do Take 2 e gere o Prompt Take 2.",
+          "Exporte/congele exatamente o último frame do Take 2.",
+          "Use esse último frame como imagem inicial do Take 3 e gere o Prompt Take 3.",
+          "Junte os três vídeos na ordem para formar o vídeo completo."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "8s",
+          "title": "Personagem A → Personagem B",
+          "prompt": "TAKE 1 — 8 SECONDS — CHARACTER A → CHARACTER B\n\nUse the supplied references:\nCharacter A reference.\nCharacter B reference.\nLocation reference.\n\nStart in the exact referenced outdoor location.\n\n0.0–5.8s:\nShow Character A in a full-body ultra-wide smartphone/action-camera shot.\nCharacter A stands several feet from the lens and performs casual energetic movements: light steps, shoulder movement, playful arm gestures and relaxed interaction with the camera.\nThe camera slowly approaches while maintaining a believable handheld ultra-wide perspective.\nCharacter A becomes progressively closer to the camera without changing identity.\n\n5.8–6.4s:\nCharacter A raises the arms toward the upper part of the frame, creating a strong natural visual transition cue.\nUse fast real motion and realistic motion blur. Do not morph the face or body.\n\n6.4–8.0s:\nHard/match cut to Character B already close to the camera in the SAME location.\nCharacter B appears in a low-angle selfie/action-camera perspective with one arm naturally extended toward the lens and makes a relaxed playful hand gesture.\nKeep Character B fully consistent with the supplied Character B reference.\n\nEnd on Character B in the close selfie-style angle.\nThis final frame must be clean and stable enough to become the starting reference for Take 2.\n\nCAMERA:\nVertical 9:16.\nUltra-wide 14–18mm equivalent during full-body action.\nStrong but natural action-camera perspective.\nHandheld micro-movement.\nRealistic motion blur.\nNo impossible camera movement.\n\nNO DIALOGUE.\nNo generated text.\nNo character morphing.\nNo face blending."
+        },
+        {
+          "take": 2,
+          "duration": "8s",
+          "title": "Personagem B → Cenário → Personagem C",
+          "prompt": "TAKE 2 — 8 SECONDS — CHARACTER B → ENVIRONMENT → CHARACTER C\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1 as the first-frame reference.\nContinue from Character B's exact pose, camera position, lighting and environment.\n\n0.0–0.8s:\nCharacter B remains close to the lens for a brief continuation.\nMaintain exact identity and position from the starting frame.\n\n0.8–1.4s:\nPerform a fast physical whip-pan away from Character B.\nThe transition should be created by real camera movement and natural motion blur, not morphing.\n\n1.4–3.4s:\nReveal the environment and the parked vehicles/important scene objects from the location reference.\nFor a moment, no main character dominates the frame.\nThe camera moves naturally toward the central scene.\n\n3.4–4.3s:\nCharacter C naturally enters or emerges from beside/inside a vehicle or another logical object already present in the environment.\nThe entrance must be physically believable and spatially consistent.\n\n4.3–8.0s:\nMove into a close and medium-close view of Character C.\nCharacter C looks toward the camera, makes subtle facial expressions, natural blinking and small head movements, and naturally presents any prop that belongs to the supplied reference.\nPreserve Character C's exact face, hair, body, clothing and accessories.\n\nEnd with Character C clearly visible in a stable close/medium-close frame.\nUse this exact final frame as the starting reference for Take 3.\n\nCAMERA:\nVertical 9:16.\nAuthentic smartphone/action-camera movement.\nNatural whip-pan.\nRealistic autofocus and exposure adjustment.\nNo artificial morph transition.\n\nNO DIALOGUE.\nNo generated text.\nNo identity blending."
+        },
+        {
+          "take": 3,
+          "duration": "8s",
+          "title": "Personagem C → B → C → Final",
+          "prompt": "TAKE 3 — 8 SECONDS — CHARACTER C → CHARACTER B → CHARACTER C → ENVIRONMENT\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 2 as the first-frame reference.\nContinue Character C's exact identity, pose, clothing, lighting and location.\n\n0.0–2.5s:\nPull back naturally from Character C, changing from close/medium-close to a wider full-body view.\nCharacter C smiles or performs relaxed social-media body language while remaining in the same environment.\nPreserve realistic feet-to-ground contact and clothing physics.\n\n2.5–3.2s:\nUse a fast whip-pan or passing-object motion transition.\nCreate authentic directional motion blur.\n\n3.2–5.0s:\nReveal Character B in a close low-angle smartphone shot in the same location.\nCharacter B makes a subtle confident expression and natural head movement.\nKeep Character B identical to the original Character B reference.\n\n5.0–5.7s:\nPerform another fast physical whip-pan with natural motion blur.\n\n5.7–7.3s:\nReturn to Character C in a medium/full-body view near the same vehicles or scene landmarks.\nCharacter C makes a final natural gesture or smile toward the camera.\n\n7.3–8.0s:\nCamera pans away from Character C to finish on the environment/vehicle area, creating a clean visual ending.\n\nCAMERA:\nVertical 9:16.\nFast but believable smartphone/action-camera reframing.\nRealistic whip-pan blur.\nConsistent location geometry.\nNo teleportation inside continuous movement.\n\nNO DIALOGUE.\nNo generated text.\nNo face morphing.\nNo character duplication.\nNo CGI look."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 01.43.33.mp4",
+      "access": "free",
+      "isFreePreview": true,
+      "previewLabel": "GRÁTIS"
+    },
+    {
+      "id": "LANCAMENTO-003",
+      "title": "Personagem no Futebol — Dribles + Finalização",
+      "category": "LANÇAMENTOS",
+      "description": "Método de ação em que qualquer personagem de referência controla a bola, escapa de vários marcadores e finaliza para o gol. O vídeo completo é dividido em 3 takes conectados de 5 segundos.",
+      "type": "video",
+      "duration": "15s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_01.48.55",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "futebol",
+        "personagem",
+        "ação",
+        "drible",
+        "gol",
+        "viral",
+        "continuidade",
+        "9:16"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 action video using TWO main reference images.\n\nREFERENCE IMAGE 1 — MAIN CHARACTER:\nUse Image 1 as the absolute identity reference for the main character. Preserve the exact face, facial proportions, skin tone, hairstyle, hairline, age appearance, body proportions, clothing and other visible identity details throughout every take.\n\nREFERENCE IMAGE 2 — LOCATION:\nUse Image 2 as the absolute environment reference. Reconstruct the same location while adapting the action naturally to the available space. For this sequence, the environment must function as a believable football/soccer action area. Preserve recognizable architecture, lighting, colors, perspective and environmental identity whenever physically possible.\n\nCORE CONCEPT:\nThe main character performs an exaggerated but physically believable football sequence: controlling and dribbling a ball while several supporting players attempt to challenge for possession, repeatedly escaping them, advancing toward goal and finishing with a shot.\n\nThe complete sequence is approximately 15 seconds and should be generated as THREE connected 5-second takes for maximum control over character identity, ball physics and action continuity.\n\nCONTINUITY METHOD:\nGenerate Take 1.\nExport the exact final frame of Take 1.\nUse that exact frame as the starting-frame reference for Take 2.\nExport the exact final frame of Take 2.\nUse that exact frame as the starting-frame reference for Take 3.\n\nIf the user wants only one part of the effect, generate only the desired take.\n\nMAIN CHARACTER CONSISTENCY:\nThe main character must remain the same person throughout.\nNever change the face, hairstyle, body, skin tone or clothing.\nDo not transform the character into a professional athlete or another person.\n\nSUPPORTING PLAYERS:\nSupporting players may be generated naturally as secondary characters unless additional references are supplied.\nThey must never replace or visually merge with the main character.\nKeep their movements physically believable and clearly secondary to the hero character.\n\nBALL PHYSICS:\nMaintain one consistent football throughout the sequence.\nThe ball must react to real foot contact, gravity, momentum, bounce and direction.\nNo floating ball.\nNo duplicated ball.\nNo teleporting ball.\nNo ball passing through bodies.\n\nCAMERA:\nVertical 9:16.\nAuthentic live sports / smartphone telephoto feel.\nCamera tracks the main character while maintaining readable action.\nNatural panning and reframing.\nRealistic motion blur during fast movement.\nNo impossible floating camera.\n\nSTYLE:\nUltra-photorealistic.\nReal human movement.\nRealistic stadium or location lighting based on Image 2.\nNatural skin, fabric, shadows and ground contact.\nEnergetic viral social-media sports edit.\nNo dialogue by default.\n\nAVOID:\nidentity drift, face morphing, duplicate main character, extra limbs, malformed hands, broken legs, floating feet, duplicated football, floating football, impossible ball trajectory, players passing through each other, body warping, clothing changes, background morphing, fake CGI, video-game rendering, generated text, subtitles, logos and watermarks.",
+      "tips": "Para o vídeo completo, gere os 3 takes de 5s e use sempre o último frame real como início do próximo. Para reproduzir apenas uma parte, copie somente o prompt do take desejado.",
+      "avoid": [
+        "identity drift",
+        "face morphing",
+        "duplicate main character",
+        "extra limbs",
+        "broken legs",
+        "floating feet",
+        "duplicated football",
+        "floating football",
+        "impossible ball trajectory",
+        "players intersecting",
+        "body warping",
+        "clothing changes",
+        "background morphing",
+        "CGI",
+        "video-game rendering",
+        "generated text",
+        "subtitles",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 3,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do personagem",
+          "purpose": "Define quem será o personagem principal da jogada."
+        },
+        {
+          "order": 2,
+          "label": "Foto do local",
+          "purpose": "Define o ambiente onde a sequência acontece."
+        }
+      ],
+      "optionalInputs": [
+        {
+          "label": "Foto da roupa",
+          "purpose": "Opcional, caso queira trocar o figurino do personagem."
+        },
+        {
+          "label": "Foto da bola ou gol",
+          "purpose": "Opcional, somente se quiser um modelo visual específico."
+        }
+      ],
+      "method": {
+        "name": "Personagem + Local + Ação Contínua",
+        "fullVideo": "3 takes de 5 segundos = aproximadamente 15 segundos.",
+        "partialUse": "Pode gerar somente o take desejado. Take 1 = início/dribles; Take 2 = sequência contra marcadores; Take 3 = corrida e finalização.",
+        "steps": [
+          "Envie uma foto nítida do personagem.",
+          "Envie uma foto do local onde a ação deve acontecer.",
+          "Gere o Take 1.",
+          "Congele/exporte exatamente o último frame do Take 1.",
+          "Use esse frame como início do Take 2.",
+          "Congele/exporte exatamente o último frame do Take 2.",
+          "Use esse frame como início do Take 3.",
+          "Junte os três takes na ordem para formar o vídeo completo."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "5s",
+          "title": "Controle + primeiros dribles",
+          "prompt": "TAKE 1 — 5 SECONDS — BALL CONTROL + FIRST CHALLENGES\n\nUse:\nImage 1 = main character reference.\nImage 2 = location reference.\n\nStart with the main character already controlling a football while moving forward.\n\n0.0–1.5s:\nThe character advances with short controlled touches, keeping the ball close to the feet.\nCamera tracks the character from a frontal/three-quarter sports angle.\n\n1.5–3.2s:\nA first supporting player attempts a sliding or reaching challenge.\nThe main character naturally changes direction and keeps possession.\nThe defender misses and moves past without colliding unrealistically with the hero.\n\n3.2–5.0s:\nA second challenge approaches.\nThe character makes another controlled touch, body feint or small directional change and continues forward.\n\nKeep one football only.\nMaintain exact character identity.\nNatural foot-to-ball contact.\nRealistic balance and momentum.\n\nEND FRAME:\nFinish with the main character still moving forward with the ball under control.\nThe final frame must be clear enough to become the exact starting reference for Take 2.\n\nNo dialogue.\nNo text.\nNo impossible acrobatics.\nNo morphing."
+        },
+        {
+          "take": 2,
+          "duration": "5s",
+          "title": "Dribles + vários marcadores",
+          "prompt": "TAKE 2 — 5 SECONDS — CONTINUED DRIBBLE + MULTIPLE DEFENDERS\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1.\n\nContinue from the same character position, body direction, football position, camera angle, lighting and location.\n\n0.0–1.8s:\nThe main character continues dribbling forward with realistic short touches.\n\n1.8–3.4s:\nOne or two supporting players close in from different directions.\nThe character uses a believable body feint, lateral touch or acceleration to escape the pressure.\n\n3.4–5.0s:\nA defender attempts another challenge near the character.\nThe main character avoids it and emerges still in possession, accelerating into open space.\n\nThe ball must remain physically connected to the action through real touches.\nSupporting players must react with believable momentum and ground contact.\nDo not allow bodies to intersect.\n\nEND FRAME:\nFinish with the main character breaking free with the football ahead, preparing for the final run toward goal.\nUse this exact final frame as the starting reference for Take 3.\n\nNo dialogue.\nNo text.\nNo identity changes."
+        },
+        {
+          "take": 3,
+          "duration": "5s",
+          "title": "Corrida + finalização",
+          "prompt": "TAKE 3 — 5 SECONDS — FINAL RUN + SHOT ON GOAL\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 2.\n\nContinue the same movement with the same character, football, location, lighting and camera direction.\n\n0.0–2.3s:\nThe main character advances toward the attacking area while one or more supporting players chase from behind.\nUse controlled forward touches and realistic running mechanics.\n\n2.3–3.8s:\nThe character positions the body for a shot.\nPlant one foot naturally beside the ball and swing the kicking leg with believable hip, knee and ankle mechanics.\n\n3.8–5.0s:\nThe foot makes clear contact with the football.\nThe ball travels rapidly and naturally toward the goal.\nCamera pans to follow the shot and briefly reveals the goal area as the ball arrives.\n\nThe shot must obey realistic football physics.\nNo teleporting ball.\nNo duplicated ball.\nNo impossible curve.\nNo body distortion.\n\nFinish on the goal/ball trajectory or immediate result of the shot.\n\nNo dialogue.\nNo generated text.\nNo CGI or video-game appearance."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 01.48.55.mp4",
+      "access": "free",
+      "isFreePreview": true,
+      "previewLabel": "GRÁTIS"
+    },
+    {
+      "id": "LANCAMENTO-004",
+      "title": "Encontro Viral — 3 Personagens no Mesmo Local",
+      "category": "LANÇAMENTOS",
+      "description": "Método viral de encontro com três personagens: performance em corpo inteiro, troca para selfie ultra-wide, revelação do cenário, entrada de outro personagem pelo carro e retorno final. Dividido em 3 takes conectados.",
+      "type": "video",
+      "duration": "18s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_01.52.57",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "viral",
+        "3 personagens",
+        "selfie",
+        "ultra-wide",
+        "whip pan",
+        "carro",
+        "encontro",
+        "9:16"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 viral social-media sequence using THREE character reference images and ONE location reference image.\n\nREFERENCE IMAGE 1 — CHARACTER A:\nUse as the absolute identity reference for the first character.\n\nREFERENCE IMAGE 2 — CHARACTER B:\nUse as the absolute identity reference for the second character.\n\nREFERENCE IMAGE 3 — CHARACTER C:\nUse as the absolute identity reference for the third character.\n\nREFERENCE IMAGE 4 — LOCATION:\nUse as the absolute reference for the outdoor environment, architecture, pavement, parked vehicles, sky, sunset lighting, horizon, colors and spatial layout.\n\nCORE CONCEPT:\nCreate a fast viral encounter montage in one continuous location. Character A begins with an energetic full-body performance. A fast camera handoff reveals Character B in a close ultra-wide selfie-style shot. The camera then leaves Character B and reveals the environment and parked vehicles. Character C emerges naturally near a vehicle, is shown first in a close portrait and then in a full-body view. A final whip-pan returns to Character B for the ending.\n\nThe complete reference sequence is approximately 18 seconds and should be generated as THREE connected takes of approximately 6 seconds each.\n\nCONTINUITY METHOD:\nGenerate Take 1 first.\nExport the exact final frame from Take 1 and use it as the starting-frame reference for Take 2.\nExport the exact final frame from Take 2 and use it as the starting-frame reference for Take 3.\nIf only one section is desired, generate only that take with the required references.\n\nIDENTITY LOCK:\nCharacter A, Character B and Character C must remain three clearly different people.\nNever blend their faces, hairstyles, bodies, clothing or accessories.\nNever morph one person into another.\nCharacter changes happen only through real camera movement, cuts, whip pans or environmental occlusion.\n\nLOCATION LOCK:\nEvery shot must remain in the same referenced location.\nPreserve important vehicles, buildings, pavement, horizon, sunset direction and scene geometry.\nDifferent camera positions are allowed only when they remain spatially believable.\n\nCAMERA STYLE:\nAuthentic smartphone / action-camera social video.\nVertical 9:16.\nUltra-wide perspective for energetic full-body and selfie shots.\n24mm-style perspective for close portraits.\nNatural handheld movement.\nWhip pans with real directional motion blur.\nFast but believable reframing.\nNo floating camera.\nNo impossible orbit.\n\nREALISM:\nNatural skin texture.\nCorrect hands and fingers.\nRealistic feet-to-ground contact.\nNatural clothing and hair physics.\nConsistent sunset lighting.\nRealistic reflections on vehicles.\nTrue-to-life smartphone exposure.\nNo CGI or video-game appearance.\n\nAUDIO:\nNo spoken dialogue by default.\nNatural ambience or rhythmic social-media soundtrack if supported.\nNo generated subtitles.\n\nAVOID:\nidentity drift, face blending, face morphing, duplicated characters, extra limbs, malformed hands, background replacement, changing vehicles, teleportation without camera transition, artificial morph transitions, excessive fisheye distortion, CGI, 3D render, generated text, subtitles, logos, watermarks.",
+      "tips": "Vídeo completo: gere os 3 takes e use o último frame real de cada take como início do seguinte. Para reproduzir somente uma cena, use apenas o prompt daquele take.",
+      "avoid": [
+        "identity drift",
+        "face blending",
+        "face morphing",
+        "duplicated characters",
+        "extra limbs",
+        "malformed hands",
+        "background replacement",
+        "changing vehicles",
+        "teleportation without camera transition",
+        "artificial morph transitions",
+        "excessive fisheye distortion",
+        "CGI",
+        "3D render",
+        "generated text",
+        "subtitles",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 4,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do Personagem A",
+          "purpose": "Personagem que abre o vídeo em corpo inteiro."
+        },
+        {
+          "order": 2,
+          "label": "Foto do Personagem B",
+          "purpose": "Personagem dos momentos selfie e do encerramento."
+        },
+        {
+          "order": 3,
+          "label": "Foto do Personagem C",
+          "purpose": "Personagem que aparece próximo ao carro e ganha close/corpo inteiro."
+        },
+        {
+          "order": 4,
+          "label": "Foto do local",
+          "purpose": "Trava do ambiente, veículos, luz e composição espacial."
+        }
+      ],
+      "method": {
+        "name": "3 Personagens + 1 Local + Handoff de Câmera",
+        "fullVideo": "3 takes de aproximadamente 6 segundos = aproximadamente 18 segundos.",
+        "partialUse": "Pode gerar apenas uma parte: Take 1 = performance e selfie; Take 2 = cenário e entrada do Personagem C; Take 3 = corpo inteiro e retorno ao Personagem B.",
+        "steps": [
+          "Envie uma foto nítida de cada personagem e uma foto do local.",
+          "Gere o Take 1.",
+          "Exporte/congele exatamente o último frame do Take 1.",
+          "Use esse frame como início do Take 2.",
+          "Exporte/congele exatamente o último frame do Take 2.",
+          "Use esse frame como início do Take 3.",
+          "Junte os três takes na ordem para obter o vídeo completo."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "~6s",
+          "title": "Personagem A → Selfie do Personagem B",
+          "prompt": "TAKE 1 — ~6 SECONDS — CHARACTER A PERFORMANCE → CHARACTER B SELFIE\n\nUse Character A, Character B and Location references.\n\n0.0–3.8s:\nShow Character A several feet from the camera in a full-body ultra-wide view in the referenced outdoor location.\nCharacter A performs relaxed rhythmic movement: small steps, shoulder movement and expressive arm gestures.\nThe camera gradually moves closer with authentic handheld action-camera energy.\n\n3.8–4.5s:\nCharacter A raises the arms toward the upper frame, creating a natural transition cue.\nUse fast physical camera movement and realistic motion blur.\nDo NOT morph Character A into Character B.\n\n4.5–6.0s:\nReveal Character B through a hard/match cut or whip transition.\nCharacter B is now close to the lens in a low-angle ultra-wide selfie-style composition, smiling and making a playful hand gesture.\nKeep Character B exactly consistent with its reference.\n\nEND:\nFinish with Character B close to the lens in a stable recognizable pose.\nExport this exact final frame for Take 2.\n\nNo dialogue.\nNo text.\nNo face morphing."
+        },
+        {
+          "take": 2,
+          "duration": "~6s",
+          "title": "Personagem B → Cenário → Close do Personagem C",
+          "prompt": "TAKE 2 — ~6 SECONDS — CHARACTER B → ENVIRONMENT → CHARACTER C CLOSE-UP\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1.\n\n0.0–1.0s:\nContinue Character B's exact pose and camera position naturally for a brief moment.\n\n1.0–2.0s:\nThe camera performs a fast physical whip-pan away from Character B.\nUse authentic directional motion blur.\n\n2.0–3.0s:\nReveal the referenced environment and parked vehicles.\nThe frame briefly focuses on the real location rather than a person.\nPreserve vehicle positions and scene geometry.\n\n3.0–4.0s:\nCharacter C naturally appears from beside or inside one of the vehicles.\nThe entrance must be physically believable.\n\n4.0–6.0s:\nMove into a close portrait of Character C.\nCharacter C looks toward the camera with subtle natural expressions, blinking and a relaxed smile.\nPreserve exact face, hair, clothing and accessories from Character C's reference.\n\nEND:\nFinish on a stable close-up of Character C.\nExport this exact final frame for Take 3.\n\nNo dialogue.\nNo generated text.\nNo identity blending."
+        },
+        {
+          "take": 3,
+          "duration": "~6s",
+          "title": "Personagem C → Whip Pan → Personagem B",
+          "prompt": "TAKE 3 — ~6 SECONDS — CHARACTER C FULL BODY → WHIP PAN → CHARACTER B ENDING\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 2.\n\n0.0–3.0s:\nCamera naturally pulls back from Character C's close-up into a medium and then full-body view beside the same parked vehicles.\nCharacter C smiles and performs relaxed natural body language.\nMaintain exact clothing, identity, lighting and location.\n\n3.0–4.0s:\nPerform a fast whip-pan away from Character C.\nUse real directional camera movement and natural motion blur.\nDo not morph Character C into another person.\n\n4.0–6.0s:\nReveal Character B again in a close low-angle smartphone/selfie view in the same location.\nCharacter B looks upward or toward the camera with a relaxed confident expression.\nCharacter A may remain naturally visible far in the background only if spatially appropriate, but must not be duplicated or become the focal subject.\n\nEND:\nFinish cleanly on Character B with the sunset/location still recognizable.\n\nNo dialogue.\nNo generated subtitles or text.\nNo morph transition.\nNo CGI look."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 01.52.57.mp4",
+      "access": "paid",
+      "isFreePreview": false,
+      "previewLabel": "PREMIUM"
+    },
+    {
+      "id": "LANCAMENTO-005",
+      "title": "Perseguição Cinematográfica — Moto + POV",
+      "category": "LANÇAMENTOS",
+      "description": "Efeito de perseguição cinematográfica em via urbana: personagem em fuga, motociclista se aproximando, desvio de emergência e sequência em POV de alta velocidade. Dividido em 2 takes conectados.",
+      "type": "video",
+      "duration": "17s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_01.55.14",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "perseguição",
+        "moto",
+        "POV",
+        "cinematográfico",
+        "ação",
+        "velocidade",
+        "viral",
+        "9:16"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 cinematic chase sequence using the supplied character and location references.\n\nREFERENCE IMAGE 1 — MAIN CHARACTER:\nUse Image 1 as the absolute identity reference for the person being chased. Preserve the exact face, age appearance, skin tone, hairstyle, body proportions, clothing and accessories throughout the sequence.\n\nREFERENCE IMAGE 2 — LOCATION:\nUse Image 2 as the absolute environment reference. Preserve the same roads, ramps, barriers, buildings, lighting direction, sky, colors and spatial identity while adapting the route naturally for the chase.\n\nOPTIONAL IMAGE 3 — PURSUER / RIDER:\nIf supplied, use it as the identity reference for the rider. If it is not supplied, create a visually consistent secondary rider without replacing or blending with the main character.\n\nOPTIONAL IMAGE 4 — MOTORCYCLE / VEHICLE:\nIf supplied, preserve the exact vehicle design. Otherwise create one consistent futuristic motorcycle and keep that same vehicle throughout.\n\nCORE CONCEPT:\nA fast cinematic pursuit. The main character moves urgently through an elevated urban roadway while a rider on a futuristic motorcycle approaches from behind. Alternate between close tracking shots of the main character, a dramatic frontal rider shot, a near-collision/evasive action beat and a fast motorcycle chase POV. End by returning to a close tracking view of the main character.\n\nThe reference sequence is approximately 17 seconds. Generate it as TWO connected takes:\nTake 1 = approximately 10 seconds.\nTake 2 = approximately 7 seconds.\n\nCONTINUITY:\nGenerate Take 1 first.\nExport the exact final frame of Take 1.\nUse that exact frame as the starting-frame reference for Take 2.\nDo not recreate the transition frame from memory.\n\nIf the user wants only one part, generate only the desired take.\n\nREALISM:\nUltra-photorealistic live-action look.\nReal human anatomy.\nCorrect hands and fingers.\nNatural clothing movement.\nBelievable balance and ground contact.\nConsistent character identity.\nConsistent motorcycle design.\nRealistic road perspective.\nNatural sunset/city lighting.\nRealistic vehicle speed, suspension and motion blur.\n\nCAMERA:\nVertical 9:16.\nLow-angle action-camera and smartphone-style tracking.\nFast forward motion.\nOccasional frontal tracking.\nMotorcycle chase POV.\nNatural camera shake caused by speed.\nStrong but physically believable motion blur.\nNo impossible floating camera.\n\nAVOID:\nidentity drift, face morphing, duplicate main character, character blending, changing clothing, changing motorcycle design, duplicated motorcycle, extra limbs, malformed hands, broken body anatomy, body passing through vehicle, impossible vehicle physics, background morphing, teleportation without a cut, fake CGI, video-game look, generated text, subtitles, logos and watermarks.",
+      "tips": "Para o efeito completo, gere primeiro o Take 1 de 10s, exporte o último frame real e use-o como início do Take 2 de 7s. Se quiser somente a abertura/ação ou somente a perseguição POV, copie apenas o take correspondente.",
+      "avoid": [
+        "identity drift",
+        "face morphing",
+        "duplicate main character",
+        "character blending",
+        "changing clothing",
+        "changing motorcycle design",
+        "duplicated motorcycle",
+        "extra limbs",
+        "malformed hands",
+        "broken anatomy",
+        "body intersecting vehicle",
+        "impossible vehicle physics",
+        "background morphing",
+        "teleportation without a cut",
+        "CGI",
+        "video-game look",
+        "generated text",
+        "subtitles",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 5,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do personagem principal",
+          "purpose": "Define a pessoa que aparece durante toda a perseguição."
+        },
+        {
+          "order": 2,
+          "label": "Foto do local",
+          "purpose": "Define a via/cenário onde a perseguição acontece."
+        }
+      ],
+      "optionalInputs": [
+        {
+          "label": "Foto do motociclista",
+          "purpose": "Use se quiser controlar também a identidade do perseguidor."
+        },
+        {
+          "label": "Foto da moto/veículo",
+          "purpose": "Use se quiser reproduzir um modelo específico de veículo."
+        }
+      ],
+      "method": {
+        "name": "Perseguição + Continuidade por Último Frame",
+        "fullVideo": "Take 1 de aproximadamente 10s + Take 2 de aproximadamente 7s = aproximadamente 17s.",
+        "partialUse": "Take 1 sozinho cria a abertura, revelação da moto e desvio. Take 2 sozinho serve para a perseguição POV e fechamento, desde que seja fornecida uma imagem inicial coerente.",
+        "steps": [
+          "Envie uma foto nítida do personagem principal e uma foto do local.",
+          "Opcionalmente envie a foto do motociclista e/ou da moto.",
+          "Gere o Take 1 de aproximadamente 10 segundos.",
+          "Exporte/congele exatamente o último frame do Take 1.",
+          "Use esse frame como imagem inicial do Take 2.",
+          "Gere o Take 2 de aproximadamente 7 segundos.",
+          "Junte os dois takes na ordem para formar o vídeo completo."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "10s",
+          "title": "Fuga → Moto → Desvio",
+          "prompt": "TAKE 1 — 10 SECONDS — MAIN CHARACTER + RIDER REVEAL + EVASIVE ACTION\n\nUse:\nImage 1 = main character.\nImage 2 = location.\nOptional Image 3 = rider.\nOptional Image 4 = motorcycle.\n\n0.0–4.2s:\nBegin with the main character moving quickly toward/along the camera on the referenced elevated urban roadway.\nUse a low, slightly wide frontal tracking angle.\nThe character leans forward with urgent, energetic body language while the camera travels backward at matching speed.\nKeep the face clearly recognizable and stable.\nA motorcycle may become visible in the distance behind the character.\n\n4.2–5.8s:\nCut to a dramatic frontal close shot of the pursuing rider on the motorcycle.\nThe rider grips the handlebars naturally.\nThe motorcycle advances rapidly through the same environment.\nUse realistic wind, clothing movement, suspension and road motion.\n\n5.8–7.7s:\nReturn to the main character with the motorcycle now visibly closing the distance from behind.\nThe character notices the threat and changes body position naturally while continuing forward.\n\n7.7–9.2s:\nCreate a dramatic evasive action beat as the motorcycle approaches.\nThe main character ducks, rolls, jumps aside or performs a believable emergency dodge without being struck.\nKeep anatomy physically coherent.\nThe motorcycle passes through the scene without intersecting the body.\n\n9.2–10.0s:\nTransition into a wider chase view down the roadway, establishing the motorcycle continuing after the main character.\n\nEND FRAME:\nFinish with the road direction, main character and/or pursuing motorcycle clearly oriented for forward continuation.\nThe final frame must be stable enough to become the exact starting image for Take 2.\n\nNo dialogue.\nNo generated text.\nNo face morphing.\nNo collision gore or injury."
+        },
+        {
+          "take": 2,
+          "duration": "7s",
+          "title": "Perseguição POV → Close final",
+          "prompt": "TAKE 2 — 7 SECONDS — MOTORCYCLE CHASE POV + FINAL CHARACTER CLOSE-UP\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1.\nStart with zero visual jump.\nPreserve the same roadway, direction of travel, lighting, character identity, motorcycle design and chase momentum.\n\n0.0–3.8s:\nShift naturally into a fast chase perspective following the motorcycle and the main character through the curved elevated roadway.\nUse a low motorcycle/action-camera feeling with strong forward movement.\nRoad barriers, buildings and environmental landmarks move past with realistic parallax.\nThe motorcycle follows the curve naturally and maintains believable tire contact and lean.\n\n3.8–5.2s:\nThe camera closes the distance again.\nReveal the main character ahead while the motorcycle remains part of the pursuit.\nUse realistic speed and directional motion blur.\n\n5.2–7.0s:\nTransition back to a close frontal/three-quarter tracking view of the main character moving quickly.\nThe character looks energized and reactive while maintaining the exact same identity, clothing and appearance.\nKeep the urban chase environment recognizable behind the character.\n\nEND:\nFinish on a strong close tracking hero frame of the main character, with the pursuit context still readable in the background.\n\nNo dialogue.\nNo generated text.\nNo body deformation.\nNo motorcycle duplication.\nNo CGI or video-game appearance."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 01.55.14.mp4",
+      "access": "paid",
+      "isFreePreview": false,
+      "previewLabel": "PREMIUM"
+    },
+    {
+      "id": "LANCAMENTO-006",
+      "title": "Dupla no Microfone — Performance Viral",
+      "category": "LANÇAMENTOS",
+      "description": "Efeito de performance musical com dois personagens no mesmo estúdio e um microfone suspenso. Os personagens alternam canto/rap visual, gestos, reações e dança mantendo os dois rostos consistentes.",
+      "type": "video",
+      "duration": "15s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_01.58.08",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "dupla",
+        "microfone",
+        "música",
+        "rap",
+        "performance",
+        "dança",
+        "viral",
+        "9:16"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 viral music-performance video using TWO character reference images and ONE optional environment reference.\n\nREFERENCE IMAGE 1 — CHARACTER A:\nUse as the absolute identity reference for the performer on the left. Preserve the exact face, age appearance, skin tone, hairstyle, body proportions, clothing/accessories and all recognizable identity details.\n\nREFERENCE IMAGE 2 — CHARACTER B:\nUse as the absolute identity reference for the performer on the right. Preserve the exact face, age appearance, skin tone, hairstyle, body proportions, clothing/accessories and all recognizable identity details.\n\nOPTIONAL IMAGE 3 — STUDIO / BACKGROUND:\nIf supplied, preserve that environment. If not supplied, use a simple clean warm-color studio backdrop with a single hanging condenser microphone centered above/between the two performers.\n\nCORE CONCEPT:\nTwo distinct characters perform together under one suspended studio microphone in a playful viral music-session style. Both remain visible for almost the entire sequence. They alternate attention toward the microphone and each other, gesture rhythmically with their hands, react to each other's performance and move naturally to the beat. Character B becomes more animated in the second half with a short dance/body-turn moment before both performers reconnect near the microphone for the ending.\n\nThe complete reference sequence is approximately 15 seconds.\nGenerate as TWO connected takes:\nTake 1 = 10 seconds.\nTake 2 = 5 seconds.\n\nCONTINUITY:\nGenerate Take 1 first.\nExport the exact final frame from Take 1.\nUse that exact final frame as the starting-frame reference for Take 2.\nStart Take 2 with zero visual jump.\n\nIf the user wants only one section, generate only the desired take.\n\nPERFORMANCE:\nNatural rhythmic body movement.\nBelievable mouth movement as if singing/rapping along to a track.\nExpressive hand gestures.\nNatural eye contact between performers.\nOccasional attention toward the hanging microphone.\nRelaxed playful chemistry.\nNo fighting or aggressive physical contact.\n\nAUDIO:\nDo not invent intelligible lyrics or dialogue by default.\nThe visual performance should be suitable for adding the user's music/audio afterward.\nIf the generation tool supports a supplied audio track, synchronize mouth and body rhythm to that supplied track without changing character identity.\n\nCAMERA:\nMostly fixed medium-wide studio framing.\nBoth performers remain readable.\nVery subtle handheld or stabilized micro-movement only.\nNo unnecessary cuts.\nNo orbiting camera.\nNo dramatic zooms.\nPreserve the hanging microphone position.\n\nREALISM:\nUltra-photorealistic live-action.\nNatural skin texture.\nCorrect hands and fingers.\nRealistic muscles/body anatomy.\nNatural breathing.\nBelievable shoulder, elbow and wrist motion.\nRealistic clothing/accessory physics.\nConsistent lighting and shadows.\n\nAVOID:\nidentity drift, face blending, one character transforming into the other, duplicate performers, extra limbs, malformed fingers, broken anatomy, bodies intersecting, disappearing microphone, moving microphone without physical reason, random wardrobe changes, background morphing, artificial face morphs, CGI, cartoon look, generated text, subtitles, logos and watermarks.",
+      "tips": "Para reproduzir o vídeo completo, gere o Take 1 de 10s, exporte o último frame real e use-o como início do Take 2 de 5s. Para usar música específica, adicione o áudio depois ou forneça a faixa ao gerador se ele aceitar sincronização de áudio.",
+      "avoid": [
+        "identity drift",
+        "face blending",
+        "character transformation",
+        "duplicate performers",
+        "extra limbs",
+        "malformed fingers",
+        "broken anatomy",
+        "bodies intersecting",
+        "disappearing microphone",
+        "random microphone movement",
+        "wardrobe changes",
+        "background morphing",
+        "artificial face morphs",
+        "CGI",
+        "cartoon look",
+        "generated text",
+        "subtitles",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 6,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do Personagem A",
+          "purpose": "Define o primeiro integrante da dupla."
+        },
+        {
+          "order": 2,
+          "label": "Foto do Personagem B",
+          "purpose": "Define o segundo integrante da dupla."
+        }
+      ],
+      "optionalInputs": [
+        {
+          "label": "Foto do estúdio/local",
+          "purpose": "Opcional. Se não enviar, o prompt cria um estúdio simples com microfone suspenso."
+        },
+        {
+          "label": "Áudio ou música",
+          "purpose": "Opcional. Use quando a ferramenta aceitar áudio de referência; caso contrário, adicione na edição final."
+        }
+      ],
+      "method": {
+        "name": "2 Personagens + Microfone + Continuidade",
+        "fullVideo": "Take 1 de 10 segundos + Take 2 de 5 segundos = aproximadamente 15 segundos.",
+        "partialUse": "Take 1 sozinho cria a maior parte da performance e dança. Take 2 pode ser usado como encerramento/interação final, desde que seja fornecida uma imagem inicial coerente.",
+        "steps": [
+          "Envie uma foto nítida do Personagem A e uma do Personagem B.",
+          "Opcionalmente envie uma referência do estúdio/local.",
+          "Gere o Take 1 de 10 segundos.",
+          "Exporte/congele exatamente o último frame do Take 1.",
+          "Use esse frame como imagem inicial do Take 2.",
+          "Gere o Take 2 de 5 segundos.",
+          "Una os dois takes e aplique a música/áudio desejado na edição final, se necessário."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "10s",
+          "title": "Dueto → Reações → Dança",
+          "prompt": "TAKE 1 — 10 SECONDS — DUET PERFORMANCE + RHYTHMIC REACTIONS\n\nUse:\nImage 1 = Character A.\nImage 2 = Character B.\nOptional Image 3 = studio/background.\n\nPlace both performers side by side beneath one suspended condenser microphone.\n\n0.0–2.5s:\nCharacter A leans slightly toward the hanging microphone and performs as if singing/rapping.\nCharacter B watches, reacts naturally and points/gestures rhythmically toward Character A or the beat.\nBoth maintain subtle body bounce.\n\n2.5–5.0s:\nBoth performers remain in frame.\nCharacter A continues expressive mouth movement and small hand gestures.\nCharacter B opens the hands and gestures conversationally, as if responding to the performance.\nThey briefly look toward each other, creating believable chemistry.\n\n5.0–7.5s:\nCharacter B becomes more active, gesturing with one hand near the chest and the other outward.\nCharacter A remains engaged near the microphone, nodding and moving to the rhythm.\n\n7.5–10.0s:\nCharacter B transitions into a more energetic dance move, rotating the torso partly away from camera while moving the arms rhythmically.\nCharacter A stays near the microphone, clapping lightly or marking the rhythm with the hands.\n\nEND FRAME:\nFinish with Character B partly turned and mid-dance while Character A remains clearly visible near the microphone.\nHold the final fraction of a second stable enough to export as the exact starting frame for Take 2.\n\nNo invented intelligible lyrics.\nNo subtitles.\nNo character morphing."
+        },
+        {
+          "take": 2,
+          "duration": "5s",
+          "title": "Continuação da dança → Final no microfone",
+          "prompt": "TAKE 2 — 5 SECONDS — CONTINUE DANCE → BOTH RECONNECT AT MICROPHONE\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1.\nBegin with zero visual jump.\nPreserve both characters' exact poses, identities, clothing, microphone position, background, lighting and camera framing.\n\n0.0–1.5s:\nCharacter B naturally completes the dance/body-turn movement and rotates back toward Character A and the microphone.\nCharacter A continues marking the rhythm with small hand gestures.\n\n1.5–3.5s:\nThe two performers move slightly closer toward the central microphone and interact playfully.\nThey gesture toward each other as if trading lines in a duet.\nUse believable eye contact, facial expressions and rhythmic mouth movement.\n\n3.5–5.0s:\nBoth face more toward the microphone/camera.\nCharacter A makes a final expressive hand gesture while Character B responds with a playful gesture near the head/face.\nEnd with both characters clearly visible together under the microphone.\n\nNo invented intelligible lyrics.\nNo generated text.\nNo identity blending.\nNo camera teleport.\nNo CGI look."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 01.58.08.mp4",
+      "access": "paid",
+      "isFreePreview": false,
+      "previewLabel": "PREMIUM"
+    },
+    {
+      "id": "LANCAMENTO-007",
+      "title": "UGC Perfumaria — Aplicação + Reação",
+      "category": "LANÇAMENTOS",
+      "description": "Método UGC para perfume/fragrância: aproximação no rosto, apresentação do produto, aplicação no pescoço, reação positiva e encerramento mostrando o produto com gesto de aprovação.",
+      "type": "video",
+      "duration": "15s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_02.00.30",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "UGC",
+        "perfumaria",
+        "perfume",
+        "produto",
+        "demonstração",
+        "reação",
+        "e-commerce",
+        "9:16"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 UGC fragrance/product demonstration using a character reference, an exact product reference and an optional environment reference.\n\nREFERENCE IMAGE 1 — CHARACTER:\nUse Image 1 as the absolute identity reference. Preserve the exact face, age appearance, skin tone, hairstyle, facial hair, body proportions, clothing, tattoos/accessories and all recognizable details throughout the sequence.\n\nREFERENCE IMAGE 2 — PRODUCT:\nUse Image 2 as the absolute product reference. Preserve the exact bottle/container shape, proportions, color, cap/nozzle, label placement, material, reflections and branding. Never redesign, recolor, duplicate, enlarge or shrink the product unnaturally.\n\nOPTIONAL IMAGE 3 — ENVIRONMENT:\nIf supplied, preserve the exact room/environment. If not supplied, use a realistic clean indoor bathroom/dressing-room style environment with warm ceiling lighting and a vertical smartphone-camera setup.\n\nCORE CONCEPT:\nA casual UGC-style fragrance demonstration. The character approaches the camera holding the product, brings the face and product closer for an attention-grabbing opening, shows the product naturally, applies/sprays the fragrance around the neck area, reacts positively to the scent, smiles, and ends by lifting the product toward the camera with an approving gesture.\n\nThe complete reference sequence is approximately 15 seconds.\nGenerate it as TWO connected takes:\nTake 1 = 10 seconds.\nTake 2 = 5 seconds.\n\nCONTINUITY METHOD:\nGenerate Take 1.\nExport the exact final frame of Take 1.\nUse that exact final frame as the starting-frame reference for Take 2.\nTake 2 must begin with zero visual jump.\n\nIf the user wants only one section, generate only the desired take.\n\nPRODUCT FIDELITY:\nThe same exact product remains in the character's hand throughout.\nCorrect grip and finger contact.\nCorrect nozzle/cap orientation.\nNo duplicated product.\nNo label morphing.\nNo floating object.\nNo product changing shape between frames.\n\nPERFORMANCE:\nNatural creator/influencer body language.\nDirect eye contact with the lens.\nExpressive but believable facial reactions.\nNatural hand gestures.\nBelievable application to the neck area.\nRelaxed smile and approval at the end.\n\nCAMERA:\nVertical 9:16.\nFixed smartphone camera at approximately chest/waist height with a slightly low angle.\nThe character creates framing variation by leaning closer and stepping backward rather than by impossible camera movement.\nNatural autofocus and exposure adjustment as the face/product approach the lens.\nNo unnecessary cuts.\n\nAUDIO:\nNo exact spoken dialogue by default.\nNatural room ambience only, or add the creator's desired voiceover/audio later.\nIf a dialogue script is supplied, preserve it exactly and synchronize mouth movement naturally.\n\nAVOID:\nidentity drift, face morphing, beauty-filter skin, changing facial hair, wardrobe changes, extra fingers, malformed hands, product duplication, product redesign, incorrect label, floating product, impossible spray direction, product passing through the hand, background morphing, CGI, cartoon look, generated text, subtitles, logos or watermarks not present on the real product.",
+      "tips": "Para o vídeo completo, gere o Take 1 de 10s, exporte o último frame real e use-o como início do Take 2 de 5s. Se quiser apenas demonstração/aplicação, use o Take 1; se quiser somente a reação e apresentação final, use o Take 2 com uma imagem inicial coerente.",
+      "avoid": [
+        "identity drift",
+        "face morphing",
+        "beauty-filter skin",
+        "facial hair changes",
+        "wardrobe changes",
+        "extra fingers",
+        "malformed hands",
+        "product duplication",
+        "product redesign",
+        "incorrect label",
+        "floating product",
+        "impossible spray direction",
+        "product passing through hand",
+        "background morphing",
+        "CGI",
+        "cartoon look",
+        "generated text",
+        "subtitles",
+        "unwanted logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 7,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do personagem",
+          "purpose": "Define a pessoa que fará a demonstração UGC."
+        },
+        {
+          "order": 2,
+          "label": "Foto do produto",
+          "purpose": "Trava formato, cor, tampa/borrifador, rótulo e aparência exata do perfume/fragrância."
+        }
+      ],
+      "optionalInputs": [
+        {
+          "label": "Foto do ambiente",
+          "purpose": "Opcional. Define o banheiro/quarto/local da gravação."
+        },
+        {
+          "label": "Roteiro de fala ou áudio",
+          "purpose": "Opcional. Se fornecido, pode ser sincronizado; sem ele, o prompt não inventa uma fala específica."
+        }
+      ],
+      "method": {
+        "name": "Personagem + Produto + Aplicação UGC",
+        "fullVideo": "Take 1 de 10 segundos + Take 2 de 5 segundos = aproximadamente 15 segundos.",
+        "partialUse": "Take 1 = hook, apresentação e aplicação. Take 2 = reação positiva e hero shot do produto.",
+        "steps": [
+          "Envie uma foto nítida do personagem.",
+          "Envie uma foto nítida do produto, preferencialmente mostrando rótulo, tampa/borrifador e formato completo.",
+          "Opcionalmente envie a foto do ambiente e/ou roteiro de fala.",
+          "Gere o Take 1 de 10 segundos.",
+          "Exporte/congele exatamente o último frame do Take 1.",
+          "Use esse frame como imagem inicial do Take 2.",
+          "Gere o Take 2 de 5 segundos.",
+          "Una os dois takes para reproduzir a sequência completa."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "10s",
+          "title": "Hook → Produto → Aplicação",
+          "prompt": "TAKE 1 — 10 SECONDS — HOOK + PRODUCT SHOW + APPLICATION\n\nUse:\nImage 1 = character.\nImage 2 = exact fragrance/product.\nOptional Image 3 = environment.\n\n0.0–1.5s:\nStart with the character standing close to the fixed vertical smartphone camera, holding the exact product naturally in one hand.\nThe character looks directly into the lens and begins an expressive UGC presentation with the free hand.\n\n1.5–2.8s:\nThe character leans very close toward the camera, creating a strong facial hook.\nKeep facial identity perfectly stable and preserve natural skin texture.\nThe product remains partially visible in the hand.\n\n2.8–4.3s:\nThe character moves back to a medium shot and presents the product more clearly toward the camera.\nUse realistic finger placement and keep the product design completely unchanged.\n\n4.3–7.5s:\nThe character turns slightly and naturally applies/sprays the fragrance around the side of the neck.\nThe free hand may touch or lightly rub the neck after application.\nUse believable wrist, elbow and shoulder mechanics.\nIf spray mist is visible, keep it subtle and physically realistic.\n\n7.5–10.0s:\nThe character reacts positively to the scent, touching the neck/chest area and smiling.\nThe product stays clearly visible in the other hand.\nEnd with a relaxed positive expression and the product held around chest height.\n\nEND FRAME:\nHold the last fraction of a second stable.\nExport this exact final frame for Take 2.\n\nNo invented dialogue.\nNo product morphing.\nNo extra product.\nNo text."
+        },
+        {
+          "take": 2,
+          "duration": "5s",
+          "title": "Reação → Produto em destaque",
+          "prompt": "TAKE 2 — 5 SECONDS — POSITIVE REACTION + PRODUCT HERO ENDING\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1.\nBegin with zero visual jump.\nPreserve the exact character pose, face, clothing, product, hand grip, room, lighting and camera position.\n\n0.0–1.8s:\nContinue the positive reaction naturally.\nThe character smiles, lightly gestures around the neck/chest and looks directly toward the camera.\n\n1.8–3.2s:\nThe character leans slightly forward again with friendly, enthusiastic UGC energy while keeping the exact product visible.\n\n3.2–5.0s:\nRaise the product higher toward the camera for a clear hero presentation.\nWith the free hand, make a simple approving gesture such as a thumbs-up.\nEnd smiling with the product prominently visible and correctly oriented.\n\nMaintain realistic hands and exact product geometry.\nDo not change the bottle/container, cap/nozzle, color or label.\n\nNo invented dialogue.\nNo generated text.\nNo product duplication.\nNo CGI look."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 02.00.30.mp4",
+      "access": "free",
+      "isFreePreview": true,
+      "previewLabel": "GRÁTIS"
+    },
+    {
+      "id": "LANCAMENTO-008",
+      "title": "Revelação no Evento — Sacada até Personagem",
+      "category": "LANÇAMENTOS",
+      "description": "Efeito cinematográfico em dois níveis: começa com um personagem na sacada, a câmera contorna por trás, revela uma multidão e um segundo personagem lá embaixo, aproxima e termina em um close com movimento/dança.",
+      "type": "video",
+      "duration": "15s",
+      "format": "9:16",
+      "status": "Novo lançamento",
+      "testedModel": "",
+      "mediaUrl": "https://player.cloudinary.com/embed/?cloud_name=rnfilyy9&public_id=WhatsApp_Video_2026-10-23_at_02.02.54",
+      "thumbnailUrl": "",
+      "tags": [
+        "lançamento",
+        "revelação",
+        "evento",
+        "sacada",
+        "multidão",
+        "2 personagens",
+        "zoom",
+        "dança",
+        "cinematográfico",
+        "9:16"
+      ],
+      "prompt": "Create an ultra-realistic vertical 9:16 cinematic reveal using TWO character references and ONE event/location reference.\n\nREFERENCE IMAGE 1 — CHARACTER A:\nUse Image 1 as the absolute identity reference for the character on the upper balcony/platform. Preserve the exact face, age appearance, skin tone, hairstyle, facial hair, body proportions, clothing and accessories.\n\nREFERENCE IMAGE 2 — CHARACTER B:\nUse Image 2 as the absolute identity reference for the character on the lower event floor. Preserve the exact face, age appearance, skin tone, hairstyle, body proportions, clothing and accessories.\n\nREFERENCE IMAGE 3 — LOCATION / EVENT:\nUse Image 3 as the environment reference. It should contain or support a two-level event space: an upper balcony/railing and a lower crowded floor or stage area. Preserve the environment's lighting, architecture, crowd atmosphere, colors and spatial relationship between the upper and lower levels.\n\nCORE CONCEPT:\nCharacter A begins leaning naturally on an upper railing in a calm medium shot. The camera slowly pushes closer to the face, then travels around Character A toward an over-the-shoulder/back view. This movement reveals a large event/crowd below and Character B far away on the lower floor. The camera then visually travels toward Character B and cuts into a close low-angle hero shot of Character B performing a simple rhythmic dance/movement in the center of the event.\n\nThe complete reference sequence is approximately 15 seconds.\nGenerate as TWO connected takes:\nTake 1 = 10 seconds.\nTake 2 = 5 seconds.\n\nCONTINUITY:\nGenerate Take 1 first.\nExport the exact final frame of Take 1.\nUse that exact final frame as the starting-frame reference for Take 2.\nTake 2 must begin with zero visual jump.\n\nIf the user wants only one part, generate only the desired take.\n\nCAMERA:\nVertical 9:16.\nCinematic smartphone/event-camera realism.\nSlow push-in at the beginning.\nSmooth move around Character A into over-the-shoulder perspective.\nNatural downward reveal of the lower event floor.\nRealistic long-distance perspective.\nFast but believable visual approach toward Character B.\nClose low-angle framing for the ending.\nNatural autofocus, exposure adjustment and depth changes.\nNo impossible camera teleport inside a continuous shot.\n\nCROWD:\nThe crowd is secondary and must remain visually coherent.\nNatural small movements, raised phones and event reactions are allowed.\nDo not create duplicated foreground faces or obvious cloned people.\n\nREALISM:\nUltra-photorealistic live-action.\nNatural skin texture.\nCorrect hands and fingers.\nRealistic railing contact.\nBelievable body weight and posture.\nConsistent architecture and event lighting.\nCharacter A and Character B must remain two separate identities.\n\nAUDIO:\nNo dialogue by default.\nEvent ambience or music may be added separately.\nDo not invent political speeches, statements, slogans or subtitles.\n\nAVOID:\nidentity drift, face blending, one character transforming into the other, duplicate main characters, extra limbs, malformed hands, body warping, railing intersection, background morphing, impossible balcony geometry, cloned crowd faces, teleportation without a cut, CGI, cartoon look, generated text, subtitles, slogans, logos and watermarks.",
+      "tips": "Para o vídeo completo, gere o Take 1 de 10s, exporte o último frame real e use-o como início do Take 2 de 5s. Se quiser somente a revelação da sacada, use o Take 1. Se quiser somente o personagem no evento, use o Take 2 com uma imagem inicial coerente.",
+      "avoid": [
+        "identity drift",
+        "face blending",
+        "character transformation",
+        "duplicate main characters",
+        "extra limbs",
+        "malformed hands",
+        "body warping",
+        "railing intersection",
+        "background morphing",
+        "impossible balcony geometry",
+        "cloned crowd faces",
+        "teleportation without a cut",
+        "CGI",
+        "cartoon look",
+        "generated text",
+        "subtitles",
+        "slogans",
+        "logos",
+        "watermarks"
+      ],
+      "isLaunch": true,
+      "launchOrder": 8,
+      "requiredInputs": [
+        {
+          "order": 1,
+          "label": "Foto do Personagem A",
+          "purpose": "Personagem que começa na sacada/plataforma superior."
+        },
+        {
+          "order": 2,
+          "label": "Foto do Personagem B",
+          "purpose": "Personagem revelado no andar inferior e mostrado no close final."
+        },
+        {
+          "order": 3,
+          "label": "Foto do local/evento",
+          "purpose": "Define sacada, andar inferior, multidão, iluminação e geometria do ambiente."
+        }
+      ],
+      "method": {
+        "name": "Sacada → Revelação → Personagem no Evento",
+        "fullVideo": "Take 1 de 10 segundos + Take 2 de 5 segundos = aproximadamente 15 segundos.",
+        "partialUse": "Take 1 sozinho reproduz a aproximação, contorno da câmera e revelação do personagem abaixo. Take 2 reproduz a aproximação final e o movimento/dança do segundo personagem.",
+        "steps": [
+          "Envie uma foto nítida do Personagem A.",
+          "Envie uma foto nítida do Personagem B.",
+          "Envie uma foto/referência do local com dois níveis ou ambiente compatível.",
+          "Gere o Take 1 de 10 segundos.",
+          "Exporte/congele exatamente o último frame do Take 1.",
+          "Use esse frame como imagem inicial do Take 2.",
+          "Gere o Take 2 de 5 segundos.",
+          "Una os dois takes para formar o vídeo completo."
+        ]
+      },
+      "takePrompts": [
+        {
+          "take": 1,
+          "duration": "10s",
+          "title": "Sacada → Câmera por trás → Revelação",
+          "prompt": "TAKE 1 — 10 SECONDS — BALCONY CLOSE-UP → OVER-THE-SHOULDER REVEAL → CHARACTER B BELOW\n\nUse:\nImage 1 = Character A.\nImage 2 = Character B.\nImage 3 = location/event.\n\n0.0–3.8s:\nStart with Character A leaning naturally on the upper railing in a medium shot.\nCharacter A has relaxed body language and a subtle natural expression.\nThe camera slowly pushes closer from medium framing toward a facial close-up.\nPreserve exact identity, clothing and realistic hand contact with the railing.\n\n3.8–5.3s:\nThe camera smoothly travels around Character A toward the side and then behind the head/shoulder.\nDo not morph or rotate the person's face unnaturally.\nThe move must feel like a real camera operator walking around the subject.\n\n5.3–7.8s:\nFrom behind Character A, reveal the large event space below.\nCharacter A's head/shoulder remains in the foreground while the crowd and lower floor become visible.\nCharacter B is visible far below as a small but recognizable figure in the central event area.\n\n7.8–10.0s:\nThe camera directs attention downward toward Character B, gradually reducing Character A's foreground dominance.\nUse a believable push/zoom toward the lower floor while maintaining the exact event geometry.\nCharacter B becomes increasingly readable in the center of the crowd.\n\nEND FRAME:\nFinish with Character B centered on the lower floor from the elevated viewpoint, with the crowd and venue clearly visible.\nHold the final fraction of a second stable for continuation.\n\nNo dialogue.\nNo generated text.\nNo identity morphing."
+        },
+        {
+          "take": 2,
+          "duration": "5s",
+          "title": "Aproximação → Close → Movimento final",
+          "prompt": "TAKE 2 — 5 SECONDS — CONTINUE APPROACH → CHARACTER B HERO DANCE\n\nSTARTING FRAME:\nUse the exact final frame exported from Take 1.\nBegin with zero visual jump.\nPreserve the same crowd, event lighting, Character B position and direction of view.\n\n0.0–1.0s:\nContinue the visual approach toward Character B from the elevated event view.\nMaintain believable scale and perspective.\n\n1.0–1.5s:\nUse a clean cinematic cut or match transition into a much closer low-angle view of Character B on the lower event floor.\nDo not morph the distant figure into the close figure.\n\n1.5–5.0s:\nCharacter B performs a simple confident rhythmic dance/body movement.\nUse natural knee bends, shoulder movement, small hip/body shifts and relaxed hand placement.\nThe movement should feel playful and viral but physically believable.\nKeep Character B's exact identity, face, hairstyle and clothing unchanged.\nThe surrounding crowd remains secondary and reacts naturally.\n\nEND:\nFinish on a strong low-angle medium/close hero frame of Character B with the blue/event lighting and crowd still recognizable.\n\nNo dialogue.\nNo political message or slogan.\nNo generated subtitles/text.\nNo CGI look."
+        }
+      ],
+      "pendingMedia": false,
+      "sourceReference": "WhatsApp Video 2026-10-23 at 02.02.54.mp4",
+      "access": "free",
+      "isFreePreview": true,
+      "previewLabel": "GRÁTIS"
+    }
+  ],
+  "batchMeta": {
+    "status": "FINALIZADO — aguardando importação",
+    "updatedAt": "2026-10-23",
+    "itemCount": 31,
+    "launchCount": 8,
+    "freeLaunchIds": [
+      "LANCAMENTO-002",
+      "LANCAMENTO-003",
+      "LANCAMENTO-007",
+      "LANCAMENTO-008"
+    ],
+    "note": "Arquivo consolidado final. 4 lançamentos grátis; demais lançamentos Premium. Preservar antes da importação no Bolt."
+  }
+}

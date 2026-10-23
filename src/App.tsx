@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Menu, Film, SearchX } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { PromptCard } from '@/components/PromptCard';
@@ -7,17 +7,21 @@ import { Filters } from '@/components/Filters';
 import type { FilterState } from '@/components/Filters';
 import { Home } from '@/components/Home';
 import { categories, categoryMap } from '@/categories';
-import { prompts } from '@/prompts';
+import { prompts, launchPrompts } from '@/prompts';
 import type { Prompt } from '@/types';
 import { useLocalStorage } from '@/hooks';
+import { useAuth } from '@/lib/auth';
+import { loadDbFavorites, migrateLocalFavorites, addDbFavorite, removeDbFavorite } from '@/lib/favorites';
 
-export type View = 'home' | 'all' | 'favorites' | { category: string };
+export type View = 'home' | 'all' | 'favorites' | 'lancamentos' | { category: string };
 
 const RECENT_KEY = 'motionlab:recent';
 const RECENT_MAX = 8;
 const FAV_KEY = 'motionlab:favorites';
 
 export default function App() {
+  const { user, isPremium, signIn, signUp, signOut, loading: authLoading } = useAuth();
+
   const [view, setView] = useState<View>('home');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [query, setQuery] = useState('');
@@ -29,10 +33,26 @@ export default function App() {
   });
   const [selectedPrompt, setSelectedPrompt] = useState<Prompt | null>(null);
 
-  const [favorites, setFavorites] = useLocalStorage<string[]>(FAV_KEY, []);
+  const [localFavorites, setLocalFavorites] = useLocalStorage<string[]>(FAV_KEY, []);
+  const [dbFavorites, setDbFavorites] = useState<string[]>([]);
   const [recent, setRecent] = useLocalStorage<Prompt[]>(RECENT_KEY, []);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [modalCopied, setModalCopied] = useState(false);
+
+  const favorites = user ? dbFavorites : localFavorites;
+
+  // Load DB favorites when user logs in
+  useEffect(() => {
+    if (!user) {
+      setDbFavorites([]);
+      return;
+    }
+    loadDbFavorites(user.id).then(setDbFavorites);
+    migrateLocalFavorites(user.id, localFavorites).then(() => {
+      loadDbFavorites(user.id).then(setDbFavorites);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
 
   const navigate = useCallback((v: View) => {
     setView(v);
@@ -44,11 +64,20 @@ export default function App() {
 
   const toggleFavorite = useCallback(
     (id: string) => {
-      setFavorites((prev) =>
-        prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id],
-      );
+      if (user) {
+        const isFav = dbFavorites.includes(id);
+        setDbFavorites((prev) =>
+          prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id],
+        );
+        if (isFav) removeDbFavorite(user.id, id);
+        else addDbFavorite(user.id, id);
+      } else {
+        setLocalFavorites((prev) =>
+          prev.includes(id) ? prev.filter((f) => f !== id) : [...prev, id],
+        );
+      }
     },
-    [setFavorites],
+    [user, dbFavorites, setLocalFavorites],
   );
 
   const handleCopy = useCallback((text: string) => {
@@ -72,16 +101,17 @@ export default function App() {
 
   const handleCardCopy = useCallback(
     (prompt: Prompt) => {
+      if (prompt.access === 'paid' && !isPremium) return;
       handleCopy(prompt.prompt);
       setCopiedId(prompt.id);
       setTimeout(() => setCopiedId((prev) => (prev === prompt.id ? null : prev)), 2000);
     },
-    [handleCopy],
+    [handleCopy, isPremium],
   );
 
   const handleModalCopy = useCallback(
-    (prompt: Prompt) => {
-      handleCopy(prompt.prompt);
+    (text: string) => {
+      handleCopy(text);
       setModalCopied(true);
       setTimeout(() => setModalCopied(false), 2000);
     },
@@ -111,6 +141,11 @@ export default function App() {
     // Favorites view
     if (view === 'favorites') {
       result = result.filter((p) => favorites.includes(p.id));
+    }
+
+    // Lançamentos view
+    if (view === 'lancamentos') {
+      result = result.filter((p) => p.isLaunch);
     }
 
     // Status filter
@@ -156,6 +191,7 @@ export default function App() {
     if (view === 'home') return null;
     if (view === 'all') return { title: 'Todos os Prompts', subtitle: `${filteredPrompts.length} prompts cadastrados` };
     if (view === 'favorites') return { title: 'Favoritos', subtitle: `${favorites.length} ${favorites.length === 1 ? 'prompt favoritado' : 'prompts favoritados'}` };
+    if (view === 'lancamentos') return { title: '🚀 Lançamentos', subtitle: `${launchPrompts.length} prompts exclusivos de lançamento` };
     const cat = typeof view === 'object' ? categoryMap[view.category] : null;
     return cat
       ? { title: `${cat.icon} ${cat.label}`, subtitle: `${filteredPrompts.filter((p) => p.category === cat.id).length} prompts nesta categoria` }
@@ -178,6 +214,12 @@ export default function App() {
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
         favoritesCount={favorites.length}
+        user={user}
+        isPremium={isPremium}
+        onSignIn={signIn}
+        onSignUp={signUp}
+        onSignOut={signOut}
+        authLoading={authLoading}
       />
 
       <div className="lg:pl-[260px]">
@@ -205,6 +247,8 @@ export default function App() {
               recent={recent}
               onOpenDetails={openDetails}
               onSearch={setQuery}
+              launchPrompts={launchPrompts}
+              isPremium={isPremium}
             />
           ) : (
             <div className="space-y-5 animate-fade-in">
@@ -238,6 +282,7 @@ export default function App() {
                       onCopy={() => handleCardCopy(p)}
                       copiedId={copiedId}
                       onOpenDetails={openDetails}
+                      isPremium={isPremium}
                     />
                   ))}
                 </div>
@@ -280,9 +325,10 @@ export default function App() {
         prompt={selectedPrompt}
         isFavorite={selectedPrompt ? favorites.includes(selectedPrompt.id) : false}
         onToggleFavorite={toggleFavorite}
-        onCopy={() => selectedPrompt && handleModalCopy(selectedPrompt)}
+        onCopy={handleModalCopy}
         copied={modalCopied}
         onClose={() => setSelectedPrompt(null)}
+        isPremium={isPremium}
       />
     </div>
   );
