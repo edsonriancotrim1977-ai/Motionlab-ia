@@ -1,9 +1,9 @@
 {
-  "projectId": "72294948",
+  "projectId": "72316638",
   "functions": {
     "kiwify-webhook": {
       "hasChanged": false,
-      "hash": "b193653fffed076a8a7a02748a5765f7456de84e076f078a7462e6ed0f86ddc8"
+      "hash": "33c020c17b601391db61dcec544f9564c5f2581613b0cf1569eda7ddf6e74002"
     }
   }
 }
